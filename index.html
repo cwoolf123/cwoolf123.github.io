@@ -11,6 +11,7 @@
 		<link rel="shortcut icon" href="favicon.png">
 		<link rel="stylesheet" href="custom-fonts.css">
     <link rel="stylesheet" type="text/css" href="resume.css" />
+    <link rel="stylesheet" type="text/css" href="flapper.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">		
   </head>
   <body>
@@ -93,27 +94,80 @@
   <div class="wd-circle-dot"></div>
 </div>
 <script src='js/exp.js'></script>
-<div><a class="arrow-click"><i class="fa fa-arrow-down"></i></a></div>
+<div><a class="arrow-click"><i class="fa fa-plus"></i></a></div>
 </main>
 </section>
 <div class="bar1"></div>
-<div class="txt-box">
-<h2 class="title-txt">Hi,</h2>
-<h2 class="title-txt2">I'm</h2>
-<h2 class="title-txta">a</h2>
-<h2 class="title-txt3">Web</h2>
-<h2 class="title-txt4">Developer</h2>
-<div class="hair-left"></div>
+<div class="flap-txt">
+<input class="header dark XS" id="header_display" />
 </div>
-<script src="jquery-3.3.1.min.js"></script>
-<script src="transitions.js"></script>
+<span class="side-txt">FOLLOW:</span>
+
+<!--<img class="current-img" src="https://piskel-imgstore-b.appspot.com/img/f977207d-3223-11e9-a799-8374fc2d0caf.gif" />-->
+</div>
+</div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/transitions.js"></script>
 <script src='js/jquery-2.2.1.min.js'></script>
+<script src='js/jquery.transform-0.9.3.min.js'></script>
+<script src="js/jquery.flapper.js"></script>
 <script src='js/anime.min.js'></script>
 <script src='js/pieces.min.js'></script>
 <script src='js/exp.js'></script>
 <script src='js/snap.svg-min.js'></script>
 <script src='js/title.js'></script>	
 <script src='js/menu.js'></script>	
+<script language="javascript">
+    $(document).ready(function() {
+        var $header_display = $('#header_display');
+        $header_display.flapper({
+            width: 27,
+            chars_preset: 'alpha'
+        });
+
+        var $demo_slow = $('#animation_demo input.slow');
+        var $demo_fast = $('#animation_demo input.fast');
+
+        var demo_timing = 500;
+        var demo_chars = [' ','0','1','2','3','4','5','6','7','8','9'];
+
+        $demo_slow.flapper({
+            width: 1,
+            chars: demo_chars,
+            timing: demo_timing,
+        });
+        
+        $demo_fast.flapper({
+            width: 1,
+            chars: demo_chars,
+            timing: demo_timing,
+            transform: false
+        });
+
+        var $demos = $('#animation_demo input');
+
+        setTimeout(function(){
+            $header_display.val('WELCOME   TO   MY   SITE').change();
+            $demos.val(9).change();
+            var toggle = false;
+            setInterval(function(){
+                if (toggle) {
+                    $header_display.val('').change();
+                    $demos.val(10).change();
+                } else {
+                    $header_display.val('').change();
+                    $demos.val('').change();
+                }
+                toggle = !toggle;
+            }, 10000);
+        }, 5000);
+
+        $('#size_demo input').flapper({
+            width: 1,
+            chars: ['9']
+        });
+    });
+</script>
   </body>
   <footer>
     <div class="footer">
