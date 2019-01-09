@@ -24,7 +24,7 @@
 .header{
   position: absolute;
   height: 1em;
-  left: 3em;
+  left: 0em;
 }
 
 .title{
@@ -38,10 +38,11 @@
 #container-ani {
   top: 17%;
   position: absolute;
+  width: 100%;
   display: fixed;
   transform: translate(-50%, -50%);
   animation: fadeIn 3s;
-  z-index: 900;
+  z-index: 800;
 }
 
 /* Menu */
@@ -127,7 +128,7 @@ a {
 }
 
 .navicon {
-  z-index: 900;
+  z-index: 990;
 }
 
 .header .menu-icon .navicon:before,
