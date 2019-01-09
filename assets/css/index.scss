@@ -1,5 +1,7 @@
 /* Contents */
 
+
+/*Global*/
   *, *:before, *:after {
     box-sizing: border-box;
     margin: 0;
@@ -213,7 +215,7 @@ a {
     height: 100%;
   }
   
-  /* END OF GLOBAL STYLES */
+
   /* SIDEBAR HOVER STYLES */
   .sidebar-hover {
     position: fixed;
@@ -564,7 +566,7 @@ a {
   .section-heading {
     top: 26.7rem;
     left: 0;
-    font-size: 5rem;
+    font-size: 4rem;
     text-transform: uppercase;
     line-height: 1;
     font-family: 'Comfortaa';
@@ -715,7 +717,7 @@ a {
   }
   
   
-/* Mobile Response */
+/* Mobile Response @media queries*/
 
 @media screen and (max-width: 30em){
 
@@ -753,10 +755,6 @@ a {
   .section-heading{
     font-size: 1.4em;
   }
-   .additional-text{
-     top:-30em;
-     z-index: 900;
-   }
    .section.section-1 .bg-part {
     background-color: #53a09e;
   }
@@ -770,11 +768,19 @@ a {
 
   .additional-text{
     display: none;
-    z-index: 9000;
+    z-index: -900;
   }
   .scroll-down:after {
       top: -100em;
       -webkit-animation: navArrowMove 0s end;
       animation: navArrowMove 0s end;
   }
+  }
+
+  .p1-img{
+    position: absolute;
+    display: fixed;
+    margin-left: -550%;
+    margin-top: 50%;
+
   }
