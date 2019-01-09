@@ -1,18 +1,22 @@
 /* Contents */
 
 
-/*Global*/
+/*-- GLOBAL --*/
+
+
   *, *:before, *:after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
   
+
   html, body {
     font-size: 100%;
     overflow: hidden;
   }
   
+
   .main {
     width: 100%;
     height: 100vh;
@@ -23,11 +27,13 @@
 
 /*Header*/
 
+
 .header{
   position: absolute;
   height: 1em;
   left: 3em;
 }
+
 
 .title{
   font-family: 'Comfortaa';
@@ -45,13 +51,11 @@
   animation: fadeIn 3s;
   z-index: 900;
 }
-
 /* Menu */
 
 a {
   color: #000;
 }
-
 /* header */
 
 .header {
@@ -184,8 +188,7 @@ a {
 @media (min-width: 48em) {
   .header li {
     float: left;
-    margin-right: 6em;
-    
+    margin-right: 6em  
   }
   .header li a {
     padding: 1em .01em;
@@ -300,7 +303,7 @@ a {
 
   @media screen and (max-width:48em){
     .sidebar-real{
-      display:none;
+      display: none;
     }
   }
   
@@ -316,6 +319,7 @@ a {
     color: rgba(255, 255, 255, 0.5);
     padding: 0.5rem;
     background: rgba(0, 0, 0, 0.4);
+  }
     /*
     &:before {
       content: "";
@@ -328,7 +332,7 @@ a {
       border-radius: 5px;
       background: rgba(255,255,255, 0.9);
     }*/
-  }
+  
   .pagination:after {
     content: ">";
     color: #fff;
@@ -566,24 +570,32 @@ a {
   .section-heading {
     top: 26.7rem;
     left: 0;
-    font-size: 4rem;
+    font-size: 3rem;
     text-transform: uppercase;
     line-height: 1;
     font-family: 'Comfortaa';
     padding: .1em 2rem 4rem;
     background: rgba(0, 0, 0, 0.4);
     cursor: pointer;
+    text-decoration: none;
   }
-  .section-heading:hover {
+.section-heading a{
+  color: #fff;
+  text-decoration: none;
+}
+
+  .section-heading:hover,
+  .section-heading a:hover{
     color: #1a1a1d;
+    text-decoration: none;
   }
   
   .additional-text {
-    top: 33.2rem;
+    top: 31.2rem;
     left: 2rem;
     font-size: 2rem;
     text-transform: uppercase;
-    font-family: ptsans-regular;
+    font-family: 'Comfortaa';
   }
 
   @media screen and (max-width: 48em){
@@ -644,7 +656,7 @@ a {
   }
   
   .scroll-down {
-    position: fixed;
+    position: relative;
     z-index: 500;
     transition: opacity 0.3s 1.7s, z-index 0.5s 1.5s, -webkit-transform 0.5s 1.5s;
     transition: transform 0.5s 1.5s, opacity 0.3s 1.7s, z-index 0.5s 1.5s;
@@ -652,12 +664,9 @@ a {
     font-size: .8rem;
     font-family: 'Comfortaa';
     text-transform: uppercase;
-    top: 15rem;
-    left: calc(50% - 18rem);
-    color: #1a1a1d;
-    width: 30rem;
-    text-align: center;
-  }
+  } 
+
+  
   .scroll-down.removed {
     -webkit-transform: translateY(-20rem);
             transform: translateY(-20rem);
@@ -666,24 +675,6 @@ a {
     transition: opacity 0.3s 0.2s, z-index 0.5s, -webkit-transform 0.5s;
     transition: transform 0.5s, opacity 0.3s 0.2s, z-index 0.5s;
     transition: transform 0.5s, opacity 0.3s 0.2s, z-index 0.5s, -webkit-transform 0.5s;
-  }
-  .scroll-down:after {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 5rem;
-    left: calc(50% - 1rem);
-    width: 1.5rem;
-    height: 1.5rem;
-    border: 0.5rem solid #1a1a1d;
-    border-left: none;
-    border-top: none;
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-    -webkit-animation: arrowMove 1.2s infinite;
-            animation: arrowMove 1.2s infinite;
   }
   
   @-webkit-keyframes arrowMove {
@@ -752,11 +743,14 @@ a {
     text-align: center;
     z-index: 990;
   }
+}
+@media screen and (max-width: 30em){
   .section-heading{
-    font-size: 1.4em;
+    font-size: 1.5em;
+    opacity: 1;
   }
    .section.section-1 .bg-part {
-    background-color: #53a09e;
+    background-color: #EAE7DC;
   }
   .pagination:after {
     content: none;
@@ -770,17 +764,42 @@ a {
     display: none;
     z-index: -900;
   }
-  .scroll-down:after {
-      top: -100em;
-      -webkit-animation: navArrowMove 0s end;
-      animation: navArrowMove 0s end;
-  }
-  }
 
   .p1-img{
     position: absolute;
     display: fixed;
     margin-left: -550%;
     margin-top: 50%;
-
   }
+  .sub-title{
+      position: absolute;
+      display: fixed;
+      font-family: 'Comfortaa';
+      font-size: 1em;
+      margin-top: 15%;
+      margin-left: -1rem;
+      z-index: 800;
+    }
+  }
+
+
+/* subtitle outside of mobile screen */
+  .sub-title{
+    position: absolute;
+    display: fixed;
+    font-family: 'Comfortaa';
+    font-size: 1em;
+    margin-top: 15%;
+    margin-left: -1rem;
+    z-index: 800;
+  }
+
+/* project images */
+  .p1-img{
+    position: absolute;
+    display: fixed;
+    margin-left: -400%;
+    margin-top: 100%;
+    width: 300px;
+    height: 300px;
+    }
