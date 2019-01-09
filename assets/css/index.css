@@ -775,7 +775,7 @@ p.pagination {
   .sidebar-hover,
 div.left-part,
 p.pagination {
-    width: 5rem;
+    width: 0rem;
   }
 
   .section,
@@ -795,9 +795,17 @@ p.pagination {
   }
 
   .navicon {
-    padding: 0.2em;
+    padding: 0.1em;
     text-align: center;
     z-index: 990;
+  }
+
+  .section-heading {
+    font-size: 1.4em;
+  }
+
+  .additional-text {
+    top: -30em;
   }
 }
 
