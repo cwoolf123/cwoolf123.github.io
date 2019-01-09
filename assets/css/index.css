@@ -21,7 +21,7 @@ html, body {
 .header {
   position: absolute;
   height: 1em;
-  left: -3em;
+  left: 3em;
 }
 
 .title {
@@ -35,29 +35,12 @@ html, body {
 #container-ani {
   top: 17%;
   position: absolute;
-  width: 100%;
   display: fixed;
   transform: translate(-50%, -50%);
   animation: fadeIn 3s;
-  z-index: 800;
+  z-index: 900;
 }
 
-@media screen and (max-width: 30em) {
-  .title a {
-    display: fixed;
-    z-index: 300;
-    left: -10%;
-    text-decoration: none;
-    top: 10em;
-  }
-}
-@media screen and (min-width: 30em) {
-  .title a {
-    display: fixed;
-    z-index: 300;
-    left: 0em;
-  }
-}
 /* Menu */
 a {
   color: #000;
@@ -131,12 +114,8 @@ a {
   position: absolute;
   transition: background 0.2s ease-out;
   width: 38px;
-  left: 0.5em;
+  left: -6em;
   top: 0em;
-}
-
-.navicon {
-  z-index: 990;
 }
 
 .header .menu-icon .navicon:before,
@@ -148,7 +127,6 @@ a {
   position: absolute;
   transition: all 0.2s ease-out;
   width: 100%;
-  padding: 1px;
 }
 
 .header .menu-icon .navicon:before {
@@ -234,11 +212,8 @@ a {
 @media screen and (max-width: 48em) {
   .sidebar-hover,
 div.left-part,
-p.pagination,
-.pagination:after {
+p.pagination {
     width: 5rem;
-    color: #fff;
-    background-color: #fff;
   }
 
   .section,
@@ -251,31 +226,6 @@ p.pagination,
     position: relative;
     height: 100%;
     width: 160vw;
-  }
-
-  .sidebar-hover {
-    max-width: 5rem;
-  }
-}
-@media screen and (max-width: 30em) {
-  .sidebar-hover,
-div.left-part,
-p.pagination {
-    width: 5rem;
-    color: #fff;
-    background-color: #fff;
-  }
-
-  .section,
-.section-1 {
-    left: -15em;
-    z-index: 700;
-  }
-
-  .section {
-    position: absolute;
-    height: 100%;
-    width: 180vw;
   }
 
   .sidebar-hover {
