@@ -118,6 +118,10 @@ a {
   top: 0em;
 }
 
+.navicon {
+  z-index: 900;
+}
+
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
   background: #333;

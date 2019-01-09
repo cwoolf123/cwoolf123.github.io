@@ -124,7 +124,10 @@ a {
     width: 38px;
     left: -6em;
     top: 0em;
+}
 
+.navicon {
+  z-index: 900;
 }
 
 .header .menu-icon .navicon:before,
