@@ -837,6 +837,8 @@ p.pagination {
 
   .scroll-down:after {
     top: -100em;
+    -webkit-animation: navArrowMove 0s end;
+    animation: navArrowMove 0s end;
   }
 }
 
