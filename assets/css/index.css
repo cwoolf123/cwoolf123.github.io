@@ -772,6 +772,13 @@ p.pagination {
 }
 /* Mobile Response */
 @media screen and (max-width: 30em) {
+  .html,
+body {
+    position: absolute;
+    width: 100vw;
+    heiht: 100vh;
+  }
+
   .sidebar-hover,
 div.left-part,
 p.pagination {
@@ -785,7 +792,7 @@ p.pagination {
   }
 
   .section {
-    position: absolute;
+    position: relative;
     height: 100%;
     width: 175vw;
   }
