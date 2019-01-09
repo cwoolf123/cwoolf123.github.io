@@ -757,8 +757,8 @@ a {
     background-color: #53a09e;
   }
   #myDiv {
-    height: 100%;
-    width: 100%;
+    height: 200px;
+    width: 200px;
     margin: 0;
     padding: 0;
     background-color: #1c6ba0;
@@ -772,6 +772,9 @@ a {
         -ms-perspective-origin: 0% 0%;
          -o-perspective-origin: 0% 0%;
             perspective-origin: 0% 0%;
+            position: absolute: 
+            display: fixed;
+            z-index: 10000;
   }
   
   span {
