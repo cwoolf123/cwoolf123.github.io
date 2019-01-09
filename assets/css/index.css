@@ -192,6 +192,11 @@ a {
     display: none;
   }
 }
+@media screen and (max-width: 30em) {
+  .header li a {
+    background-color: #eae7dc;
+  }
+}
 .sidebar-hover,
 .sidebar-real,
 .left-part,

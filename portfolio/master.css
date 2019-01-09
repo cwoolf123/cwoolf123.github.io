@@ -204,7 +204,7 @@ footer p {
       font-family: 'Comfortaa';
       text-transform: uppercase;
       font-weight: 800;
-      background-color: #eae7dc;
+      background-color: none;
     }
     
     .header li a:hover,
@@ -333,3 +333,8 @@ footer p {
       }
     }
     
+    @media screen and (max-width: 30em){
+      .header li a{
+            background-color: #eae7dc;
+      }
+    }
