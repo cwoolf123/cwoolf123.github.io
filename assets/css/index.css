@@ -215,6 +215,8 @@ a {
 div.left-part,
 p.pagination {
     width: 5rem;
+    color: #fff;
+    background-color: #fff;
   }
 
   .section,
@@ -237,7 +239,9 @@ p.pagination {
   .sidebar-hover,
 div.left-part,
 p.pagination {
-    width: 0rem;
+    width: 5rem;
+    color: #fff;
+    background-color: #fff;
   }
 
   .section,
