@@ -834,6 +834,10 @@ p.pagination {
     display: none;
     z-index: 9000;
   }
+
+  .scroll-down:after {
+    top: -100em;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
