@@ -721,7 +721,7 @@ a {
   body{
     position: absolute;
     width: 100vw;
-    heiht: 100vh;
+    height: 100vh;
   }
   .sidebar-hover,
   div.left-part,
@@ -753,4 +753,57 @@ a {
    .additional-text{
      top:-30em;
    }
+   .section.section-1 .bg-part {
+    background-color: #53a09e;
+  }
+  #myDiv {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #1c6ba0;
+    -webkit-perspective: 800px;
+       -moz-perspective: 800px;
+        -ms-perspective: 800px;
+         -o-perspective: 800px;
+            perspective: 800px;
+    -webkit-perspective-origin: 0% 0%;
+       -moz-perspective-origin: 0% 0%;
+        -ms-perspective-origin: 0% 0%;
+         -o-perspective-origin: 0% 0%;
+            perspective-origin: 0% 0%;
+  }
+  
+  span {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    opacity: 0.7;
+    border: 3px solid white;
+    background-color: lightblue;
+    -webkit-transition: all 2s;
+       -moz-transition: all 2s;
+        -ms-transition: all 2s;
+         -o-transition: all 2s;
+            transition: all 2s;
+    -webkit-border-radius: 100%;
+       -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+         -o-border-radius: 100%;
+            border-radius: 100%;
+    -webkit-transform: scaleZ(0) translateZ(200px);
+  }
+  
+  .blur {
+    -webkit-filter: blur(2px);
+       -moz-filter: blur(2px);
+        -ms-filter: blur(2px);
+         -o-filter: blur(2px);
+            filter: blur(2px);
+  }
+}
+
+#myDiv {
+  display: none;
+
 }
