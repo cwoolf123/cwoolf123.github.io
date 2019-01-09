@@ -24,7 +24,7 @@
 .header{
   position: absolute;
   height: 1em;
-  left: 0em;
+  left: -3em;
 }
 
 .title{
@@ -43,6 +43,14 @@
   transform: translate(-50%, -50%);
   animation: fadeIn 3s;
   z-index: 800;
+}
+
+@media screen and (max-width: 30em){
+  .title a{
+    display: fixed;
+    z-index: 300;
+    left: -3em;
+  }
 }
 
 /* Menu */
@@ -123,7 +131,7 @@ a {
     position: absolute;
     transition: background 0.2s ease-out;
     width: 38px;
-    left: -6em;
+    left: .5em;
     top: 0em;
 }
 
