@@ -121,9 +121,11 @@ a {
     height: 1px;
     position: absolute;
     transition: background 0.2s ease-out;
-    width: 38px;
-    left: -6em;
+    width: 58px;
+    left: -5em;
     top: 0em;
+    padding: .1em 0em .1em 0;
+
 
 }
 
@@ -139,11 +141,11 @@ a {
 }
 
 .header .menu-icon .navicon:before {
-  top: 5px;
+  top: 8px;
 }
 
 .header .menu-icon .navicon:after {
-  top: -5px;
+  top: -8px;
 }
 
 /* menu btn */
@@ -752,6 +754,7 @@ a {
   }
    .additional-text{
      top:-30em;
+     z-index: 9000;
    }
    .section.section-1 .bg-part {
     background-color: #53a09e;
