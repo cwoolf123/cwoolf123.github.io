@@ -4,27 +4,32 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Portfolio | Chris Woolf</title>
+      <title>About | Chris Woolf</title>
       <link rel="stylesheet" href="master.css">
       <link rel="stylesheet" href="custom-fonts.css">
       <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 </head>
 <body>
-            <header>
-                  <h1 class="anim">Project #1</h1>
-                  <p class="anim">A concept design for the Retrica App</p>
                   <div class="header">
                               <!-- Menu -->
                                 <a href="" class="logo"></a>
                                 <input class="menu-btn" type="checkbox" id="menu-btn" />
                                   <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
                                     <ul class="menu">
-                                      <li><a href="#about">About</a></li>
-                                      <li><a href="index.html">Portfolio</a></li>
-                                      <li><a href="#contact">Contact</a></li>
+                                      <li><a href="http://localhost:9000/cwoolf123.github.io/about/about.html">About</a></li>
+                                      <li><a href="http://localhost:9000/cwoolf123.github.io/portfolio/index.html">Portfolio</a></li>
+                                      <li><a href="http://localhost:9000/cwoolf123.github.io/contact/contact.html">Contact</a></li>
                                     </ul>
                               </div>
-            </header>
+                              <header>
+                                          <div id="container-ani" class="title">
+                                                      <svg id="logo" viewBox="-1250 20 2352 600" width="500px">
+                                                      <path fill="none" d="M531.3 11.2S520.6.5 509.5.5c-11 0-25.4 11.3-25.4 11.3L11 360s-16 12-7.4 24c8.8 12.2 25.5 1.5 25.5 1.5L499 112s6.6-4.2 10.3-4c3 .2 7.7 4 7.7 4l283 229s4 3 6 3c2.7.2 7.4-3.3 7.4-3.3l210-145.4s2.2-1.7 3.6-1.7c1 0 3.4 1.7 3.4 1.7l189.3 144.5s15.8 12.8 27.2.3c11-12-4-27-4-27l-196.7-181s-7.3-7.5-15.8-8c-8.6-.4-19.8 7.8-19.8 7.8l-196.2 122s-5.5 4-8.6 4c-2.6-.3-6.5-4-6.5-4z"/>
+                                                      </svg>
+                                                  </div><!-- close title container -->
+                                    <h1 class="anim"></h1>
+                                    <p class="anim">Please select an image to see my latest projects</p>
+                              </header>
 
             <div class="work">
                   <img class="anim" src="RetricaAppColourScheme.png" alt="project img">
@@ -45,6 +50,8 @@
                   
             </footer>
       </div>
+      <script  src="js/title.js"></script>
+    <script src='js/snap.svg-min.js'></script>
       <script type="text/javascript">
             window.sr = ScrollReveal();
             sr.reveal('.anim');
