@@ -713,3 +713,31 @@ a {
   }
   
   
+/* Mobile Response */
+
+@media screen and (max-width: 30em){
+  .sidebar-hover,
+  div.left-part,
+  p.pagination{
+    width: 5rem;
+  }
+
+  .section,
+  .section-1{
+    left: -15em;
+    z-index: 700;
+  }
+  .section{
+      position: relative;
+      height: 100%;
+      width: 175vw;
+  }
+  .sidebar-hover{
+    max-width: 5rem;
+  }
+  .navicon{
+    padding: .2em;
+    text-align: center;
+    z-index: 990
+  }
+}

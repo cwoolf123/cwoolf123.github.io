@@ -629,7 +629,7 @@ p.pagination {
 
 @media screen and (max-width: 48em) {
   .additional-text {
-    top: 30.2rem;
+    top: 33.2rem;
     left: 2.2rem;
     font-size: 1.2rem;
   }
@@ -768,6 +768,36 @@ p.pagination {
     -webkit-transform: translateX(2rem);
     transform: translateX(2rem);
     opacity: 0;
+  }
+}
+/* Mobile Response */
+@media screen and (max-width: 30em) {
+  .sidebar-hover,
+div.left-part,
+p.pagination {
+    width: 5rem;
+  }
+
+  .section,
+.section-1 {
+    left: -15em;
+    z-index: 700;
+  }
+
+  .section {
+    position: relative;
+    height: 100%;
+    width: 175vw;
+  }
+
+  .sidebar-hover {
+    max-width: 5rem;
+  }
+
+  .navicon {
+    padding: 0.2em;
+    text-align: center;
+    z-index: 990;
   }
 }
 
