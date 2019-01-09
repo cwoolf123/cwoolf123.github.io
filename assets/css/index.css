@@ -814,11 +814,23 @@ p.pagination {
 
   .additional-text {
     top: -30em;
-    z-index: 9000;
+    z-index: 900;
   }
 
   .section.section-1 .bg-part {
     background-color: #53a09e;
+  }
+
+  .pagination:after {
+    content: "";
+    color: #fff;
+    display: none;
+    right: 3rem;
+    top: 0.5rem;
+  }
+
+  .pagination {
+    color: #fff;
   }
 }
 
