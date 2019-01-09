@@ -770,4 +770,8 @@ a {
   .pagination{
     color: #fff;
   }
+  .additional-text{
+    display: fixed;
+    z-index: 9000;
+  }
 }

@@ -832,6 +832,11 @@ p.pagination {
   .pagination {
     color: #fff;
   }
+
+  .additional-text {
+    display: fixed;
+    z-index: 9000;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
