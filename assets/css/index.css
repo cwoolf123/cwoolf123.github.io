@@ -824,7 +824,7 @@ p.pagination {
   .p1-img {
     position: absolute;
     display: fixed;
-    margin-left: -550%;
+    margin-left: -950%;
     margin-top: 50%;
   }
 
@@ -854,9 +854,60 @@ p.pagination {
   position: absolute;
   display: fixed;
   margin-left: -400%;
-  margin-top: 100%;
+  margin-top: 25vh;
   width: 300px;
   height: 300px;
+}
+
+/* Social Media Bar */
+.sm-icons {
+  margin-top: 5em;
+}
+
+.fa-codepen,
+.fa-linkedin,
+.fa-github {
+  padding-top: 2.5em;
+  font-size: 2em;
+}
+
+@media screen and (max-width: 30em) {
+  .fa-codepen,
+.fa-linkedin,
+.fa-github {
+    font-size: 2em;
+    position: absolute;
+    display: fixed;
+    z-index: 9000;
+  }
+
+  .fa-github {
+    font-size: 2em;
+    position: absolute;
+    display: fixed;
+    z-index: 9000;
+    margin-top: 2.5em;
+  }
+
+  .fa-codepen {
+    font-size: 2em;
+    position: absolute;
+    display: fixed;
+    z-index: 9000;
+  }
+
+  .fa-linkedin {
+    font-size: 2em;
+    position: absolute;
+    display: fixed;
+    z-index: 9000;
+    margin-top: 5em;
+  }
+
+  .sm-icons {
+    margin-top: 10em;
+    margin-left: -4em;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

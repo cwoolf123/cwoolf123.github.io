@@ -60,7 +60,7 @@ nav a:nth-child(2) {
 /* header */
 
 header {
-      margin: 100px 0 200px 120px;
+      margin: 100px 0 100px 120px;
 }
 
 header p {
@@ -256,7 +256,7 @@ footer p {
         position: absolute;
         transition: background 0.2s ease-out;
         width: 58px;
-        left: -5.5em;
+        left: -3.5em;
         top: -6.5em;
         padding: .1em 0em .1em 0;
     
@@ -341,3 +341,20 @@ footer p {
       }
     }
    
+    .gallery img{
+      position: relative;
+      width: 50%;
+      height: 50%;
+      left: 25%;
+      filter: grayscale(100%);
+    }
+
+    @media screen and (max-width: 48em){
+      .gallery img{
+        position: relative;
+        width: 75vw;
+        height: 75vh;
+        left: 12.5vw;
+        filter: grayscale(100%);
+      }
+    }
