@@ -115,7 +115,7 @@ a {
   position: absolute;
   transition: background 0.2s ease-out;
   width: 58px;
-  left: -5em;
+  left: -6em;
   top: 0em;
   padding: 0.1em 0em 0.1em 0;
 }
@@ -616,7 +616,7 @@ p.pagination {
   text-transform: uppercase;
   line-height: 1;
   font-family: "Comfortaa";
-  padding: 0.1em 2rem 4rem;
+  padding: 3rem 3rem 4rem 4rem;
   background: rgba(0, 0, 0, 0.4);
   cursor: pointer;
   text-decoration: none;
@@ -652,7 +652,21 @@ p.pagination {
     font-size: 2.8rem;
     width: 100%;
     height: 150%;
-    left: 0em;
+    left: -0.3em;
+  }
+}
+@media screen and (max-width: 30em) {
+  .additional-text {
+    top: 33.2rem;
+    left: 2.2rem;
+    font-size: 1.2rem;
+  }
+
+  .section-heading {
+    font-size: 2.8rem;
+    width: 110%;
+    height: 150%;
+    left: -0.5em;
   }
 }
 .bg-part {
@@ -802,6 +816,7 @@ p.pagination {
   .section-heading {
     font-size: 1.5em;
     opacity: 1;
+    left: -1.2em;
   }
 
   .section.section-1 .bg-part {
@@ -834,7 +849,7 @@ p.pagination {
     font-family: "Comfortaa";
     font-size: 1em;
     margin-top: 15%;
-    margin-left: -1rem;
+    margin-left: -1em;
     z-index: 800;
   }
 }
@@ -844,7 +859,7 @@ p.pagination {
   display: fixed;
   font-family: "Comfortaa";
   font-size: 1em;
-  margin-top: 15%;
+  margin-top: 4em;
   margin-left: -1rem;
   z-index: 800;
 }
@@ -879,6 +894,7 @@ p.pagination {
     position: absolute;
     display: fixed;
     z-index: 9000;
+    left: -80%;
   }
 
   .fa-github {
@@ -903,10 +919,39 @@ p.pagination {
     z-index: 9000;
     margin-top: 5em;
   }
+}
+@media screen and (max-width: 48em) {
+  .fa-codepen,
+.fa-linkedin,
+.fa-github {
+    font-size: 2em;
+    position: absolute;
+    display: fixed;
+    z-index: 9000;
+    left: -105%;
+  }
 
-  .sm-icons {
-    margin-top: 10em;
-    margin-left: -4em;
+  .fa-github {
+    font-size: 2em;
+    position: absolute;
+    display: fixed;
+    z-index: 9000;
+    margin-top: 2.5em;
+  }
+
+  .fa-codepen {
+    font-size: 2em;
+    position: absolute;
+    display: fixed;
+    z-index: 9000;
+  }
+
+  .fa-linkedin {
+    font-size: 2em;
+    position: absolute;
+    display: fixed;
+    z-index: 9000;
+    margin-top: 5em;
   }
 }
 

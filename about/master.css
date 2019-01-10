@@ -343,9 +343,8 @@ footer p {
    
     .gallery img{
       position: relative;
-      width: 50%;
-      height: 50%;
-      left: 25%;
+      width: 80vw;
+      left: 10vw;
       filter: grayscale(100%);
     }
 
@@ -353,7 +352,6 @@ footer p {
       .gallery img{
         position: relative;
         width: 75vw;
-        height: 75vh;
         left: 12.5vw;
         filter: grayscale(100%);
       }

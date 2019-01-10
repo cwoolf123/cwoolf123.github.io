@@ -1,3 +1,5 @@
+/* GLOBAL */
+
 * {
       margin: 0;
       padding: 0;
@@ -35,7 +37,7 @@ h1 {
 
 p {
       color: #1a1a1d;
-      font-size: 16px;
+      font-size: 1em;
       font-weight: 300;
       font-family: 'Comfortaa';
 }
@@ -60,12 +62,13 @@ nav a:nth-child(2) {
 /* header */
 
 header {
-      margin: 100px 0 200px 120px;
+      margin: 50px 0 200px 120px;
 }
 
 header p {
-      width: 60%;
-      margin-top: 10px;
+      width: 20%;
+      margin-top: 1em;
+      text-align: center;
 }
 
 /* .work */
@@ -84,6 +87,7 @@ header p {
 
 .header2 {
       margin: 130px 0 80px 40px;
+      text-align: center;
 }
 
 /* .work2 */
@@ -113,11 +117,13 @@ footer p {
       }
 
       header h1 {
-            font-size: 36px;
+            font-size: 40px;
+            top: 5%;
+            position: absolute;
       }
 
       header p {
-            font-size: 12px;
+            font-size: 14px;
             width: 90%;
       }
 
@@ -136,11 +142,19 @@ footer p {
 
       .header2 p {
             font-size: 12px;
-            width: 90%;
+            width: 80%;
+            margin-left: 10%;
+            top: 1em;
       }
 
       .work2 img {
             margin: 2%;
+      }
+
+      .navicon{
+        margin-left: 23vw;
+        position: absolute;
+        display: fixed;
       }
 }
 
@@ -164,6 +178,7 @@ footer p {
       position: absolute;
       z-index: 900;
       background-color: none;
+      left: 3vw;
     }
     
     #container-ani {
@@ -172,7 +187,7 @@ footer p {
       display: fixed;
       transform: translate(-50%, -50%);
       animation: fadeIn 3s;
-      z-index: 900;
+      z-index: 900; 
     }
     /* Menu */
     
@@ -218,12 +233,12 @@ footer p {
     
     }
     
-    .header .logo {
+    .header {
       display: block;
       float: left;
       padding: 10px 20px;
       text-decoration: none;
-      left: -3em;
+      left: -5%;
     }
     
     /* menu */
@@ -311,13 +326,13 @@ footer p {
     
     /* 48em = 768px */
     
-    @media (min-width: 48em) {
+    @media (min-width: 49em) {
       .header li {
         float: left;
-        margin-right: 6em  
+        margin-right: 2em;
       }
       .header li a {
-        padding: 1em .01em;
+        padding: .5em .01em;
         font-size: 1em;
         font-family: 'Comfortaa';
         text-transform: uppercase;
@@ -336,14 +351,6 @@ footer p {
     @media screen and (max-width: 48em){
       .header li a{
                background-color: #eae7dc;
+               padding: 15px 30px;
       }
     }
-
-  
-.contact-txt{
-  text-align: center;
-  margin-left: 3em;
-  position: relative;
-  display: fixed;
-}
-   
