@@ -338,4 +338,12 @@ footer p {
                background-color: #eae7dc;
       }
     }
+
+  
+.contact-txt{
+  text-align: center;
+  margin-left: 3em;
+  position: relative;
+  display: fixed;
+}
    
