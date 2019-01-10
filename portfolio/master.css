@@ -164,6 +164,7 @@ footer p {
       position: absolute;
       z-index: 900;
       background-color: none;
+      left: 3vw;
     }
     
     #container-ani {
@@ -314,10 +315,10 @@ footer p {
     @media (min-width: 48em) {
       .header li {
         float: left;
-        margin-right: 6em  
+        margin-right: 4em;
       }
       .header li a {
-        padding: 1em .01em;
+        padding: .5em .01em;
         font-size: 1em;
         font-family: 'Comfortaa';
         text-transform: uppercase;
