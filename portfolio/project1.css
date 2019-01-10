@@ -74,6 +74,8 @@ header p {
 /* .work */
 
 .work {
+      position: relative;
+      top: 5vh;
       text-align: center;
       width: 100%;
 }
@@ -86,7 +88,7 @@ header p {
 /* header2 */
 
 .header2 {
-      margin: 130px 0 80px 40px;
+      margin: 120px 0 100px 40px;
       text-align: center;
 }
 
@@ -133,7 +135,8 @@ footer p {
       }
 
       .header2 {
-            margin: 130px 0 40px 12px;
+            margin: 80px 0 80px 12px;
+            display: block;
       }
 
       .header2 h1 {

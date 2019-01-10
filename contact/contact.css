@@ -313,7 +313,7 @@ a {
 
 /* 48em = 768px */
 
-@media (min-width: 48em) {
+@media (min-width: 55em) {
   .header li {
     float: left;
     margin-right: 6em  
@@ -324,6 +324,7 @@ a {
     font-family: 'Comfortaa';
     text-transform: uppercase;
     color: #000;
+    z-index: 19900;
   }
   .header .menu {
     clear: none;
