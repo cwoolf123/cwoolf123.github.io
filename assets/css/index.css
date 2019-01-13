@@ -451,19 +451,19 @@ p.pagination {
 }
 
 .nav-elem.nav-1 {
-  background-color: #EAE7DC;
+  background-image: url("img/page-1.png");
 }
 
 .nav-elem.nav-2 {
-  background-color: #E98074;
+  background-image: url("img/page2.png");
 }
 
 .nav-elem.nav-3 {
-  background-color: #53a09e;
+  background-image: url("img/page-3.png");
 }
 
 .nav-elem.nav-4 {
-  background-color: #febd85;
+  background-image: url("img/page4.png");
 }
 
 .nav-elem.nav-5 {
