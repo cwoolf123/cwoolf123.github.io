@@ -258,3 +258,17 @@ a:focus {
 
 
 
+@media screen and (max-width: 30em){
+	.body {
+		width: 100vw;
+		height: 100vh;
+		overflow: scroll;
+	}
+}
+
+@media screen and (max-width: 30em){
+.segmenter {
+	width: 100;
+	overflow: scroll;
+}
+}
