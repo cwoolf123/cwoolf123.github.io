@@ -463,7 +463,7 @@ p.pagination {
 }
 
 .nav-elem.nav-4 {
-  background-color: #24305E;
+  background-color: #febd85;
 }
 
 .nav-elem.nav-5 {
@@ -504,11 +504,11 @@ p.pagination {
 }
 
 .section.section-2 .left-part {
-  background-color: #434657;
+  background-color: #E98074;
 }
 
 .section.section-2 .bg-part {
-  background-color: #434657;
+  background-color: #E98074;
 }
 
 .section.section-3 .left-part {
@@ -520,11 +520,11 @@ p.pagination {
 }
 
 .section.section-4 .left-part {
-  background-color: #24305E;
+  background-color: #febd85;
 }
 
 .section.section-4 .bg-part {
-  background-color: #24305E;
+  background-color: #febd85;
 }
 
 .section.section-5 .left-part {
@@ -837,13 +837,6 @@ p.pagination {
     z-index: -900;
   }
 
-  .p1-img {
-    position: absolute;
-    display: fixed;
-    margin-left: -950%;
-    margin-top: 50%;
-  }
-
   .sub-title {
     position: absolute;
     display: fixed;
@@ -866,13 +859,74 @@ p.pagination {
 }
 
 /* project images */
+/* project 1 */
 .p1-img {
-  position: absolute;
+  position: relative;
+  display: fixed;
+  margin-left: -450%;
+  margin-top: 20vh;
+  width: 600px;
+  height: 300px;
+}
+
+.p1-img2 {
+  position: relative;
   display: fixed;
   margin-left: -400%;
-  margin-top: 25vh;
-  width: 300px;
+  margin-top: 30vh;
+  width: 150px;
+  height: 220px;
+  z-index: 10000;
+}
+
+/* project 2 */
+.p2-img {
+  position: relative;
+  display: fixed;
+  margin-left: -400%;
+  margin-top: 20vh;
+  width: 500px;
   height: 300px;
+}
+
+.p2-img2 {
+  position: relative;
+  display: fixed;
+  margin-left: -300%;
+  margin-top: 25vh;
+  width: 250px;
+  height: 150px;
+}
+
+.p2-img3 {
+  position: relative;
+  display: fixed;
+  margin-left: 275%;
+  margin-top: 60vh;
+  width: 250px;
+  height: 100px;
+  z-index: 10000;
+}
+
+/* project 3 */
+.p3-img2 {
+  position: relative;
+  display: fixed;
+  margin-left: -50%;
+  margin-top: 50vh;
+  width: 250px;
+  height: 150px;
+  z-index: 10000;
+}
+
+.p3-img {
+  position: relative;
+  display: fixed;
+  margin-right: -100%;
+  margin-top: 20vh;
+  width: 500px;
+  height: 300px;
+  z-index: 9999;
 }
 
 /* Social Media Bar */
