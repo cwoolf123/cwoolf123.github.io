@@ -20,6 +20,13 @@ body {
 	height: 100vh;
 }
 
+@media screen and (max-width: 30em){
+	.body {
+		width: 100vw;
+		height: 100vh;
+	}
+}
+
 .segmenter {
 	width: 100;
 }
