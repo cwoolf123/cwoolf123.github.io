@@ -1,9 +1,31 @@
-# Demo: Different page transitions based on clicked anchor with smoothState.js
+# Pieces Slider
 
-This demo shows how to switch transitions based on initiating link with [smoothState.js](https://github.com/miguel-perez/smoothState.js). This solution has been inspired by [@pudgereyem's comment](https://github.com/miguel-perez/smoothState.js/issues/143#issuecomment-84967896) on [smoothState.js #143](https://github.com/miguel-perez/smoothState.js/issues/143).
+A slider made with the [Pieces](https://github.com/lmgonzalves/pieces) library where slides are animated in a fragmented look.
 
-You can [view the demo here](https://rawgit.com/miguel-perez/smoothState.js/master/demos/anchor-transitions/index.html).
+![Pieces Slider](https://tympanus.net/codrops/wp-content/uploads/2018/02/PiecesSlider.jpg)
 
-The demo implements a crude idea of viewports that are horizontally aligned to determine the needed animation: every anchor has a numeric `data-target` paramter that represents the needed viewport while every scene element provides a numeric `data-viewport` parameter that reprents the current viewport. If the viewport requested for the clicked target is larger then the current viewport, the scene element is moved to the left, else to the right.
+[Article on Codrops](https://tympanus.net/codrops/?p=33985)
 
-The logic to determine the wanted animation is implemented in the `onBefore` callback, the animations themselves are defined as pure CSS animations. Please feel free to take this as a starting point to implement you own animation logic.
+[Demo](http://tympanus.net/Development/PiecesSlider/)
+
+## Credits
+
+- [Pieces](https://github.com/lmgonzalves/pieces) by Luis Manuel
+- Images by [Unsplash.com](https://unsplash.com/)
+- [anime.js](http://anime-js.com/) by Julian Garnier
+
+## License
+This resource can be used freely if integrated or build upon in personal or commercial projects such as websites, web apps and web templates intended for sale. It is not allowed to take the resource "as-is" and sell it, redistribute, re-publish it, or sell "pluginized" versions of it. Free plugins built using this resource should have a visible mention and link to the original work. Always consider the licenses of all included libraries, scripts and images used.
+
+## Misc
+
+Follow Luis: [Twitter](https://twitter.com/lmgonzalves), [GitHub](https://github.com/lmgonzalves) 
+
+Follow Codrops: [Twitter](http://www.twitter.com/codrops), [Facebook](http://www.facebook.com/codrops), [Google+](https://plus.google.com/101095823814290637419), [GitHub](https://github.com/codrops), [Pinterest](http://www.pinterest.com/codrops/), [Instagram](https://www.instagram.com/codropsss/)
+
+[© Codrops 2018](http://www.codrops.com)
+
+
+
+
+
