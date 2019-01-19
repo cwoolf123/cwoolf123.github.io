@@ -9,6 +9,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 html {
 	background: #fff;
 	overflow: hidden;
+	position: absolute;
 }
 
 body {
@@ -24,6 +25,12 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	overflow: hidden;
 	height: 100vh;
+	position: absolute;
+}
+@media screen and (max-width: 55em){
+.body {
+    overflow: hidden;
+}
 }
 
 a {
@@ -64,6 +71,12 @@ button:focus {
 	display: none;
 }
 
+.project-list{
+	position: relative;
+	display: inline-block;
+	left: 45%;
+}
+
 .social1,
 .social2,
 .social3{
@@ -87,18 +100,21 @@ main {
 .shdw {
 	position: absolute;
 	display: block;
-	left: 75vh;
-	top: 45vh;
+	left: 25vw;
+	width: 50vw;
+	height: 50vw;
+	top: 30vh;
 	margin-top: 0em;
+	z-index: 900;
 }
-
 @media screen and (max-width: 62em)
 {
 	.shdw {
-		position: absolute;
+		position: center;
 		display: block;
-		left: 20%;
-		top: 45vh;
+		left: 25vw;
+		width: 50vw;
+		height: 85vh;
 	}
 } 
 
@@ -143,7 +159,7 @@ main {
 }
 
 #container-ani {
-	top: -4.5vh;
+	top: -4vh;
 	left: 42%;
 	position: absolute;
 	display: fixed;
@@ -151,6 +167,7 @@ main {
 	animation: fadeIn 3s;
 	z-index: 900;
 	}
+	
 	@media screen and (max-width: 62em) {
 		#container-ani {
 			top: -4.5vh;
@@ -165,7 +182,7 @@ main {
 
 @media screen and (max-width: 55em) {
 	body {
-		overflow: auto;
+		overflow: hidden;
 	}
 	.content {
 		flex-direction: column;
@@ -208,7 +225,8 @@ main {
 	  transform: translateY(0);
 	}
   }
-  
+	
+	
   /* Layout styles only, not needed for functionality */
   
   .grid {

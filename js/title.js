@@ -11,7 +11,7 @@ window.onload = function () {
 		var logoTitleContainer = l.text(0, '100%', '');
 		var possible = "-+*/|}{[]~\\\":;?/.><=+-_)(*&^%$#@!)}";
 		logoTitleContainer.attr({
-			fontSize: 90,
+			fontSize: 80,
 			fontFamily: 'Comfortaa',
 			fontWeight: '600',
 			fill: '#fff',

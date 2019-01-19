@@ -57,8 +57,9 @@
 	font-weight: bold;
 	border: none;
 	cursor: crosshair;
-	opacity: .8;
+	opacity: 1;
 	transition: 0.1s background-color;
+	z-index: 900;
 }
 
 .pieces-slider__button:hover {
