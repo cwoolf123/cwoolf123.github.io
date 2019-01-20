@@ -6,12 +6,12 @@ window.onload = function () {
 
 	setTimeout( function() {
 		// modify this one line below, and see the result !
-		var logoTitle = 'Chris Woolf | Portfolio';
+		var logoTitle = 'Chris Woolf';
 		var logoRandom = '';
 		var logoTitleContainer = l.text(0, '100%', '');
 		var possible = "-+*/|}{[]~\\\":;?/.><=+-_)(*&^%$#@!)}";
 		logoTitleContainer.attr({
-			fontSize: 80,
+			fontSize: 90,
 			fontFamily: 'Comfortaa',
 			fontWeight: '600',
 			fill: '#fff',

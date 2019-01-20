@@ -27,6 +27,10 @@ body {
 	height: 100vh;
 	position: absolute;
 }
+
+h1,h2,h3,h4,h5,h6{
+	color:#333;
+}
 @media screen and (max-width: 55em){
 .body {
     overflow: hidden;
@@ -97,7 +101,8 @@ main {
 	width: 100%;
 }
 
-.shdw {
+.shdw,
+.shdw-link {
 	position: absolute;
 	display: block;
 	left: 25vw;
@@ -109,6 +114,7 @@ main {
 }
 @media screen and (max-width: 62em)
 {
+	.shdw-link,
 	.shdw {
 		position: center;
 		display: block;
@@ -117,6 +123,8 @@ main {
 		height: 85vh;
 	}
 } 
+
+
 
 .content {
 	position: fixed;
@@ -159,8 +167,8 @@ main {
 }
 
 #container-ani {
-	top: -4vh;
-	left: 42%;
+	top: -3.5vh;
+	left: 49%;
 	position: absolute;
 	display: fixed;
 	transform: translate(-50%, -50%);
@@ -170,11 +178,11 @@ main {
 	
 	@media screen and (max-width: 62em) {
 		#container-ani {
-			top: -4.5vh;
-			left: 33vw;
+			top: -5vh;
+			left: 46vw;
 			position: absolute;
 			display: fixed;
-			transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%), scale(60%);
 			animation: fadeIn 3s;
 			z-index: 900;
 			}
@@ -198,6 +206,7 @@ main {
 	}
 }
 
+/* Skills */
 .circle-chart__circle {
 	animation: circle-chart-fill 2s reverse; /* 1 */ 
 	transform: rotate(-90deg); /* 2, 3 */
@@ -229,18 +238,23 @@ main {
 	
   /* Layout styles only, not needed for functionality */
   
-  .grid {
-	display: grid;
-	grid-column-gap: 1em;
+  div.grid {
+	display: inline-block;
+	grid-column-gap: .5em;
 	grid-row-gap: 1em;
 	grid-template-columns: repeat(1, 1fr);
+	top: 1em;
   }
   
   @media (min-width: 31em) {
 	.grid {
 	  grid-template-columns: repeat(2, 1fr);
 	}
-  }
+	}
+	
+	.chart{
+		display: inline-block;
+	}
 
   /* Add a black background color to the top navigation */
 .topnav {
@@ -305,5 +319,43 @@ main {
 		text-align: left;
 	}
 	}
-	
-	
+
+	/* WordPress Icon */
+
+	.PixelArt{
+		position: relative;
+	}
+	@media screen and (max-width: 62em) {
+		.PixelArt{
+			position: center;
+			width: 25%;
+			height: 25%;
+			top: 10vh;
+		}
+	}
+
+	.WordPress{
+	position: relative;
+	}
+	@media screen and (max-width: 62em) {
+		.WordPress{
+			position: center;
+			width: 25%;
+			height: 25%;
+			top: 10vh;
+	}
+}
+
+.w-title{
+		position: relative;
+		z-index: 900;
+}
+
+@media screen and (max-width: 62em) {
+	.w-title{
+		position: center;
+		font-size: .8em;
+		z-index: 900;
+		top: 10vh;
+}
+}
