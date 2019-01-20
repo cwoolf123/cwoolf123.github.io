@@ -384,7 +384,7 @@ main {
 .bg-img{
 	position: absolute;
 	filter: invert(100%);
-	width: 60vw;
+	width: 100vw;
 	height: 100vh;
 	top: 0vh;
 	left: 0vw;

@@ -24,7 +24,7 @@
 
     // Options for images
     var imageOptions = {
-        opacity: '.8',
+        opacity: '.5',
         angle: 45,
         extraSpacing: {extraX: 100, extraY: 200},
         piecesWidth: function() { return Pieces.random(50, 200); },
@@ -33,10 +33,10 @@
 
     // Options for texts
     var textOptions = {
-        opacity: '.9',
+        opacity: '.3',
         color: 'white',
         fontFamily: 'Comfortaa',
-        backgroundColor: '#1c1c1c',
+        backgroundColor: 'none',
         fontSize: function() { return windowWidth > 620 ? 40 : 20; },
         padding: '15 20 10 20',
         angle: -45,
@@ -57,7 +57,7 @@
         opacity: '0',
         color: 'white',
         fontFamily: 'Comfortaa',
-        backgroundColor: '#1c1c1c',
+        backgroundColor: 'none',
         fontSize: function() { return windowWidth > 720 ? 60 : 20; },
         padding: function() { return windowWidth > 720 ? '18 35 10 38' : '18 25 10 28'; },
         angle: 0,
