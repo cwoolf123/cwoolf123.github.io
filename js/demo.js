@@ -37,7 +37,7 @@
         color: 'white',
         fontFamily: 'Comfortaa',
         backgroundColor: '#1c1c1c',
-        fontSize: function() { return windowWidth > 720 ? 50 : 30; },
+        fontSize: function() { return windowWidth > 620 ? 40 : 20; },
         padding: '15 20 10 20',
         angle: -45,
         piecesSpacing: 2,
@@ -54,7 +54,7 @@
 
     // Options for numbers
     var numberOptions = {
-        opacity: '.9',
+        opacity: '0',
         color: 'white',
         fontFamily: 'Comfortaa',
         backgroundColor: '#1c1c1c',

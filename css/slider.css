@@ -32,10 +32,22 @@
 /* Canvas with viewport width and height */
 .js .pieces-slider__canvas {
 	position: relative;
-	width: 100vw;
+	width: 60vw;
+	left: 1em;
 	height: 100vh;
 	transition: 0.2s opacity;
 }
+
+@media screen and (max-width: 63em){
+.js .pieces-slider__canvas {
+	position: relative;
+	width: 100vw;
+	left: 1em;
+	height: 100vh;
+	transition: 0.2s opacity;
+}
+}
+
 
 /* Class for when we resize */
 .pieces-slider__canvas--hidden {
@@ -46,10 +58,10 @@
 /* Navigation buttons */
 .pieces-slider__button {
 	position: absolute;
-	left: 0;
+	left: 0em;
 	top: 50%;
-	width: 80px;
-	height: 80px;
+	width: 40px;
+	height: 40px;
 	margin: -25px 0 0 0;
 	background-color: #1c1c1c;
 	color: #fff;
@@ -91,7 +103,7 @@
 		height: 100vw;
 	}
 	.pieces-slider__button {
-		width: 60px;
-		height: 60px;
+		width: 40px;
+		height: 40px;
 	}
 }

@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
-		<title>Chris Woolf | Web Developer</title>
+		<title>Chris Woolf | Contact</title>
 		<meta name="description" content="A slider made with the Pieces library where slides are animated in a fragmented look." />
 		<meta name="keywords" content="slideshow, slider, pieces, fragments, animation, svg, canvas, javascript" />
 		<meta name="author" content="Chris Woolf" />
@@ -21,47 +21,21 @@
 			<path fill="none" d="M531.3 11.2S520.6.5 509.5.5c-11 0-25.4 11.3-25.4 11.3L11 360s-16 12-7.4 24c8.8 12.2 25.5 1.5 25.5 1.5L499 112s6.6-4.2 10.3-4c3 .2 7.7 4 7.7 4l283 229s4 3 6 3c2.7.2 7.4-3.3 7.4-3.3l210-145.4s2.2-1.7 3.6-1.7c1 0 3.4 1.7 3.4 1.7l189.3 144.5s15.8 12.8 27.2.3c11-12-4-27-4-27l-196.7-181s-7.3-7.5-15.8-8c-8.6-.4-19.8 7.8-19.8 7.8l-196.2 122s-5.5 4-8.6 4c-2.6-.3-6.5-4-6.5-4z"/>
 			</svg>
 		</div><!-- close title container -->
-		<div class="topnav" id="myTopnav">
-				<a href="index.html" class="active">Home</a>
+		<nav class="topnav" id="myTopnav">
+				<a href="index.html">Home</a>
 				<a href="work.html">Work</a>
-				<a href="contact.html">Contact</a>
+				<a href="contact.html" class="active">Contact</a>
 				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 				  <i class="fa fa-bars"></i>
 				</a>
-			  </div>
-		<main>
-			<!--<img class="bg-img" src="https://media.giphy.com/media/3cSPGMMR6zoFa/giphy.gif" />-->
+			</nav>
+		<main class="work-body">
+				<h1 class="typeit">Let's Talk !</h1>
 			<a href="https://codepen.io/cwoolf123/"><i class="social1 fa fa-codepen"></i></a>
 			<a href="https://github.com/cwoolf123"><i class="social2 fa fa-github"></i></a>
 			<a href="https://www.linkedin.com/in/chriswoolf/"><i class="social3 fa fa-linkedin"></i></a>
-			<section>
-					<h1 class="typeit">Hey, what's good?</h1>
-			<div class="content">
-				<!-- Pieces Slider -->
-				<div class="pieces-slider">
-					<!-- Each slide with corresponding image and text -->
-					<div class="pieces-slider__slide">
-						<img class="pieces-slider__image img" src="img/w1.png" alt="">
-						<h2 class="pieces-slider__text"><a>WordPress</a></h2>
-					</div>
-					<div class="pieces-slider__slide">
-						<img class="pieces-slider__image" src="img/frame1.png" alt="">
-						<h2 class="pieces-slider__text">Pixel Art</h2>
-					</div>
-					<div class="pieces-slider__slide">
-						<img class="pieces-slider__image" src="img/ph.png" alt="">
-						<h2 class="pieces-slider__text">Other Projects</h2>
-					</div>
-					<!-- Canvas to draw the pieces -->
-					<canvas class="pieces-slider__canvas"></canvas>
-					<!-- Slider buttons: prev and next -->
-					<button class="pieces-slider__button pieces-slider__button--prev"><</button>
-					<button class="pieces-slider__button pieces-slider__button--next">></button>
-
-			</div>
-		</div>
-			</section>
-			<a href="work.html" class="shdw-link"><img class="shdw" width="300px" height="300px" src="img/shdw.png"/></a>
+			<div class="content">		
+	
 		</main>
 			<script src='js/jquery-2.2.1.min.js'></script>
 			<script src='js/anime.min.js'></script>

@@ -7,7 +7,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 }
 
 html {
-	background: #fff;
+	background: #1c1c1c;
 	overflow: hidden;
 	position: absolute;
 }
@@ -20,7 +20,7 @@ body {
 	min-height: 100vh;
 	color: #fff;
 	color: var(--color-text);
-	background-color: #ebebeb; 
+	background-color: #1c1c1c; 
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	overflow: hidden;
@@ -28,9 +28,31 @@ body {
 	position: absolute;
 }
 
+
 h1,h2,h3,h4,h5,h6{
 	color:#333;
 }
+
+
+/* Typing ! */
+
+@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+
+.typeit { 
+	position: absolute;
+	left: 0vw;
+	font: bold 100% Consolas, Monaco, monospace;
+	border-right: .1em solid black;
+	width: 16.5em; 
+	width: 21ch;
+	margin: 1em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	-webkit-animation: typing 3s steps(21, end),
+	           blink-caret .5s step-end infinite alternate;
+}
+
 @media screen and (max-width: 55em){
 .body {
     overflow: hidden;
@@ -105,10 +127,10 @@ main {
 .shdw-link {
 	position: absolute;
 	display: block;
-	left: 25vw;
-	width: 50vw;
+	left: 5vw;
+	width: 40vw;
 	height: 50vw;
-	top: 30vh;
+	top: 1vh;
 	margin-top: 0em;
 	z-index: 900;
 }
@@ -118,13 +140,12 @@ main {
 	.shdw {
 		position: center;
 		display: block;
-		left: 25vw;
-		width: 50vw;
-		height: 85vh;
+		top: 13vh;
+		left: 12vw;
+		width: 60vw;
+		height: 55vh;
 	}
 } 
-
-
 
 .content {
 	position: fixed;
@@ -357,5 +378,30 @@ main {
 		font-size: .8em;
 		z-index: 900;
 		top: 10vh;
+}
+}
+
+.bg-img{
+	position: absolute;
+	filter: invert(100%);
+	width: 60vw;
+	height: 100vh;
+	top: 0vh;
+	left: 0vw;
+	z-index: 0;
+	opacity: 1;
+}
+
+@media screen and (max-width: 62em) {
+	
+.bg-img{
+	position: absolute;
+	filter: invert(100%);
+	width: 100vw;
+	height: 100vh;
+	top: 0vh;
+	left: 0vw;
+	z-index: 0;
+	opacity: .3;
 }
 }
