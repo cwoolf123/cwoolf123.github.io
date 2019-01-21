@@ -1,0 +1,600 @@
+/*-------------------------------------------------*\
+*--------------------style.CSS----------------------*
+\*-------------------------------------------------*/
+
+/* CONTENTS */
+
+/* 
+*
+*  #Global
+*  #Headers
+*  #Icons
+*  #Shadows - (click areas)
+*  #Menu
+*  #Sections
+*
+*
+*
+*
+*
+*/
+
+
+/*-------------------------------------------------*\
+*--------------------#Global------------------------*
+\*-------------------------------------------------*/
+
+*,
+*::after,
+*::before {
+box-sizing: border-box;
+cursor: crosshair;
+}
+
+html {
+	background: transparent;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	position: absolute;
+}
+
+body {
+	--color-text: #fff;
+	--color-link: #f0f0f0;
+	--color-link-hover: #fff;
+	font-family: 'Comfortaa';
+	min-height: 100vh;
+	color: #fff;
+	background-color: #e8e8e8; 
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height: 200vh;
+	position: absolute;
+}
+
+
+/* Links */
+
+a {
+	text-decoration: none;
+	color: #636363;
+	outline: none;
+}
+
+a:hover,
+a:focus {
+	color: #636363;
+	cursor: crosshair;
+}
+
+a:focus,
+button:focus {
+	outline: none;
+}
+
+.hidden {
+	position: absolute;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	pointer-events: none;
+}
+
+/* Tiny Page detail - Numbers (01/02 & 02/02)*/
+
+.txt-detail1{
+	position: absolute;
+	color: #686868;
+	top: 3vh;
+	left: 1em;
+	font-size:.8em;
+	transform: rotate(-90deg);
+}
+
+	.txt-detail2{
+		position: absolute;
+		color: #686868;
+		top: 103vh;
+		left: 1em;
+		font-size:.8em;
+		transform: rotate(-90deg);
+	}
+
+
+/*-------------------------------------------------*\
+*--------------------#Headers-----------------------*
+\*-------------------------------------------------*/
+
+
+
+h1,h2,h3,h4,h5,h6{
+	color:#333;
+}
+
+/* CHRIS WOOLF - Animated Header */
+
+.info {
+	margin: 0 0 0 1.25em;
+}
+
+#container-ani {
+	top: -1.5em;
+	left: 3vw;
+	position: absolute;
+	display: fixed;
+	transform: translate(-50%, -50%);
+	animation: fadeIn 3s;
+	z-index: 1;
+	}
+	
+	@media screen and (max-width: 62em) {
+		#container-ani {
+			top: -1.8em;
+			left: 40vw;
+			position: absolute;
+			display: fixed;
+			transform: translate(-50%, -50%), scale(60%);
+			animation: fadeIn 3s;
+			z-index: 900;
+			}
+	}
+
+/* self-typing Header */
+
+@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+
+.typeit { 
+	position: absolute;
+	display: fixed;
+	color: #686868;
+	left: 60vw;
+	top: 30vh;
+	font: bold 100% Consolas, Monaco, monospace;
+	border-right: .1em solid #686868;
+	width: 16.5em; 
+	width: 21ch;
+	margin: 1em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	-webkit-animation: typing 3s steps(21, end),
+	           blink-caret .5s step-end infinite alternate;
+}
+
+/*-------------------------------------------------*\
+*--------------------#Icons-------------------------*
+\*-------------------------------------------------*/
+
+/* For Mobiles */
+@media screen and (max-width: 55em){
+.body,
+html{
+    overflow: hidden;
+}
+.fa-codepen,
+.fa-github,
+.fa-linkedin{
+	z-index: 11;
+}
+.typeit{
+	left: 6em;
+	top: 8em;
+}
+}
+
+
+/* Icons */
+.icon {
+	display: block;
+	width: 1.5em;
+	height: 1.5em;
+	margin: 0 auto;
+	fill: currentColor;
+}
+
+.icon--keyboard {
+	display: none;
+}
+
+.project-list{
+	position: relative;
+	display: inline-block;
+	left: 45%;
+}
+
+.social1,
+.social2,
+.social3{
+	position: absolute;
+	display: fixed;
+	left: 91vw;
+	top: 2em;
+	width: 100%;
+	font-size: 2em;
+}
+
+
+.social1:hover,
+.social2:hover,
+.social3:hover{
+	background-color: #686868;
+	transition: 1s;
+	color: #fff;
+	left: 88vw;
+}
+
+.fa-codepen:hover,
+.fa-github:hover,
+.fa-linkedin:hover{
+	font-size: 1em;
+	padding: .5em;
+}
+
+.fa-codepen,
+.fa-github,
+.fa-linkedin{
+	font-size: 1em;
+	padding: .5em;
+}
+
+.social2{
+	top: 4em;
+}
+.social3{
+	top:6em;
+}
+main {
+	position: relative;
+	width: 100%;
+}
+
+/*-------------------------------------------------*\
+*--------------------#Shadows-(click areas)---------*
+\*-------------------------------------------------*/
+
+.shdw,
+.shdw-link {
+	position: absolute;
+	display: block;
+	left: 5vw;
+	width: 40vw;
+	height: 90vh;
+	top: 1vh;
+	margin-top: 0em;
+	z-index: 900;
+	opacity: 0;
+}
+
+/* For Mobiles */
+@media screen and (max-width: 62em)
+{
+	.shdw-link,
+	.shdw {
+		position: center;
+		display: block;
+		top: 13vh;
+		left: 12vw;
+		width: 60vw;
+		height: 55vh;
+		opacity: 0;
+	}
+} 
+
+
+.shdw2,
+.shdw-link2{
+	position: absolute;
+	display: block;
+	left: 5vw;
+	width: 40vw;
+	height: 90vh;
+	top: 101vh;
+	margin-top: 0em;
+	z-index: 900;
+	opacity: 0;
+}
+/*-------------------------------------------------*\
+*--------------------#Gallery-(click areas)---------*
+\*-------------------------------------------------*/
+
+.content {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	min-height: 100vh;
+}
+
+.content--fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: grid;
+	align-content: space-between;
+	width: 100%;
+	max-width: none;
+	min-height: 0;
+	height: 100vh;
+	padding: 1.5em;
+	pointer-events: none;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: auto auto 4em;
+	grid-template-areas: 'header ...'
+	'... ...'
+	'github demos';
+}
+
+.content--fixed a {
+	pointer-events: auto;
+}
+
+	
+@media screen and (max-width: 55em) {
+	body {
+		overflow: hidden;
+	}
+	.content {
+		flex-direction: column;
+		height: auto;
+		min-height: 0;
+		padding-bottom: 10em;
+	}
+	.content--fixed {
+		position: relative;
+		z-index: 1000;
+		display: block;
+		padding: 0.85em;
+	}
+}
+
+/*-------------------------------------------------*\
+*--------------------#Menu--------------------------*
+\*-------------------------------------------------*/
+	
+  /* Layout styles only, not needed for functionality */
+  
+  div.grid {
+	display: inline-block;
+	grid-column-gap: .5em;
+	grid-row-gap: 1em;
+	grid-template-columns: repeat(1, 1fr);
+	top: 1em;
+  }
+  
+  @media (min-width: 31em) {
+	.grid {
+	  grid-template-columns: repeat(2, 1fr);
+	}
+	}
+	
+	.chart{
+		display: inline-block;
+	}
+
+	.topnav {
+		background-color: transparent;
+		overflow: hidden;
+		width: 100vw;
+		position: relative;
+		z-index: 3;
+		padding-bottom: 0px;
+		top: 0em;
+		left: 0vw;
+	  }
+	  
+	  /* Style the links inside the navigation bar */
+	  .topnav a {
+		float: left;
+		display: block;
+		color: #686868;
+		text-align: center;
+		padding: 14px 36px 14px 36px;
+		text-decoration: none;
+		font-size: 1em;
+		font-weight: 800;
+		text-transform: uppercase;
+	  }
+	  
+	  /* Change the color of links on hover */
+	  .topnav a:hover {
+		background-color: transparent;
+		color: #fff;
+		transition: .5s;
+	  }
+  
+  /* Add an active class to highlight the current page */
+  .active {
+	background-color: transparent;
+	color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+	display: none;
+	font-size: 30px;
+	margin-top: -.2em;
+  }
+
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 62em) {
+	.topnav a:not(:first-child) {display: none;}
+	.topnav a.icon {
+		float: right;
+		display: block;
+		padding-right: 1.3em;
+		padding-bottom: 1.3em;
+	}
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 62em) {
+	.topnav.responsive {position: relative;}
+	.topnav.responsive a.icon {
+	  position: absolute;
+	  right: 0;
+	  top: 0;
+	}
+	.topnav.responsive a {
+	  float: none;
+	  display: block;
+		text-align: left;
+	}
+	}
+	@media screen and (min-width: 62em) {
+	.topnav {
+		background-color: transparent;
+		overflow: hidden;
+		width: 100vw;
+		position: relative;
+		z-index: 3;
+		padding-bottom: 0px;
+		left: 50vw;
+		top: .5em;
+	  }
+	  
+	  /* Style the links inside the navigation bar */
+	  .topnav a {
+		float: left;
+		display: block;
+		color: #686868;
+		text-align: center;
+		padding: 14px 36px 14px 36px;
+		text-decoration: none;
+		font-size: 1em;
+		font-weight: 800;
+	  }
+	  
+	  /* Change the color of links on hover */
+	  .topnav a:hover {
+		background-color: transparent;
+		color: #fff;
+		transition: .5s;
+	  }
+
+	}
+	
+
+/*-------------------------------------------------*\
+*----------------#Sections--------------------------*
+\*-------------------------------------------------*/
+
+.first{
+width: 100%;
+height: 100vh;
+}
+
+.second {
+	position: relative;
+	top: 100vh;
+    width: 100%;
+    height: 100vh;
+	z-index: -1;
+}
+
+
+.pierone{
+	position: absolute;	
+	display: fixed;
+	margin-left: 25em;
+	margin-top: 3em;
+	width: 45%;
+	z-index: -1;
+}
+
+.sq-img{
+	filter: grayscale(100%);
+}
+
+/* Pier One Project */
+.p1{
+	position: absolute;
+	left: -100vw;
+	top: -15vh;
+	z-index: -1;
+}
+
+.web-txt-box{
+	position: absolute;
+	font-size: 9em;
+	left: 5.5vw;
+	top: -103vh;
+	z-index: 140;
+}
+
+.web-icons{
+	position: absolute;
+	font-size: 1.8em;
+	left: 27vw;
+	top: -42vh;
+	z-index: 140;
+}
+
+.web-about{
+	position: absolute;
+	font-size: 1.3em;
+	top: 13.5vw;
+	left: -88vw;
+	z-index: 140;
+	color: #fff;
+	width: 35vw;
+	text-align: justify;
+}
+
+.explore{
+	position: absolute;
+	font-size: 1.8em;
+	left: 103vw;
+	top: 33vh;
+	z-index: 140;
+	color: #fff;
+}
+
+.explore a{
+	color: #fff;
+}
+
+@media screen and (max-width: 63em){
+.p1{
+	position: absolute;
+	left: -100vw;
+	top: 3vh;
+	z-index: -1;
+	width: 300px;
+	}
+	
+.web-txt-box{
+	position: absolute;
+	font-size: 3.5em;
+	left: 1em;
+	top: -102vh;
+}
+
+.web-about{
+	position: absolute;
+	font-size: 1em;
+	top: 35vw;
+	left: -108vw;
+	z-index: 140;
+	color: #fff;
+	width: 60vw;
+	text-align: justify;
+}
+
+.web-icons{
+	position: absolute;
+	font-size: 1em;
+	left: 10vw;
+	top: -53vh;
+	z-index: 140;
+}
+.explore{
+	position: absolute;
+	font-size: .8em;
+	left: 53vw;
+	top: -53vh;
+	z-index: 140;
+}
+}

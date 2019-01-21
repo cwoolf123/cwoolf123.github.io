@@ -9,8 +9,11 @@
 		<meta name="author" content="Chris Woolf" />
 		<link rel="shortcut icon" href="favicon.png">
 		<link rel="stylesheet" href="custom-fonts.css">
-		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/invader.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link rel="stylesheet" type="text/css" href="css/slider.css" />
+		<link rel="stylesheet" type="text/css" href="css/glitch.css" />
+		<link href="https://fonts.googleapis.com/css?family=Barlow:500,800" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 	</head>
@@ -23,33 +26,41 @@
 		</div><!-- close title container -->
 		<nav class="topnav" id="myTopnav">
 				<a href="index.html">Home</a>
-				<a href="work.html" class="active">Work</a>
+				<a href="skills.html" class="active">Work</a>
 				<a href="contact.html">Contact</a>
 				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 				  <i class="fa fa-bars"></i>
 				</a>
 			</nav>
-		<main>
-			<body class="work-body">
-				<h1 class="typeit">Choose a topic.</h1>
+		<main class="demo-3 loading">
+			<div class="work-body">
+				<h1 class="typeit"></h1>
 			<a href="https://codepen.io/cwoolf123/"><i class="social1 fa fa-codepen"></i></a>
 			<a href="https://github.com/cwoolf123"><i class="social2 fa fa-github"></i></a>
 			<a href="https://www.linkedin.com/in/chriswoolf/"><i class="social3 fa fa-linkedin"></i></a>
 			<div class="content">		
-			<img class="PixelArt" width="300px" height="300px" src="img/frame1.png"/>
-			<div class="w-title"><h2>Pixel Art</h2></div>		
-			<img class="WordPress" width="300px" height="300px" src="img/w1.png"/>
-			<div class="w-title"><h2>WordPress</h2></div>
-			<img class="WordPress" width="300px" height="300px" src="img/w1.png"/>
-			<div class="w-title"><h2>Graphics</h2></div>
-			</div>
-		</body>
-
+					<div class="grid">
+							<div class="grid__item">
+								<div class="glitch glitch--style-1">
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+									<div class="glitch__img"></div>
+								</div>
+								<h2 class="grid__item-title">WordPress <span>Development</span></h2>
+							</div>
+					</div>
+				</div>
+			<div class="web-sites">
+				<img class="pierone" src="img/pierone.png" />
+		</div>
 		</main>
 			<script src='js/jquery-2.2.1.min.js'></script>
+			<script src="js/glitch.js"></script>
 			<script src='js/anime.min.js'></script>
 			<script src='js/pieces.min.js'></script>
-			<script src='js/demo.js'></script>
+			<script src='js/gallery.js'></script>
 			<script src='js/snap.svg-min.js'></script>
 			<script src='js/title.js'></script>	
 	</body>

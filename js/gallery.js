@@ -24,7 +24,7 @@
 
     // Options for images
     var imageOptions = {
-        opacity: '.5',
+        opacity: '.9',
         angle: 45,
         extraSpacing: {extraX: 100, extraY: 200},
         piecesWidth: function() { return Pieces.random(50, 200); },
@@ -33,10 +33,10 @@
 
     // Options for texts
     var textOptions = {
-        opacity: '.3',
-        color: 'white',
+        opacity: '.9',
+        color: '#e8e8e8',
         fontFamily: 'Comfortaa',
-        backgroundColor: 'none',
+        backgroundColor: '#444',
         fontSize: function() { return windowWidth > 620 ? 40 : 20; },
         padding: '15 20 10 20',
         angle: -45,
@@ -219,3 +219,71 @@
         }, 500);
     }
 })();
+
+
+
+    $("button").click(function() {
+window.scrollBy({ 
+    top: 1000, // could be negative value
+    left: 0, 
+    behavior: 'smooth' 
+  });
+});
+
+$("button").click(function() {
+    window.scrollBy({ 
+        top: -1000, // could be negative value
+        left: 0, 
+        behavior: 'smooth' 
+      });
+    });
+    
+
+/*
+    $("button").click(function() {
+        $('html,body').animate({
+            scrollTop: $(".second").offset().top},
+            'slow');
+    });
+*/
+
+$(".shdw").click(function() {
+    $(".content, .typeit").animate({ 
+        top: "-=150vh",
+      }, 1500 );
+    $('.p1').animate({ 
+        left: "+=104vw",
+        zIndex: 130,
+      }, 2000 );
+      $('.shdw').animate({ 
+        zIndex: -10,
+      }, 200 );
+       $('.web-txt-box').animate({ 
+        top: "+=110vh",
+      }, 1250 );
+      $('.web-icons').animate({ 
+        top: "+=110vh",
+      }, 1250 );
+      $('.web-about').animate({ 
+        left: "+=138vw",
+      }, 1250 );
+      $('.explore').animate({ 
+        left: "-=78vw",}, 1250 );
+      });
+
+$(".p1").click(function() {
+    $('.p1').animate({ 
+        left: "+=100vw",
+    }, 2000 );
+    $('.web-txt-box').animate({ 
+        left: "+=110vw",
+      }, 1250 );
+      $('.web-icons').animate({ 
+        top: "+=110vh",
+      }, 1250 );
+      $('.web-about').animate({ 
+        left: "+=138vw",
+      }, 1250 );
+      $('.explore').animate({ 
+        left: "-=78vw",}, 1250 );
+    });

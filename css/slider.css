@@ -2,6 +2,7 @@
 	position: relative;
 	text-align: center;
 	padding: 8rem 0;
+	z-index: 10000;
 }
 
 .js .pieces-slider {
@@ -33,7 +34,7 @@
 .js .pieces-slider__canvas {
 	position: relative;
 	width: 60vw;
-	left: 1em;
+	left: 0vw;
 	height: 100vh;
 	transition: 0.2s opacity;
 }
@@ -64,7 +65,7 @@
 	height: 80px;
 	margin: -25px 0 0 0;
 	background-color: transparent;
-	color: #1c1c1c;
+	color: #686868;
 	font-family: 'Comfortaa';
 	font-weight: bold;
 	border: none;
@@ -72,12 +73,12 @@
 	opacity: 1;
 	transition: 0.1s background-color;
 	z-index: 900;
-	font-size: 3em;
+	font-size: 1.3em;
 }
 
 .pieces-slider__button:hover {
 	background: transparent;
-	color: #fff;
+	color: #333;
 	transition: .5s;
 }
 

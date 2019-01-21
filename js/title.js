@@ -11,16 +11,16 @@ window.onload = function () {
 		var logoTitleContainer = l.text(0, '100%', '');
 		var possible = "-+*/|}{[]~\\\":;?/.><=+-_)(*&^%$#@!)}";
 		logoTitleContainer.attr({
-			fontSize: 90,
+			fontSize: 100,
 			fontFamily: 'Comfortaa',
-			fontWeight: '600',
-			fill: '#fff',
+			fontWeight: '800',
+			fill: '#686868',
 		});
     
 		function generateRandomTitle(i, logoRandom) {
 			setTimeout( function() {
 				logoTitleContainer.attr({ text: logoRandom });
-			}, i*125 );
+			}, i*150 );
 		}
 
 		for( var i=0; i < logoTitle.length+1; i++ ) {
