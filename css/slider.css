@@ -34,7 +34,7 @@
 .js .pieces-slider__canvas {
 	position: relative;
 	width: 60vw;
-	left: 0vw;
+	left: 1vw;
 	height: 100vh;
 	transition: 0.2s opacity;
 }
@@ -43,7 +43,7 @@
 .js .pieces-slider__canvas {
 	position: relative;
 	width: 100vw;
-	left: 1em;
+	left: -1em;
 	height: 100vh;
 	transition: 0.2s opacity;
 }
@@ -73,7 +73,7 @@
 	opacity: 1;
 	transition: 0.1s background-color;
 	z-index: 900;
-	font-size: 1.3em;
+	font-size: 1.8em;
 }
 
 .pieces-slider__button:hover {
@@ -85,6 +85,10 @@
 .pieces-slider__button--next {
 	left: auto;
 	right: 0;
+}
+
+.pieces-slider__button--prev {
+	left: -.5em;
 }
 
 /* Hide the buttons when no JS */

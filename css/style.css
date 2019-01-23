@@ -87,7 +87,7 @@ button:focus {
 .txt-detail1{
 	position: absolute;
 	color: #686868;
-	top: 3vh;
+	top: 30vh;
 	left: 1em;
 	font-size:.8em;
 	transform: rotate(-90deg);
@@ -96,7 +96,7 @@ button:focus {
 	.txt-detail2{
 		position: absolute;
 		color: #686868;
-		top: 103vh;
+		top: 40vh;
 		left: 1em;
 		font-size:.8em;
 		transform: rotate(-90deg);
@@ -154,13 +154,19 @@ h1,h2,h3,h4,h5,h6{
 	top: 30vh;
 	font: bold 100% Consolas, Monaco, monospace;
 	border-right: .1em solid #686868;
-	width: 16.5em; 
-	width: 21ch;
+	width: 19.5em; 
+	width: 26ch;
 	margin: 1em 1em;
 	white-space: nowrap;
 	overflow: hidden;
 	-webkit-animation: typing 3s steps(21, end),
-	           blink-caret .5s step-end infinite alternate;
+	           blink-caret .5s step-end 6 alternate;
+}
+/* Slide in low title */
+.web-portfolio{
+	position: absolute;
+	top: 85vh;
+	left: 105vw; 
 }
 
 /*-------------------------------------------------*\
@@ -179,8 +185,8 @@ html{
 	z-index: 11;
 }
 .typeit{
-	left: 6em;
-	top: 8em;
+	left: 4em;
+	top: 6em;
 }
 }
 
@@ -280,21 +286,33 @@ main {
 		height: 55vh;
 		opacity: 0;
 	}
+	
+
+.shdw2{
+	position: absolute;
+	display: fixed;
+	left: 25vw;
+	width: 40vw;
+	height: 90vh;
+	top: 106vh;
+	z-index: 10900;
+	opacity: 1;
+}
 } 
 
 
-.shdw2,
-.shdw-link2{
+.shdw2{
 	position: absolute;
-	display: block;
-	left: 5vw;
+	display: fixed;
+	left: 10vw;
 	width: 40vw;
 	height: 90vh;
-	top: 101vh;
-	margin-top: 0em;
-	z-index: 900;
-	opacity: 0;
+	top: 106vh;
+	z-index: 10900;
+	opacity: 1;
 }
+
+
 /*-------------------------------------------------*\
 *--------------------#Gallery-(click areas)---------*
 \*-------------------------------------------------*/
@@ -382,7 +400,7 @@ main {
 		z-index: 3;
 		padding-bottom: 0px;
 		top: 0em;
-		left: 0vw;
+		left: -1.5vw;
 	  }
 	  
 	  /* Style the links inside the navigation bar */
@@ -395,7 +413,6 @@ main {
 		text-decoration: none;
 		font-size: 1em;
 		font-weight: 800;
-		text-transform: uppercase;
 	  }
 	  
 	  /* Change the color of links on hover */
@@ -424,8 +441,9 @@ main {
 	.topnav a.icon {
 		float: right;
 		display: block;
-		padding-right: 1.3em;
+		padding-right: 1.5em;
 		padding-bottom: 1.3em;
+		z-index: 900;
 	}
   }
   
@@ -514,6 +532,7 @@ height: 100vh;
 	left: -100vw;
 	top: -15vh;
 	z-index: -1;
+	filter: brightness(68%);
 }
 
 .web-txt-box{
@@ -527,20 +546,22 @@ height: 100vh;
 .web-icons{
 	position: absolute;
 	font-size: 1.8em;
-	left: 27vw;
+	left: 26vw;
 	top: -42vh;
 	z-index: 140;
 }
 
 .web-about{
 	position: absolute;
-	font-size: 1.3em;
+	font-size: 1.2em;
 	top: 13.5vw;
 	left: -88vw;
 	z-index: 140;
 	color: #fff;
 	width: 35vw;
 	text-align: justify;
+	background-color: #4f7d9b1d;
+	padding: .8em 1em;
 }
 
 .explore{
@@ -574,7 +595,7 @@ height: 100vh;
 
 .web-about{
 	position: absolute;
-	font-size: 1em;
+	font-size: .8em;
 	top: 35vw;
 	left: -108vw;
 	z-index: 140;
@@ -586,15 +607,15 @@ height: 100vh;
 .web-icons{
 	position: absolute;
 	font-size: 1em;
-	left: 10vw;
+	left: 8vw;
 	top: -53vh;
 	z-index: 140;
 }
 .explore{
 	position: absolute;
-	font-size: .8em;
-	left: 53vw;
-	top: -53vh;
-	z-index: 140;
+	font-size: 1.8em;
+	left: 129vw;
+	top: 74.5vh;
+	z-index: 940;
 }
 }

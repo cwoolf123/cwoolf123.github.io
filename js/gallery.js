@@ -239,14 +239,6 @@ $("button").click(function() {
     });
     
 
-/*
-    $("button").click(function() {
-        $('html,body').animate({
-            scrollTop: $(".second").offset().top},
-            'slow');
-    });
-*/
-
 $(".shdw").click(function() {
     $(".content, .typeit").animate({ 
         top: "-=150vh",
@@ -269,6 +261,8 @@ $(".shdw").click(function() {
       }, 1250 );
       $('.explore').animate({ 
         left: "-=78vw",}, 1250 );
+      $('.web-portfolio').animate({ 
+        left: "-=98vw",}, 1250 );
       });
 
 $(".p1").click(function() {
@@ -279,7 +273,7 @@ $(".p1").click(function() {
         left: "+=110vw",
       }, 1250 );
       $('.web-icons').animate({ 
-        top: "+=110vh",
+        top: "+=200vh",
       }, 1250 );
       $('.web-about').animate({ 
         left: "+=138vw",
