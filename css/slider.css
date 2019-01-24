@@ -88,7 +88,7 @@
 }
 
 .pieces-slider__button--prev {
-	left: -.5em;
+	left: 0em;
 }
 
 /* Hide the buttons when no JS */

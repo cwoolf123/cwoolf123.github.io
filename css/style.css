@@ -45,7 +45,7 @@ body {
 	font-family: 'Comfortaa';
 	min-height: 100vh;
 	color: #fff;
-	background-color: #e8e8e8; 
+	background-color: #cbcbcb; 
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	overflow-y: scroll;
@@ -54,6 +54,17 @@ body {
 	position: absolute;
 }
 
+.sitebg{
+	position: absolute;
+	display: fixed;
+	width: 0vw;
+	height: 210vh;
+	z-index: 0;
+	top: -1vh;
+	filter: grayscale(100%);
+	border-left: 1px solid #636363;
+	opacity: .5;
+}
 
 /* Links */
 
@@ -87,7 +98,7 @@ button:focus {
 .txt-detail1{
 	position: absolute;
 	color: #686868;
-	top: 30vh;
+	top: -30vh;
 	left: 1em;
 	font-size:.8em;
 	transform: rotate(-90deg);
@@ -151,7 +162,7 @@ h1,h2,h3,h4,h5,h6{
 	display: fixed;
 	color: #686868;
 	left: 60vw;
-	top: 30vh;
+	top: 50vh;
 	font: bold 100% Consolas, Monaco, monospace;
 	border-right: .1em solid #686868;
 	width: 19.5em; 
@@ -160,7 +171,9 @@ h1,h2,h3,h4,h5,h6{
 	white-space: nowrap;
 	overflow: hidden;
 	-webkit-animation: typing 3s steps(21, end),
-	           blink-caret .5s step-end 6 alternate;
+			   blink-caret .5s step-end 6 alternate;
+			   animation-delay: 5s;
+			   animation-fill-mode: both;
 }
 /* Slide in low title */
 .web-portfolio{
@@ -168,7 +181,11 @@ h1,h2,h3,h4,h5,h6{
 	top: 85vh;
 	left: 105vw; 
 }
-
+.web-portfolio-title{
+	position: relative;
+	color: #fff;
+	z-index: 10000;
+}
 /*-------------------------------------------------*\
 *--------------------#Icons-------------------------*
 \*-------------------------------------------------*/
@@ -185,8 +202,9 @@ html{
 	z-index: 11;
 }
 .typeit{
-	left: 4em;
-	top: 6em;
+	left: 20%;
+	top: 80vh;
+	font-size: .8em;
 }
 }
 
@@ -216,11 +234,19 @@ html{
 	position: absolute;
 	display: fixed;
 	left: 91vw;
-	top: 2em;
 	width: 100%;
 	font-size: 2em;
 }
 
+.social1{
+	top: 104vh;
+}
+.social2{
+	top: 110vh;
+}
+.social3{
+	top: 116vh;
+}
 
 .social1:hover,
 .social2:hover,
@@ -245,12 +271,7 @@ html{
 	padding: .5em;
 }
 
-.social2{
-	top: 4em;
-}
-.social3{
-	top:6em;
-}
+
 main {
 	position: relative;
 	width: 100%;
@@ -273,6 +294,16 @@ main {
 	opacity: 0;
 }
 
+.shdw2{
+	position: absolute;
+	left: 3vw;
+	width: 45vw;
+	height: 50vh;
+	top: 68vh;
+	z-index: 900;
+	opacity: 0;
+}
+
 /* For Mobiles */
 @media screen and (max-width: 62em)
 {
@@ -286,31 +317,20 @@ main {
 		height: 55vh;
 		opacity: 0;
 	}
-	
-
-.shdw2{
-	position: absolute;
-	display: fixed;
-	left: 25vw;
-	width: 40vw;
-	height: 90vh;
-	top: 106vh;
-	z-index: 10900;
-	opacity: 1;
-}
+	.shdw2{
+		position: absolute;
+		left: 5vw;
+		width: 80vw;
+		height: 90vh;
+		top: 50vh;
+		z-index: 1900;
+		opacity: 0;
+	}
 } 
 
 
-.shdw2{
-	position: absolute;
-	display: fixed;
-	left: 10vw;
-	width: 40vw;
-	height: 90vh;
-	top: 106vh;
-	z-index: 10900;
-	opacity: 1;
-}
+
+
 
 
 /*-------------------------------------------------*\
@@ -324,6 +344,7 @@ main {
 	align-items: center;
 	margin: 0 auto;
 	min-height: 100vh;
+	left: -100vw;
 }
 
 .content--fixed {
@@ -401,6 +422,7 @@ main {
 		padding-bottom: 0px;
 		top: 0em;
 		left: -1.5vw;
+		opacity: 0;
 	  }
 	  
 	  /* Style the links inside the navigation bar */
@@ -522,10 +544,6 @@ height: 100vh;
 	z-index: -1;
 }
 
-.sq-img{
-	filter: grayscale(100%);
-}
-
 /* Pier One Project */
 .p1{
 	position: absolute;
@@ -575,6 +593,11 @@ height: 100vh;
 
 .explore a{
 	color: #fff;
+}
+
+.explore a:focus,
+.explore a:hover{
+	color: #cbcbcb;
 }
 
 @media screen and (max-width: 63em){

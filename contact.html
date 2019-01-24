@@ -11,6 +11,7 @@
 		<link rel="stylesheet" href="custom-fonts.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link rel="stylesheet" type="text/css" href="css/slider.css" />
+		<link rel="stylesheet" type="text/css" href="css/contact.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 	</head>
@@ -29,18 +30,40 @@
 				</a>
 			</nav>
 		<main class="work-body">
-				<h1 class="typeit">Let's Talk !</h1>
 			<a href="https://codepen.io/cwoolf123/"><i class="social1 fa fa-codepen"></i></a>
 			<a href="https://github.com/cwoolf123"><i class="social2 fa fa-github"></i></a>
 			<a href="https://www.linkedin.com/in/chriswoolf/"><i class="social3 fa fa-linkedin"></i></a>
 			<div class="content">		
-	
+				<section id="hire">
+					<h1>Contact Me</h1>
+					
+					<form>
+						  <div class="field name-box">
+								<input type="text" id="name" placeholder="Who Are You?"/>
+								<label for="name">Name</label>
+						  </div>
+				
+						  <div class="field email-box">
+								<input type="text" id="email" placeholder="name@email.com"/>
+								<label for="email">Email</label>
+						  </div>
+				
+						  <div class="field msg-box">
+								<textarea id="msg" rows="4" placeholder="Your message goes here..."/></textarea>
+								<label for="msg">Msg</label>
+						  </div>
+				
+						  <input class="button" type="submit" value="Send" />
+				  </form>
+				</section>
+				</div>
 		</main>
 			<script src='js/jquery-2.2.1.min.js'></script>
 			<script src='js/anime.min.js'></script>
 			<script src='js/pieces.min.js'></script>
-			<script src='js/demo.js'></script>
+			<script src='js/gallery.js'></script>
 			<script src='js/snap.svg-min.js'></script>
 			<script src='js/title.js'></script>	
+			<script src='js/contact.js'></script>	
 	</body>
 </html>

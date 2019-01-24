@@ -7,19 +7,19 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 
 body {
 	--color-text: #636363;
-	--color-bg: #e8e8e8;
+	--color-bg: #cbcbcb;
 	--color-link: #636363;
 	--color-link-hover: #fff;
 	font-family: "Comfortaa";
 	min-height: 100vh;
 	color: #57585c;
 	color: var(--color-text);
-	background-color: #e8e8e8;
-	background-color: var(--color-bg);
+	background-color: #cbcbcb;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	overflow: scroll;
 	overflow-x: hidden;
+	cursor: crosshair;
 }
 
 
@@ -91,11 +91,13 @@ a {
 a:hover,
 a:focus {
 	color: var(--color-link-hover);
+	cursor: crosshair;
 }
 
 button:focus,
 a:focus {
 	outline: none;
+	cursor: crosshair;
 }
 
 .hidden {
@@ -143,6 +145,7 @@ main {
 .portfolio-header__links a {
 	display: inline-block;
 	text-transform: lowercase;
+	cursor: crosshair;
 }
 
 .portfolio-header__links a:nth-child(2) {
@@ -163,8 +166,8 @@ main {
 .menutop__item {
 	pointer-events: auto;
 	font-weight: bold;
-	cursor: pointer;
-	margin: 0 0.5rem;
+	cursor: crosshair;
+	margin: 0 .5rem;
 }
 
 .menutop__item--social {
@@ -191,6 +194,7 @@ main {
 	flex-wrap: wrap;
 	justify-content: center;
 	pointer-events: auto;
+	pointer: crosshair;
 }
 
 .menu--closed .menu__item {
@@ -212,13 +216,10 @@ main {
 .menu__item-text {
 	font-family: "Comfortaa";
 	-webkit-text-stroke: 2px #636363;
-	text-stroke: 2px #636363;
-	-webkit-text-fill-color: transparent;
-	text-fill-color: transparent;
 	color: transparent;
 	font-size: 2rem;
 	padding: 0 1rem;
-	cursor: pointer;
+	cursor: crosshair;
 	display: inline-block;
 }
 
@@ -227,7 +228,6 @@ main {
 	text-fill-color: #636363;
 	color: #636363;
 	-webkit-text-stroke: 2px transparent;
-	text-stroke: 2px transparent;
 }
 
 .menu__item-link {
@@ -236,7 +236,7 @@ main {
 	align-self: flex-end;
 	opacity: 0;
 	width: 100%;
-	cursor: pointer;
+	cursor: crosshair;
 	text-align: center;
 }
 
@@ -364,16 +364,6 @@ main {
 .grid--layout-4 .grid__item:nth-child(7) {grid-area: 4 / 7 / 8 / 11;}
 .grid--layout-4 .grid__item:nth-child(8) {grid-area: 8 / 9 / 11 / 4;}
 
-/* Layout 5 */
-.grid--layout-5 .grid__item:first-child {grid-area: 2 / 1 / 5 / 4;}
-.grid--layout-5 .grid__item:nth-child(2) {grid-area: 1 / 4 / 5 / 7;}
-.grid--layout-5 .grid__item:nth-child(3) {grid-area: 5 / 2 / 7 / 5;}
-.grid--layout-5 .grid__item:nth-child(4) {grid-area: 1 / 7 / 4 / 11;}
-.grid--layout-5 .grid__item:nth-child(5) {grid-area: 5 / 7 / 7 / 5;}
-.grid--layout-5 .grid__item:nth-child(6) {grid-area: 7 / 5 / 10 / 1;}
-.grid--layout-5 .grid__item:nth-child(7) {grid-area: 4 / 7 / 7 / 9;}
-.grid--layout-5 .grid__item:nth-child(8) {grid-area: 4 / 9 / 9 / 11;}
-.grid--layout-5 .grid__item:nth-child(9) {grid-area: 7 / 5 / 11 / 9;}
 
 .content__item {
 	max-width: 600px;
@@ -441,6 +431,7 @@ main {
 	.pageheader {
 		grid-area: pageheader;
 		margin: 0;
+		font-size: .8em;
 	}
 	.menutop {
 		grid-area: menutop;

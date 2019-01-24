@@ -281,3 +281,27 @@ $(".p1").click(function() {
       $('.explore').animate({ 
         left: "-=78vw",}, 1250 );
     });
+
+    $(function() {
+        $('.content').animate({ 
+            left: "0vw", 
+        }, 2500 );
+        $('container-ani').animate({ 
+            opacity: 1, 
+        }, 2500 );
+        $('.topnav').animate({ 
+            opacity: 1, 
+        }, 2500 );
+        $('.social1').animate({ 
+            top: "-=100vh", 
+        }, 2500 );
+        $('.social2').animate({ 
+            top: "-=100vh", 
+        }, 3000 );
+        $('.social3').animate({ 
+            top: "-=100vh", 
+        }, 3500 );
+        $('.txt-detail1').animate({ 
+            top: "+=60vh", 
+        }, 3500 );
+    });
