@@ -98,18 +98,20 @@ button:focus {
 .txt-detail1{
 	position: absolute;
 	color: #686868;
-	top: -30vh;
+	top: -50vh;
 	left: 1em;
 	font-size:.8em;
+	font-weight: 800;
 	transform: rotate(-90deg);
 }
 
 	.txt-detail2{
 		position: absolute;
 		color: #686868;
-		top: 40vh;
+		top: 10vh;
 		left: 1em;
 		font-size:.8em;
+		font-weight: 800;
 		transform: rotate(-90deg);
 	}
 
@@ -202,8 +204,8 @@ html{
 	z-index: 11;
 }
 .typeit{
-	left: 20%;
-	top: 80vh;
+	left: 25%;
+	top: 75vh;
 	font-size: .8em;
 }
 }
@@ -233,7 +235,7 @@ html{
 .social3{
 	position: absolute;
 	display: fixed;
-	left: 91vw;
+	left: 89vw;
 	width: 100%;
 	font-size: 2em;
 }
@@ -328,11 +330,6 @@ main {
 	}
 } 
 
-
-
-
-
-
 /*-------------------------------------------------*\
 *--------------------#Gallery-(click areas)---------*
 \*-------------------------------------------------*/
@@ -421,7 +418,7 @@ main {
 		z-index: 3;
 		padding-bottom: 0px;
 		top: 0em;
-		left: -1.5vw;
+		left: 0;
 		opacity: 0;
 	  }
 	  
@@ -642,3 +639,93 @@ height: 100vh;
 	z-index: 940;
 }
 }
+
+/* Acountants Project */
+.p2{
+	position: absolute;
+	left: -95vw;
+	width: 65%;
+	top: .5em;
+	z-index: -1;
+}
+	
+.web-txt-box2{
+	position: absolute;
+	font-size: 3.5em;
+	left: 1.5em;
+	top: -107vh;
+	width: 50vw;
+	color: #fff;
+	font-weight: 800;
+	line-height: 1.5em;
+}
+
+.web-about2{
+	position: absolute;
+	font-size: 1.2em;
+	top: -.7vh;
+	left: -95vw;
+	z-index: 140;
+	color: #fff;
+	width: 38vw;
+	text-align: justify;
+	background-color: #4f7d9b1d;
+	padding: .8em 1em;
+}
+
+.explore2{
+	position: absolute;
+	font-size: 1.8em;
+	left: 153vw;
+	top: 33vh;
+	z-index: 140;
+	color: #fff;
+}
+
+.explore2 a{
+	color: #fff;
+}
+
+.explore2 a:focus,
+.explore2 a:hover{
+	color: #cbcbcb;
+}
+
+@media screen and (max-width: 63em){
+	.p2{
+		position: absolute;
+		left: -100vw;
+		width: 65%;
+		top: 0em;
+		z-index: -1;
+	}	
+		
+	.web-txt-box2{
+		position: absolute;
+		font-size: 1.5rem;
+		left: 2em;
+		top: -108vh;
+		width: 80%;
+		color: #fff;
+		line-height: 1em;
+	}
+	
+	.web-about2{
+		position: absolute;
+		font-size: .8em;
+		top: 30vw;
+		left: -108vw;
+		z-index: 140;
+		color: #fff;
+		width: 60vw;
+		text-align: justify;
+	}
+	
+	.explore2{
+		position: absolute;
+		font-size: 1.8em;
+		left: 109vw;
+		top: 74.5vh;
+		z-index: 940;
+	}
+	}

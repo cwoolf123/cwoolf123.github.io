@@ -26,8 +26,8 @@
     var imageOptions = {
         opacity: '.9',
         angle: 45,
-        extraSpacing: {extraX: 100, extraY: 200},
-        piecesWidth: function() { return Pieces.random(50, 200); },
+        extraSpacing: {extraX: 0, extraY: 0},
+        piecesWidth: function() { return Pieces.random(50, 50); },
         ty: function() { return Pieces.random(-400, 400); },
     };
 
@@ -260,9 +260,17 @@ $(".shdw").click(function() {
         left: "+=138vw",
       }, 1250 );
       $('.explore').animate({ 
-        left: "-=78vw",}, 1250 );
+        left: "-=78vw",
+    }, 1250 );
       $('.web-portfolio').animate({ 
-        left: "-=98vw",}, 1250 );
+        left: "-=98vw",
+    }, 1250 );
+    $('.shade').animate({ 
+        left: "-=100vw", 
+    }, 1500 );
+    $('.shade2',).animate({ 
+        left: "-=100vw", 
+    }, 2500 );
       });
 
 $(".p1").click(function() {
@@ -280,8 +288,18 @@ $(".p1").click(function() {
       }, 1250 );
       $('.explore').animate({ 
         left: "-=78vw",}, 1250 );
+        $('.p2').animate({ 
+        left: "+=120vw",
+    }, 2000 );
+    $('.web-txt-box2').animate({ 
+        top: "+=110vh",
+      }, 1250 );
+      $('.web-about2').animate({ 
+        left: "+=138vw",
+      }, 1250 );
     });
 
+    /* Animate on load */
     $(function() {
         $('.content').animate({ 
             left: "0vw", 
@@ -304,4 +322,10 @@ $(".p1").click(function() {
         $('.txt-detail1').animate({ 
             top: "+=60vh", 
         }, 3500 );
+        $('.shade',).animate({ 
+            left: "-=100vw", 
+        }, 1500 );
+        $('.shade2',).animate({ 
+            left: "-=100vw", 
+        }, 2500 );
     });
