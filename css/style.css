@@ -1,3 +1,4 @@
+
 /*-------------------------------------------------*\
 *--------------------style.CSS----------------------*
 \*-------------------------------------------------*/
@@ -51,6 +52,7 @@ body {
 	overflow-x: hidden;
 	height: 200vh;
 	position: absolute;
+	display: block;
 }
 
 /* Links */
@@ -143,8 +145,8 @@ h1,h2,h3,h4,h5,h6{
 
 /* self-typing Header */
 
-@-webkit-keyframes typing { from { width: 0; } }
-@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+@keyframes typing { from { width: 0; } }
+@keyframes blink-caret { 50% { border-color: transparent; } }
 
 .typeit { 
 	position: absolute;
@@ -159,7 +161,7 @@ h1,h2,h3,h4,h5,h6{
 	margin: 1em 1em;
 	white-space: nowrap;
 	overflow: hidden;
-	-webkit-animation: typing 3s steps(21, end),
+	animation: typing 3s steps(21, end),
 			   blink-caret .5s step-end 6 alternate;
 			   animation-delay: 5s;
 			   animation-fill-mode: both;

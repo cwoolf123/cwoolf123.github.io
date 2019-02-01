@@ -14,7 +14,7 @@ window.onload = function () {
 			fontSize: 100,
 			fontFamily: 'Comfortaa',
 			fontWeight: '800',
-			fill: '#686868',
+			fill: '#282828',
 		});
     
 		function generateRandomTitle(i, logoRandom) {
