@@ -8,6 +8,9 @@ $(function() {
     $('.fa-arrow-down').animate({ 
         opacity: 1,
     }, 1800 );
+    $('.title-txt').animate({ 
+        opacity: 1,
+    }, 1800 );
 });
 
 
