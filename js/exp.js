@@ -11,6 +11,15 @@ $(function() {
     $('.title-txt').animate({ 
         opacity: 1,
     }, 1800 );
+    $('.title-txt2').animate({ 
+        left: "+=59.5vw",
+    }, 1800 );
+    $('.title-txt3').animate({ 
+        top: "+=33vh",
+    }, 1800 );
+    $('.title-txt4').animate({ 
+        top: "-=40vh",
+    }, 1800 );
 });
 
 
@@ -27,27 +36,27 @@ $(function() {
         }, 900 );
         $('.circle-line').animate({ 
             opacity: "1",
-          }, 900 );
-         $('.expertise-title').animate({ 
+        }, 900 );
+        $('.expertise-title').animate({ 
             fontSize: ".7em",
             marginTop: "1.8em",
-          }, 900 );
-          $('.exp-circle2').animate({ 
+        }, 900 );
+        $('.exp-circle2').animate({ 
             marginTop: "0em",
             opacity: 1,
             zIndex: "1",
-         }, 900 );
-         $('.exp-circle3').animate({ 
+        }, 900 );
+        $('.exp-circle3').animate({ 
             marginTop: "0em",
             opacity: 1,
             zIndex: "1",
-         }, 900 );
-         $('.exp-circle4').animate({ 
+        }, 900 );
+        $('.exp-circle4').animate({ 
             marginTop: "0em",
             opacity: 1,
             zIndex: "1",
-         }, 900 );
-         $('.exp-circle5').animate({ 
+        }, 900 );
+        $('.exp-circle5').animate({ 
             marginTop: "0em",
             opacity: 1,
             zIndex: "1",
@@ -66,6 +75,21 @@ $(function() {
         $('.wd-box-dot').animate({ 
             opacity: 0,
             left: "+80vw",
+        }, 900 );
+        $('.title-txt').animate({ 
+            opacity: 1,
+        }, 900 );
+        $('.title-txt2').animate({ 
+            opacity: 1,
+        }, 900 );
+        $('.title-txt3').animate({ 
+            opacity: 1,
+        }, 900 );
+        $('.title-txta').animate({ 
+            opacity: 1,
+        }, 900 );
+        $('.title-txt4').animate({ 
+            opacity: 1,
         }, 900 );
 
         } else {  
@@ -120,7 +144,23 @@ $(function() {
          $('.expertise-header').animate({ 
             top: "-=12vh",
             opacity: 0,
-         }, 900 ); }
+         }, 900 ); 
+         $('.title-txt').animate({ 
+            opacity: 0,
+        }, 900 );
+        $('.title-txt2').animate({ 
+            opacity: 0,
+        }, 900 );
+        $('.title-txt3').animate({ 
+            opacity: 0,
+        }, 900 );
+        $('.title-txta').animate({ 
+            opacity: 0,
+        }, 900 );
+        $('.title-txt4').animate({ 
+            opacity: 0,
+        }, 900 ); }
+
         $(this).data("clicks", !clicks);
         });
 
@@ -192,7 +232,22 @@ $(function() {
              $('.wp-img').animate({ 
                 top: "-8em",
                 opacity: 0,
-             }, 900 ); 
+             }, 900 );
+             $('.title-txt').animate({ 
+                opacity: 1,
+            }, 900 );
+            $('.title-txt2').animate({ 
+                opacity: 1,
+            }, 900 );
+            $('.title-txt3').animate({ 
+                opacity: 1,
+            }, 900 );
+            $('.title-txta').animate({ 
+                opacity: 1,
+            }, 900 );
+            $('.title-txt4').animate({ 
+                opacity: 1,
+            }, 900 ); 
             
             } else {  
 
@@ -254,7 +309,22 @@ $(function() {
              $('.wp-img').animate({ 
                 top: "+=12vh",
                 opacity: 0.8,
-             }, 900 ); }
+             }, 900 ); 
+             $('.title-txt').animate({ 
+                opacity: 0,
+            }, 900 );
+            $('.title-txt2').animate({ 
+                opacity: 0,
+            }, 900 );
+            $('.title-txt3').animate({ 
+                opacity: 0,
+            }, 900 );
+            $('.title-txta').animate({ 
+                opacity: 0,
+            }, 900 );
+            $('.title-txt4').animate({ 
+                opacity: 0,
+            }, 900 ); }
 
             $(this).data("clicks2", !clicks2);
             });
@@ -313,6 +383,21 @@ $(function() {
                 fontSize: ".7em",
                 marginTop: "2em"
             }, 50 );
+            $('.title-txt').animate({ 
+                opacity: 1,
+            }, 900 );
+            $('.title-txt2').animate({ 
+                opacity: 1,
+            }, 900 );
+            $('.title-txt3').animate({ 
+                opacity: 1,
+            }, 900 );
+            $('.title-txta').animate({ 
+                opacity: 1,
+            }, 900 );
+            $('.title-txt4').animate({ 
+                opacity: 1,
+            }, 900 );
             
             } else {  
 
@@ -358,7 +443,22 @@ $(function() {
              $('.expertise-title3').animate({ 
                 fontSize: ".8em",
                 marginTop: "-1em",
-              }, 50 ); }
+              }, 50 ); 
+              $('.title-txt').animate({ 
+                opacity: 0,
+            }, 900 );
+            $('.title-txt2').animate({ 
+                opacity: 0,
+            }, 900 );
+            $('.title-txt3').animate({ 
+                opacity: 0,
+            }, 900 );
+            $('.title-txta').animate({ 
+                opacity: 0,
+            }, 900 );
+            $('.title-txt4').animate({ 
+                opacity: 0,
+            }, 900 ); }
 
             $(this).data("clicks3", !clicks3);
             });
@@ -414,6 +514,21 @@ $(function() {
                 fontSize: ".7em",
                 top: "-61%",
             }, 50 );
+            $('.title-txt').animate({ 
+                opacity: 1,
+            }, 900 );
+            $('.title-txt2').animate({ 
+                opacity: 1,
+            }, 900 );
+            $('.title-txt3').animate({ 
+                opacity: 1,
+            }, 900 );
+            $('.title-txta').animate({ 
+                opacity: 1,
+            }, 900 );
+            $('.title-txt4').animate({ 
+                opacity: 1,
+            }, 900 );
             
             } else {  
 
@@ -460,7 +575,22 @@ $(function() {
                 marginLeft: "-.2em",
                 fontSize: ".8em",
                 top: "-50%",
-              }, 50 ); }
+              }, 50 ); 
+              $('.title-txt').animate({ 
+                opacity: 0,
+            }, 900 );
+            $('.title-txt2').animate({ 
+                opacity: 0,
+            }, 900 );
+            $('.title-txt3').animate({ 
+                opacity: 0,
+            }, 900 );
+            $('.title-txta').animate({ 
+                opacity: 0,
+            }, 900 );
+            $('.title-txt4').animate({ 
+                opacity: 0,
+            }, 900 ); }
 
             $(this).data("clicks4", !clicks4);
             });
@@ -525,6 +655,21 @@ $(function() {
                 fontSize: ".7em",
                 marginTop: "2em"
             }, 50 );
+            $('.title-txt').animate({ 
+                opacity: 1,
+            }, 900 );
+            $('.title-txt2').animate({ 
+                opacity: 1,
+            }, 900 );
+            $('.title-txt3').animate({ 
+                opacity: 1,
+            }, 900 );
+            $('.title-txta').animate({ 
+                opacity: 1,
+            }, 900 );
+            $('.title-txt4').animate({ 
+                opacity: 1,
+            }, 900 );
             
             } else {  
 
@@ -578,7 +723,22 @@ $(function() {
             $('.expertise-title5').animate({ 
                 fontSize: ".8em",
                 marginTop: "-.5em",
-            }, 50 ); }
+            }, 50 ); 
+            $('.title-txt').animate({ 
+                opacity: 0,
+            }, 900 );
+            $('.title-txt2').animate({ 
+                opacity: 0,
+            }, 900 );
+            $('.title-txt3').animate({ 
+                opacity: 0,
+            }, 900 );
+            $('.title-txta').animate({ 
+                opacity: 0,
+            }, 900 );
+            $('.title-txt4').animate({ 
+                opacity: 0,
+            }, 900 ); }
 
             $(this).data("clicks5", !clicks5);
             });

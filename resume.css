@@ -110,7 +110,7 @@ opacity: .8;
 
 .title-txt{
 font-size: 8em;
-color: #444;
+color: #282828;
 position: absolute;
 left: 59vw;
 top: 12vh;
@@ -122,9 +122,9 @@ opacity: 0;
 
 .title-txt2{
 font-size: 5em;
-color: #444;
+color: #282828;
 position: absolute;
-left: 59.5vw;
+left: 0vw;
 top: 40vh;
 text-align: left;
 z-index: -5;
@@ -146,10 +146,10 @@ opacity: 1;
 
 .title-txt3{
 font-size: 5em;
-color: #444;
+color: #fff;
 position: absolute;
-left: 80vw;
-top: 33vh;
+left: 75vw;
+top: 0vh;
 text-align: left;
 z-index: -5;
 line-height: 1em;
@@ -162,7 +162,7 @@ font-size: 3.5em;
 color: #282828;
 position: absolute;
 left: 60vw;
-top: 60vh;
+top: 100vh;
 text-align: left;
 z-index: -5;
 line-height: 1em;
