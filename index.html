@@ -11,7 +11,7 @@
 		<link rel="shortcut icon" href="favicon.png">
 		<link rel="stylesheet" href="custom-fonts.css">
     <link rel="stylesheet" type="text/css" href="resume.css" />
-    <link rel="stylesheet" type="text/css" href="flapper.css" />
+    <link rel="stylesheet" type="text/css" href="contact.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">		
   </head>
   <body>
@@ -94,16 +94,14 @@
   <div class="wd-circle-dot"></div>
 </div>
 <script src='js/exp.js'></script>
-<div><a class="arrow-click"><i class="fa fa-plus"></i></a></div>
-</main>
+<!--<img class="cube-img" src="img/cube.png" />-->
+<h1 class="W">W</h1><h1 class="title">EB Developer</h1>
+<div class="dots"><img class="comb-img" src="img/comb.png" /></div>
+<img class="comb-img" src="img/.png" />
 </section>
-<div class="bar1"></div>
-<div class="flap-txt">
-<input class="header dark XS" id="header_display" />
-</div>
-<span class="side-txt">FOLLOW:</span>
-
+<div class="social"><i class="fa fa-codepen" aria-hidden="true"></i><i class="fa fa-code-fork" aria-hidden="true"></i><i class="fa fa-linkedin" aria-hidden="true"></i></div>
 <!--<img class="current-img" src="https://piskel-imgstore-b.appspot.com/img/f977207d-3223-11e9-a799-8374fc2d0caf.gif" />-->
+<img class="chip-img" src="img/chip.png" />
 </div>
 </div>
 <script src="js/jquery-3.3.1.min.js"></script>
@@ -117,61 +115,12 @@
 <script src='js/snap.svg-min.js'></script>
 <script src='js/title.js'></script>	
 <script src='js/menu.js'></script>	
-<script language="javascript">
-    $(document).ready(function() {
-        var $header_display = $('#header_display');
-        $header_display.flapper({
-            width: 27,
-            chars_preset: 'alpha'
-        });
-
-        var $demo_slow = $('#animation_demo input.slow');
-        var $demo_fast = $('#animation_demo input.fast');
-
-        var demo_timing = 500;
-        var demo_chars = [' ','0','1','2','3','4','5','6','7','8','9'];
-
-        $demo_slow.flapper({
-            width: 1,
-            chars: demo_chars,
-            timing: demo_timing,
-        });
-        
-        $demo_fast.flapper({
-            width: 1,
-            chars: demo_chars,
-            timing: demo_timing,
-            transform: false
-        });
-
-        var $demos = $('#animation_demo input');
-
-        setTimeout(function(){
-            $header_display.val('WELCOME   TO   MY   SITE').change();
-            $demos.val(9).change();
-            var toggle = false;
-            setInterval(function(){
-                if (toggle) {
-                    $header_display.val('').change();
-                    $demos.val(10).change();
-                } else {
-                    $header_display.val('').change();
-                    $demos.val('').change();
-                }
-                toggle = !toggle;
-            }, 10000);
-        }, 5000);
-
-        $('#size_demo input').flapper({
-            width: 1,
-            chars: ['9']
-        });
-    });
-</script>
+<script src='js/contact.js'></script>	
   </body>
   <footer>
     <div class="footer">
-      <p class="footer-words"><br/>Chris Woolf © 2019</p>
+        <img class="fchip-img" src="img/chip.png" />
+      <p class="footer-words"><br><br><strong>Design & Developed By:</strong><br><br/>Chris Woolf © 2019</p>
     </div>
   </footer>
 </html>

@@ -79,9 +79,9 @@ $(function() {
         $('.title-txt4').animate({ 
             opacity: 1,
         }, 900 );
-        $('.flap-txt').animate({ 
-            opacity: 1,
-        }, 100 );
+        $('.chip-img').animate({ 
+            top: "+=100vh",
+        }, 900 );
 
         } else {  
         
@@ -151,9 +151,9 @@ $(function() {
         $('.title-txt4').animate({ 
             opacity: 0,
         }, 900 );
-        $('.flap-txt').animate({ 
-            opacity: 0,
-        }, 300 ); }
+        $('.chip-img').animate({ 
+            top: "-=100vh",
+        }, 900 ); }
 
         $(this).data("clicks", !clicks);
         });
@@ -242,7 +242,7 @@ $(function() {
             $('.title-txt4').animate({ 
                 opacity: 1,
             }, 900 );
-            $('.flap-txt').animate({ 
+            $('.chip-img').animate({ 
                 top: "+=100vh",
             }, 900 ); 
             
@@ -322,7 +322,7 @@ $(function() {
             $('.title-txt4').animate({ 
                 opacity: 0,
             }, 900 ); 
-            $('.flap-txt').animate({ 
+            $('.chip-img').animate({ 
                 top: "-=100vh",
             }, 900 ); }
 
@@ -398,7 +398,7 @@ $(function() {
             $('.title-txt4').animate({ 
                 opacity: 1,
             }, 900 );
-            $('.flap-txt').animate({ 
+            $('.chip-img').animate({ 
                 top: "+=100vh",
             }, 900 );
             
@@ -462,7 +462,7 @@ $(function() {
             $('.title-txt4').animate({ 
                 opacity: 0,
             }, 900 ); 
-            $('.flap-txt').animate({ 
+            $('.chip-img').animate({ 
                 top: "-=100vh",
             }, 900 ); }
 
@@ -535,7 +535,7 @@ $(function() {
             $('.title-txt4').animate({ 
                 opacity: 1,
             }, 900 );
-            $('.flap-txt').animate({ 
+            $('.chip-img').animate({ 
                 top: "+=100vh",
             }, 900 );
             
@@ -600,7 +600,7 @@ $(function() {
             $('.title-txt4').animate({ 
                 opacity: 0,
             }, 900 ); 
-            $('.flap-txt').animate({ 
+            $('.chip-img').animate({ 
                 top: "-=100vh",
             }, 900 ); }
 
@@ -682,7 +682,7 @@ $(function() {
             $('.title-txt4').animate({ 
                 opacity: 1,
             }, 900 );
-            $('.flap-txt').animate({ 
+            $('.chip-img').animate({ 
                 top: "+=100vh",
             }, 900 );
             
@@ -754,7 +754,7 @@ $(function() {
             $('.title-txt4').animate({ 
                 opacity: 0,
             }, 900 ); 
-            $('.flap-txt').animate({ 
+            $('.chip-img').animate({ 
                 top: "-=100vh",
             }, 900 ); }
 

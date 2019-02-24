@@ -10,6 +10,7 @@
 		<link rel="shortcut icon" href="favicon.png">
 		<link rel="stylesheet" href="custom-fonts.css">
     <link rel="stylesheet" type="text/css" href="resume.css" />
+    <link rel="stylesheet" type="text/css" href="contact.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">		
   </head>
   <body>
@@ -32,14 +33,40 @@
 </header>
 
 <section>
-  <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="content">		
+				<div id="hire">
+					<h1></h1>
+					
+					<form>
+						  <div class="field name-box">
+								<input type="text" id="name" placeholder="Who Are You?"/>
+								<label for="name">Name</label>
+						  </div>
+				
+						  <div class="field email-box">
+								<input type="text" id="email" placeholder="name@email.com"/>
+								<label for="email">Email</label>
+						  </div>
+				
+						  <div class="field msg-box">
+								<textarea id="msg" rows="4" placeholder="Your message goes here..."/></textarea>
+								<label for="msg">Msg</label>
+						  </div>
+				
+						  <input class="button" type="submit" value="Send" />
+				  </form>
+        </div>
+				</div>
   <script src='js/exp.js'></script>
-  <footer>
+</section>
+<footer>
     <div class="footer">
+      <p class="footer-words"><br/>Chris Woolf © 2019</p>
     </div>
   </footer>
-</section>
-
+<div class="social"><i class="fa fa-codepen" aria-hidden="true"></i><i class="fa fa-code-fork" aria-hidden="true"></i><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+<img class="chip-img" src="img/chip.png" />
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/transitions.js"></script>
     <script src='js/jquery-2.2.1.min.js'></script>
@@ -49,5 +76,6 @@
     <script src='js/snap.svg-min.js'></script>
     <script src='js/title.js'></script>	
     <script src='js/menu.js'></script>
+    <script src='js/contact.js'></script>	
   </body>
 </html>
