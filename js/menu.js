@@ -50,6 +50,10 @@ $(".chip-img").click(function() {
     $('.flap-txt').animate({ 
         left: "+=150vw",
     }, 1200 );
+    $('.skills').animate({ 
+        opacity: 0,
+        left: "-=110vw",
+    }, 900 );
 
     } else {  
     
@@ -61,6 +65,10 @@ $(".chip-img").click(function() {
     }, 900 );
     $('.flap-txt').animate({ 
         left: "-=150vw",
+    }, 1200 );
+    $('.skills').animate({ 
+        opacity: .8,
+        left: "+=110vw",
     }, 1200 );}
     
     $(this).data("clicka", !clicka);

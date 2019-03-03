@@ -8,6 +8,15 @@ $(function() {
     $('.fa-plus').animate({ 
         opacity: 1,
     }, 1800 );
+    $('.j-title').animate({ 
+        opacity: .8,
+    }, 1800 );
+    $('.chip-img').animate({ 
+        opacity: .7,
+    }, 1800 );
+    $('.social').animate({ 
+        opacity: .7,
+    }, 1800 );
 });
 
 
@@ -80,7 +89,10 @@ $(function() {
             opacity: 1,
         }, 900 );
         $('.chip-img').animate({ 
-            top: "+=100vh",
+            opacity: 1,
+        }, 900 );
+        $('.j-title').animate({ 
+            opacity: 1,
         }, 900 );
 
         } else {  
@@ -152,7 +164,10 @@ $(function() {
             opacity: 0,
         }, 900 );
         $('.chip-img').animate({ 
-            top: "-=100vh",
+            opacity: 0,
+        }, 900 );
+        $('.j-title').animate({ 
+            opacity: 0,
         }, 900 ); }
 
         $(this).data("clicks", !clicks);
@@ -243,7 +258,10 @@ $(function() {
                 opacity: 1,
             }, 900 );
             $('.chip-img').animate({ 
-                top: "+=100vh",
+                opacity: 1,
+            }, 900 ); 
+            $('.j-title').animate({ 
+                opacity: 1,
             }, 900 ); 
             
             } else {  
@@ -323,7 +341,10 @@ $(function() {
                 opacity: 0,
             }, 900 ); 
             $('.chip-img').animate({ 
-                top: "-=100vh",
+                opacity: 0,
+            }, 900 );
+            $('.j-title').animate({ 
+                opacity: 0,
             }, 900 ); }
 
             $(this).data("clicks2", !clicks2);
@@ -399,7 +420,10 @@ $(function() {
                 opacity: 1,
             }, 900 );
             $('.chip-img').animate({ 
-                top: "+=100vh",
+                opacity: 1,
+            }, 900 );
+            $('.j-title').animate({ 
+                opacity: 1,
             }, 900 );
             
             } else {  
@@ -463,7 +487,10 @@ $(function() {
                 opacity: 0,
             }, 900 ); 
             $('.chip-img').animate({ 
-                top: "-=100vh",
+                opacity: 0,
+            }, 900 );
+            $('.j-title').animate({ 
+                opacity: 0,
             }, 900 ); }
 
             $(this).data("clicks3", !clicks3);
@@ -536,7 +563,10 @@ $(function() {
                 opacity: 1,
             }, 900 );
             $('.chip-img').animate({ 
-                top: "+=100vh",
+                opacity: 1,
+            }, 900 );
+            $('.j-title').animate({ 
+                opacity: 1,
             }, 900 );
             
             } else {  
@@ -601,8 +631,11 @@ $(function() {
                 opacity: 0,
             }, 900 ); 
             $('.chip-img').animate({ 
-                top: "-=100vh",
-            }, 900 ); }
+                opacity: 0,
+            }, 900 );
+            $('.j-title').animate({ 
+                opacity: 0,
+            }, 900 );  }
 
             $(this).data("clicks4", !clicks4);
             });
@@ -683,7 +716,10 @@ $(function() {
                 opacity: 1,
             }, 900 );
             $('.chip-img').animate({ 
-                top: "+=100vh",
+                opacity: 1,
+            }, 900 );
+            $('.j-title').animate({ 
+                opacity: 1,
             }, 900 );
             
             } else {  
@@ -755,7 +791,10 @@ $(function() {
                 opacity: 0,
             }, 900 ); 
             $('.chip-img').animate({ 
-                top: "-=100vh",
+                opacity: 0,
+            }, 900 );
+            $('.j-title').animate({ 
+                opacity: 0,
             }, 900 ); }
 
             $(this).data("clicks5", !clicks5);

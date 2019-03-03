@@ -202,6 +202,7 @@ top: 45vh;
 left: 92vw;
 width: 1vw;
 text-align: center;
+opacity: 0;
 }
 
 @media screen and (max-width: 33em){
@@ -211,6 +212,7 @@ top: 8vh;
 width: 2vw;
 left: 86vw;
 text-align: center;
+opacity: 0;
 }
 }
 
@@ -221,6 +223,7 @@ top: 33vh;
 width: 1vw;
 left: 93vw;
 text-align: center;
+opacity: 0;
 }
 }
 /*-------------------------------------------------*\
@@ -901,14 +904,16 @@ text-align: center;
 \*-------------------------------------------------*/
 
 .skills{
-position: relative;
+position: absolute;
 display: block;
 width: 60vw;
 height: 10vh;
 color: #282828;
 text-align: justify;
 line-height: 1.3em;
-top: -22rem;
+top: -12rem;
+opacity: 0;
+left: -100vw;
 }
 
 .skills-header{
@@ -1245,7 +1250,9 @@ padding-bottom: 1rem;
 
 .skills,
 .skills-header{
-top: -22.75rem;
+top: 0rem;
+opacity: 0;
+left: -100vw;
 }
 
 .skills-header{
@@ -1338,7 +1345,8 @@ display: block;
 width: 60vw;
 top: -12.5em;
 padding-top: 3.5em;
-padding-bottom: 2em;			
+padding-bottom: 2em;
+left: -100vw;			
 }
 
 .experience,
@@ -1670,12 +1678,50 @@ margin-top: 3vh;
 display: inline-block;
 }
 
+.footer-explore{
+position: absolute;
+font-size: .6em;
+margin-left: 9em;
+margin-top: 3em;
+display: inline-block;
+left: 20vw;
+}
+
+.footer-follow{
+position: absolute;
+font-size: .6em;
+margin-left: 9em;
+margin-top: 3vh;
+display: inline-block;
+left: 15vw;
+top: 23vw;
+}
+
 @media screen and (max-width: 33em){
 .footer-words{
 position: absolute;
 font-size: .6em;
 margin-left: 33vw;
 display: inline-block;
+}
+
+.footer-explore{
+position: absolute;
+font-size: .6em;
+margin-left: 15em;
+display: inline-block;
+margin-top: 19vh;
+left: -10em;
+}
+
+.footer-follow{
+position: absolute;
+display: fixed;
+font-size: .6em;
+margin-left: 15em;
+display: inline-block;
+margin-top: 2.3vh;
+left: 1em;
 }
 }
 
@@ -1686,6 +1732,25 @@ font-size: .6em;
 margin-left: 15vw;
 margin-top: 4vh;
 display: inline-block;
+}
+
+.footer-explore{
+position: absolute;
+font-size: .6em;
+margin-left: 15vw;
+margin-top: 4vh;
+display: inline-block;
+left: 20vw;
+}
+
+.footer-follow{
+position: absolute;
+font-size: .6em;
+margin-left: 9em;
+margin-top: 3vh;
+display: inline-block;
+left: 15vw;
+top: 23vw;
 }
 }
 
@@ -1772,7 +1837,7 @@ position: absolute;
 width: 6vw;
 left: 92.5vw;
 top: 1vh;
-opacity: .7;
+opacity: 0;
 z-index: 21;
 }
 
@@ -1781,8 +1846,8 @@ z-index: 21;
 position: absolute;
 width: 20vw;
 left: 40vw;
-top: 87vh;
-opacity: .7;
+top: 83vh;
+opacity: 0;
 }
 }
 
@@ -1793,7 +1858,7 @@ position: absolute;
 width: 8vw;
 left: 90vw;
 top: 8vh;
-opacity: .7;
+opacity: 0;
 }
 }
 
@@ -1843,12 +1908,31 @@ transform: rotate(-25deg);
 }
 }
 
-.W{
+.j-title{
+font-size: 1em;
+text-align: right;
 position: absolute;
-display: fixed;
-top: -50vh;
+color: #282828;
+top: 7.5em;
+line-height: 1.5em;
+opacity: 0;
 left: 40vw;
-font-size: 12em;
-font-family: 'Poppins';
-opacity: .8;
+}
+
+@media screen and (max-width: 33em){
+.j-title{
+font-size: .8em;    
+width: 50vw; 
+left: 40vw;
+top: 18em;
+}
+}
+
+@media screen and (min-width: 55em){
+.j-title{
+font-size: .8em;    
+width: 50vw; 
+left: 45vw;
+top: 18em;
+}
 }
