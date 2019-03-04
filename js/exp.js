@@ -15,7 +15,13 @@ $(function() {
         opacity: .7,
     }, 1800 );
     $('.social').animate({ 
-        opacity: .7,
+        opacity: .9,
+    }, 1800 );
+    $('.comb-img').animate({ 
+        opacity: .1,
+    }, 1800 );
+    $('.comb-img2').animate({ 
+        opacity: .1,
     }, 1800 );
 });
 

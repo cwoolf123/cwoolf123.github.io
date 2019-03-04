@@ -54,7 +54,12 @@ $(".chip-img").click(function() {
         opacity: 0,
         left: "-=110vw",
     }, 900 );
-
+    $('.j-title').animate({ 
+        left: "-=100vw",
+    },900 );
+    $('.summary').animate({ 
+        left: "-=100vw",
+    },900 );
     } else {  
     
     $('.circles').animate({ 
@@ -69,7 +74,13 @@ $(".chip-img").click(function() {
     $('.skills').animate({ 
         opacity: .8,
         left: "+=110vw",
-    }, 1200 );}
+    }, 1200 );
+    $('.j-title').animate({ 
+        left: "+=100vw",
+    }, 900 );
+    $('.summary').animate({ 
+        left: "+=100vw",
+    }, 900 );}
     
     $(this).data("clicka", !clicka);
 });
