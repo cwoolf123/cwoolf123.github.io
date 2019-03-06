@@ -11,11 +11,17 @@
 *  #Icons
 *  #Menu
 *  #Sections
-*
-*
-*
-*
-*
+*  #Portfolio
+*  #Experience / Employment
+*  #Footer
+*  #Responsive
+*    # #Mobiles
+*    # #Big Screens
+*  #Animation
+*  #Tweaks
+*  #Background Image
+*  #Switch
+*  #Circle Chart
 */
 
 
@@ -101,7 +107,7 @@ padding: 1em;
 opacity: .8;
 }
        
-.current-img{
+/*.current-img{
 position: absolute;
 width: 20vw;
 top: 100vh;
@@ -109,7 +115,7 @@ left: 10vw;
 filter: grayscale(100%);
 opacity: .8;
 }
-/* Mobile ready resp. text */
+/* Mobile ready resp. text * / 
 
 @media screen and (max-width: 33em){
 
@@ -121,7 +127,7 @@ left: 10vw;
 filter: grayscale(100%);
 opacity: .8;
 }
-}
+}*/
 /*-------------------------------------------------*\
 *--------------------#Headers-----------------------*
 \*-------------------------------------------------*/
@@ -165,6 +171,39 @@ z-index: 3;
 }
 }
 
+/* WEB DEVELOPER & GRAPHIC DESIGNER - title */
+
+.j-title{
+font-size: .8em;
+text-align: right;
+position: absolute;
+color: #282828;
+top: 7.5em;
+line-height: 1.5em;
+opacity: 0;
+left: 75vw;
+}
+  
+@media screen and (max-width: 33em){
+.j-title{
+font-size: .8em;    
+width: 80vw; 
+left: 10vw;
+top: 22em;
+}
+}
+  
+@media screen and (min-width: 55em){
+.j-title{
+font-size: .8em;    
+width: 50vw; 
+left: 45vw;
+top: 18em;
+}
+}
+
+
+
 /*-------------------------------------------------*\
 *--------------------#Icons-------------------------*
 \*-------------------------------------------------*/
@@ -194,7 +233,7 @@ left: 45%;
 .fa-code-fork,
 .fa-linkedin{
 color: #282828;
-padding: .5em;
+padding: 1em;
 }	
 
 .fa-codepen:hover,
@@ -204,7 +243,7 @@ padding: .5em;
 .fa-linkedin:hover,
 .fa-linkedin:focus{
 color: #fff;
-padding: .5em;
+padding: 1em;
 transition: .5s;
 cursor: crosshair;
 }	
@@ -212,7 +251,7 @@ cursor: crosshair;
 .social{
 position: absolute;
 top: 20vh;
-left: 93vw;
+left: 91vw;
 width: 1vw;
 text-align: center;
 opacity: 0;
@@ -232,13 +271,92 @@ opacity: 0;
 @media screen and (min-width: 58em){
 .social{
 position: absolute;
-top: 33vh;
+top: 25vh;
 width: 1vw;
 left: 93vw;
 text-align: center;
 opacity: 0;
 }
 }
+
+
+/* Icons */
+
+.arrow-click{
+cursor: crosshair;
+z-index: 25;
+}
+  
+.fa-plus{
+color: #333;
+position: absolute;
+display: fixed;
+left: 83vw;
+top: 5vh;
+z-index: 22;
+opacity: 0;
+font-size: 5em;
+cursor: crosshair;
+}
+  
+@media screen and (max-width: 33em){
+.fa-plus{
+position: absolute;
+left: 47vw;
+top: 70vh;
+z-index: 22;
+opacity: 0;
+transform: translate(-50%, -50%);
+}
+}
+  
+@media screen and (min-width: 58em){
+.fa-plus{
+left: 83.5vw;
+top: 58vh;
+z-index: 22;
+opacity: 0;
+}
+}
+  
+.chip-img{
+position: absolute;
+width: 6vw;
+left: 92.5vw;
+top: 1vh;
+opacity: 0;
+z-index: 21;
+font-size: 3em;
+color: #282828;
+}
+  
+@media screen and (max-width: 33em){
+.chip-img{
+position: absolute;
+width: 20vw;
+left: 40vw;
+top: 83vh;
+opacity: 0;
+}
+}
+  
+  
+@media screen and (min-width: 58em){
+.chip-img{
+position: absolute;
+width: 8vw;
+left: 90vw;
+top: 3.5vh;
+opacity: 0;
+}
+}
+  
+.chip-img:hover,
+.chip-img:focus{
+transition: 1.5s;
+filter: invert(100%) brightness(2000%);
+}
+
 /*-------------------------------------------------*\
 *----------------#Sections--------------------------*
 \*-------------------------------------------------*/
@@ -264,26 +382,41 @@ width: 50vw;
 color: #282828;
 text-align: justify;
 line-height: 1.3em;
-top: -8em;
+top: -20em;
 font-size: 1em;
+left: 20vw;
 }
 
 .summary-header{
 position: relative;
 display: block;
 text-transform: uppercase;
-border-bottom: 1px solid #282828;
 padding-bottom: .8em;
 font-size: 1.2em;
+text-align: center;
 }
 
 .summary-p{
 position: relative;
 display: block;
 font-size: .8em;
+background-color: none;
+padding: .5em .8em;
+opacity: .7;
+border-radius: 2px;
 }
 
-
+.about-img{
+position: relative;
+left: 25%;
+width: 50%;
+filter: grayscale(100%);
+top: -2vh;
+border-radius: 50% 50%;
+padding: .5em;
+background-color: #cdcdcd;
+opacity: 0;
+}
 /*-------------------------------------------------*\
 *----------------#Expertise-------------------------*
 \*-------------------------------------------------*/
@@ -561,6 +694,8 @@ left: 17em;
 top: 3.5em; 
 transform: scale(2);
 }
+
+
 
 /* Responsive Design for Graphic Circles */
 
@@ -926,9 +1061,52 @@ height: 10vh;
 color: #282828;
 text-align: justify;
 line-height: 1.3em;
-top: -12rem;
+top: -20rem;
 opacity: 0;
 left: -100vw;
+}
+
+.skills-2{
+position: absolute;
+display: block;
+width: 60vw;
+height: 10vh;
+color: #282828;
+text-align: justify;
+line-height: 1.3em;
+top: 3.5rem;
+opacity: 0;
+left: 10vw;
+}
+
+@media screen and (max-width: 33em){
+.skills-2{
+position: absolute;
+display: block;
+width: 60vw;
+height: 10vh;
+color: #282828;
+text-align: justify;
+line-height: 1.3em;
+top: 15rem;
+opacity: 0;
+left: 10vw;
+}
+}
+
+@media screen and (min-width: 55em){
+.skills-2{
+position: absolute;
+display: block;
+width: 60vw;
+height: 10vh;
+color: #282828;
+text-align: justify;
+line-height: 1.3em;
+top: -6.45rem;
+opacity: 0;
+left: 50vw;
+}
 }
 
 .skills-header{
@@ -946,6 +1124,18 @@ list-style-type: none;
 position: relative;
 left: -3em;
 }
+
+.skills-k{
+padding-bottom: 1em;	
+}
+  
+.skills-k ul li{
+font-size: .8em;
+list-style-type: none;
+position: relative;
+left: -3em;
+}
+
 
 /* Skills Small Circles */
 .circle-wrap {
@@ -1120,6 +1310,130 @@ opacity: .7;
 }
 }
 
+
+.footer{
+position: absolute;
+display: fixed;
+width: 110vw;
+background-color: #282828;
+height: 50vh;
+margin-left: -1em;
+top: 118vh;
+text-align: left;
+}
+  
+.footer-words{
+position: absolute;
+font-size: .6em;
+margin-left: 9em;
+margin-top: 3vh;
+display: inline-block;
+}
+  
+.footer-explore{
+position: absolute;
+font-size: .6em;
+margin-left: 15em;
+display: fixed;
+margin-top: 1rem;
+left: -10em;
+}
+  
+.footer-follow{
+position: absolute;
+font-size: .6em;
+margin-left: 9em;
+margin-top: 4vh;
+display: inline-block;
+left: 10em;
+top: 12em;
+}
+  
+@media screen and (max-width: 33em){
+.footer-words{
+position: absolute;
+font-size: .6em;
+margin-left: 38vw;
+display: inline-block;
+}
+  
+.footer-explore{
+position: absolute;
+font-size: .6em;
+margin-left: 15em;
+display: fixed;
+margin-top: 7.55rem;
+left: 1em;
+top: 2em;
+}
+  
+.footer-follow{
+position: absolute;
+display: fixed;
+font-size: .6em;
+margin-left: 12.5em;
+top: 10em;
+left: -8em;
+width: 5em;
+}
+  
+.footer-follow{
+color: #282828;
+}
+}
+  
+@media screen and (min-width: 58em){
+.footer-words{
+position: absolute;
+font-size: .6em;
+margin-left: 15vw;
+margin-top: 4vh;
+display: inline-block;
+}
+  
+.footer-explore{
+position: absolute;
+font-size: .6em;
+margin-left: 12vw;
+margin-top: 4em;
+display: inline-block;
+left: 20vw;
+}
+  
+.footer-follow{
+position: absolute;
+font-size: .6em;
+margin-left: 9em;
+margin-top: 3.5em;
+display: inline-block;
+left: 35vw;
+top: 2.5em;
+}
+}
+  
+.f-icon{
+color: #cdcdcd;
+transform: scale(2);
+padding: 1em;
+margin-left: 2em;
+margin-right: 2em;
+margin-top: 1em;
+margin-bottom: 1em;
+position: relative;
+}
+
+  /* Links */
+
+.link-light{
+color: #cdcdcd;
+}
+  
+.link-light:hover,
+.linklight:focus{
+color: #fff;
+transition: .5s;
+}
+
 /*-------------------------------------------------*\
 *----------------#Responsive------------------------*
 \*-------------------------------------------------*/
@@ -1231,15 +1545,16 @@ margin: .6em;
 }
 
 .summary{
-top: 6.45rem;
-width: 90vw;
+top: -4.45rem;
+width: 85vw;
 padding-bottom: 1.3em;
 }
 
 .summary-p{
-font-size: .8em;
+font-size: .6em;
 line-height: 1em;
 padding-top: .65em;
+left: 1vw;
 }
 
 .expertise{
@@ -1262,9 +1577,16 @@ display: block;
 padding-bottom: 1rem;
 }
 
+.summary-header{
+text-align: center;
+}
+
+.summary{
+left: .5vw;
+}
 .skills,
 .skills-header{
-top: 0rem;
+top: -6rem;
 opacity: 0;
 left: -100vw;
 }
@@ -1273,7 +1595,8 @@ left: -100vw;
 font-size: 1em;
 }
 
-.skills-p{
+.skills-p,
+.skills-k{
 font-size: .8em;
 text-align: left;
 }
@@ -1313,13 +1636,17 @@ top: 9rem;
 
 .summary{
 width: 50vw;
-top: 2.2em;
+top: -33vh;
+left: 22vw;
+translate: (50% 50%);
 }
 
 .summary-header{
 text-transform: uppercase;
-border-bottom: 1px solid #282828;
+border-bottom: none;
 padding-bottom: 1em;
+text-align: center;
+opacity: .8;
 }
 
 .summary-p{
@@ -1530,11 +1857,6 @@ left: 203vw;
 }
 }
 
-
-
-
-
-
 /* Expertise Text Box 4 (Animation) */
 .exp-d4{ 
 font-size: .8em;
@@ -1642,6 +1964,54 @@ border-radius: 50% 50%;
 z-index: -3;
 }
 
+
+/* Web Design Squares */
+.wd-line{
+width: 10rem;
+height: 0rem;
+border: 2px solid #999;
+position: absolute;
+display: fixed;
+opacity: 0;
+border-radius: 0% 0%;
+top: -100vw;
+z-index: -5;
+}
+        
+.wd-line-dot{
+width: 10rem;
+height: 1rem;
+border: 1px dashed #999;
+position: absolute;
+display: fixed;
+opacity: 0;
+border-radius: 0% 0%;
+left: -100vw;
+z-index: -5;
+transform: rotate(90deg);
+}
+  
+.wd-line-dot2{
+width: 9rem;
+height: .5rem;
+border: 1px solid #999;
+position: absolute;
+display: fixed;
+opacity: 0;
+border-radius: 0% 0%;
+left: -100vw;
+z-index: -5;
+transform: rotate(90deg);
+}
+  
+
+/*-------------------------------------------------*\
+*------------------#Tweaks -------------------------*
+\*-------------------------------------------------*/
+
+/* All these bar elements create the correct amount of space 
+for every individual page to have the footer in the exact same place */
+
 .bar4{
 position: relative;
 height: 1em;
@@ -1673,230 +2043,7 @@ opacity: 0;
 z-index: -1;
 }
 
-.footer{
-position: absolute;
-display: fixed;
-width: 110vw;
-background-color: #282828;
-height: 50vh;
-margin-left: -1em;
-top: 118vh;
-text-align: left;
-}
 
-.footer-words{
-position: absolute;
-font-size: .6em;
-margin-left: 9em;
-margin-top: 3vh;
-display: inline-block;
-}
-
-.footer-explore{
-position: absolute;
-font-size: .6em;
-margin-left: 15em;
-display: fixed;
-margin-top: 1rem;
-left: -10em;
-}
-
-.footer-follow{
-position: absolute;
-font-size: .6em;
-margin-left: 9em;
-margin-top: 4vh;
-display: inline-block;
-left: 10em;
-top: 12em;
-}
-
-@media screen and (max-width: 33em){
-.footer-words{
-position: absolute;
-font-size: .6em;
-margin-left: 38vw;
-display: inline-block;
-}
-
-.footer-explore{
-position: absolute;
-font-size: .6em;
-margin-left: 15em;
-display: fixed;
-margin-top: 7.55rem;
-left: 1em;
-top: 2em;
-}
-
-.footer-follow{
-position: absolute;
-display: fixed;
-font-size: .6em;
-margin-left: 12.5em;
-top: 10em;
-left: -8em;
-width: 5em;
-}
-
-.footer-follow{
-color: #282828;
-}
-}
-
-@media screen and (min-width: 58em){
-.footer-words{
-position: absolute;
-font-size: .6em;
-margin-left: 15vw;
-margin-top: 4vh;
-display: inline-block;
-}
-
-.footer-explore{
-position: absolute;
-font-size: .6em;
-margin-left: 12vw;
-margin-top: 4em;
-display: inline-block;
-left: 20vw;
-}
-
-.footer-follow{
-position: absolute;
-font-size: .6em;
-margin-left: 9em;
-margin-top: 3.5em;
-display: inline-block;
-left: 35vw;
-top: 2.5em;
-}
-}
-
-.f-icon{
-color: #cdcdcd;
-transform: scale(2);
-padding: 1em;
-margin-left: 2em;
-margin-right: 2em;
-margin-top: 1em;
-margin-bottom: 1em;
-position: relative;
-}
-
-/* Web Design Squares */
-.wd-line{
-width: 10rem;
-height: 0rem;
-border: 2px solid #999;
-position: absolute;
-display: fixed;
-opacity: 0;
-border-radius: 0% 0%;
-top: -100vw;
-z-index: -5;
-}
-      
-.wd-line-dot{
-width: 10rem;
-height: 1rem;
-border: 1px dashed #999;
-position: absolute;
-display: fixed;
-opacity: 0;
-border-radius: 0% 0%;
-left: -100vw;
-z-index: -5;
-transform: rotate(90deg);
-}
-
-.wd-line-dot2{
-width: 9rem;
-height: .5rem;
-border: 1px solid #999;
-position: absolute;
-display: fixed;
-opacity: 0;
-border-radius: 0% 0%;
-left: -100vw;
-z-index: -5;
-transform: rotate(90deg);
-}
-
-/* Icons */
-
-.arrow-click{
-cursor: crosshair;
-z-index: 25;
-}
-
-.fa-plus{
-color: #333;
-position: absolute;
-display: fixed;
-left: 83vw;
-top: 5vh;
-z-index: 22;
-opacity: 0;
-font-size: 5em;
-cursor: crosshair;
-}
-
-@media screen and (max-width: 33em){
-.fa-plus{
-position: absolute;
-left: 47vw;
-top: 70vh;
-z-index: 22;
-opacity: 0;
-transform: translate(-50%, -50%);
-}
-}
-
-@media screen and (min-width: 58em){
-.fa-plus{
-left: 83.5vw;
-top: 58vh;
-z-index: 22;
-opacity: 0;
-}
-}
-
-.chip-img{
-position: absolute;
-width: 6vw;
-left: 92.5vw;
-top: 1vh;
-opacity: 0;
-z-index: 21;
-}
-
-@media screen and (max-width: 33em){
-.chip-img{
-position: absolute;
-width: 20vw;
-left: 40vw;
-top: 83vh;
-opacity: 0;
-}
-}
-
-
-@media screen and (min-width: 58em){
-.chip-img{
-position: absolute;
-width: 8vw;
-left: 90vw;
-top: 8vh;
-opacity: 0;
-}
-}
-
-.chip-img:hover,
-.chip-img:focus{
-transition: 1.5s;
-filter: invert(100%) brightness(2000%);
-}
 
 /*.cube-img{
 position: absolute;
@@ -1909,6 +2056,10 @@ z-index: -10;
 filter: grayscale(100);
 }*/
 
+
+/*-------------------------------------------------*\
+*-------------#Background Image --------------------*
+\*-------------------------------------------------*/
 
 .comb-img{
 position: absolute;
@@ -1944,6 +2095,8 @@ transform: rotate(-25deg);
 }
 }
 
+/* Same Background Image just Tweaked for Contact and Portfolio Page */
+
 .comb-img2{
 position: absolute;
 width: 80vw;
@@ -1978,48 +2131,11 @@ transform: rotate(-25deg);
 }
 }
 
-.j-title{
-font-size: .8em;
-text-align: right;
-position: absolute;
-color: #282828;
-top: 7.5em;
-line-height: 1.5em;
-opacity: 0;
-left: 55vw;
-}
-
-@media screen and (max-width: 33em){
-.j-title{
-font-size: .8em;    
-width: 80vw; 
-left: 10vw;
-top: 18em;
-}
-}
-
-@media screen and (min-width: 55em){
-.j-title{
-font-size: .8em;    
-width: 50vw; 
-left: 45vw;
-top: 18em;
-}
-}
-
-/* Links */
-
-.link-light{
-color: #cdcdcd;
-}
 
 
-.link-light:hover,
-.linklight:focus{
-color: #fff;
-transition: .5s;
-}
-
+/*-------------------------------------------------*\
+*-------------------- #Switch ----------------------*
+\*-------------------------------------------------*/
 
 /*---Switch styles---*/
 
@@ -2119,12 +2235,40 @@ color: #282828;
 }
 
 
-/* Circle Chart
+/*-------------------------------------------------*\
+*----------------- #Circle Chart -------------------*
+\*-------------------------------------------------*/
+
+/* Circle Chart */ 
+
 .single-chart {
-width: 33%;
+width: 20%;
+margin-top: -40vh;
 justify-content: space-around ;
+display: inline-block;
 }
+
+@media screen and (max-width: 33em){
+.single-chart {
+width: 42%;
+display: block;
+margin-left: 34%;
+margin-top: 15.5vh;
+}
+}
+
+@media screen and (min-width: 55em){
+.single-chart {
+width: 20%;
+margin-top: 12vh;
+justify-content: space-around ;
+display: inline-block;
+transform: scale(.8);
+}
+}
+
   
+
 .circular-chart {
 display: block;
 margin: 10px auto;
@@ -2135,12 +2279,12 @@ max-height: 250px;
 .circle-bg {
 fill: none;
 stroke: #282828;
-stroke-width: 3.8;
+stroke-width: 1.8;
 }
   
 .circle {
 fill: none;
-stroke-width: 2.8;
+stroke-width: 1.3;
 stroke-linecap: square;
 animation: progress 1s ease-out forwards;
 }
@@ -2150,19 +2294,36 @@ animation: progress 1s ease-out forwards;
   stroke-dasharray: 0 100;
 }
 }
+
 .circular-chart.orange .circle {
 stroke: #cdcdcd;
 }
 
 .text{
-top: -1em;
+position: absolute;
+font-size: .15em;
+font-weight: 800;
+opacity: .8;
 }
 
 .chart{
 position: relative;
 top: -50vh;
-left: 50vw;
+left: -2vw;
 opacity: .8;
 }
 
-*/
+
+input[type=checkbox] + label{
+  background-color: #cdcdcd;
+} 
+input[type=checkbox]:checked + label{
+  background-color: #282828;
+} 
+
+input[type=checkbox] + .circles{
+  background-color: #cdcdcd;
+} 
+input[type=checkbox]:checked + .circles{
+  background-color: #282828;
+} 

@@ -23,6 +23,9 @@ $(function() {
     $('.comb-img2').animate({ 
         opacity: .1,
     }, 1800 );
+    $('.about-img').animate({ 
+        opacity: 1,
+    }, 900 );
 });
 
 

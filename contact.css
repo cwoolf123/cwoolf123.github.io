@@ -153,3 +153,12 @@ top: -20vh;
 left: 0em;
 }
 }
+
+
+.contact-title{
+position: absolute;
+display: fixed;
+top: 80vh;
+left: 47vw;
+}
+

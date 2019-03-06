@@ -37,7 +37,7 @@
     });
 
 
-/* Plus Click */
+/* Plus / Chip Click */
 $(".chip-img").click(function() {
     var clicka = $(this).data("clicka");
     if (clicka) {
@@ -54,12 +54,16 @@ $(".chip-img").click(function() {
         opacity: 0,
         left: "-=110vw",
     }, 900 );
+    $('.skills-2').animate({ 
+        opacity: 0,
+    }, 900 );
     $('.j-title').animate({ 
         left: "-=100vw",
     },900 );
     $('.summary').animate({ 
-        left: "-=100vw",
+        top: "+=100vh",
     },900 );
+
     } else {  
     
     $('.circles').animate({ 
@@ -75,11 +79,14 @@ $(".chip-img").click(function() {
         opacity: .8,
         left: "+=110vw",
     }, 1200 );
+    $('.skills-2').animate({ 
+        opacity: .8,
+    }, 1800 );
     $('.j-title').animate({ 
         left: "+=100vw",
     }, 900 );
     $('.summary').animate({ 
-        left: "+=100vw",
+        top: "-=100vh",
     }, 900 );}
     
     $(this).data("clicka", !clicka);
