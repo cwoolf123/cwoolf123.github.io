@@ -402,14 +402,14 @@ display: block;
 font-size: .8em;
 background-color: none;
 padding: .5em .8em;
-opacity: .7;
+opacity: 1;
 border-radius: 2px;
 }
 
 .about-img{
 position: relative;
 left: 25%;
-width: 50%;
+width: 45%;
 filter: grayscale(100%);
 top: -2vh;
 border-radius: 50% 50%;
@@ -1636,7 +1636,7 @@ top: 9rem;
 
 .summary{
 width: 50vw;
-top: -33vh;
+top: -35vh;
 left: 22vw;
 translate: (50% 50%);
 }
@@ -1654,6 +1654,9 @@ font-size: .8em;
 line-height: 1.3em;
 padding-top: .5rem;
 padding-bottom: 0.65rem;
+top: 50vh;
+transform: translatey(-60%);
+opacity: 1;
 }
 
 .expertise{
@@ -2321,9 +2324,6 @@ input[type=checkbox]:checked + label{
   background-color: #282828;
 } 
 
-input[type=checkbox] + .circles{
-  background-color: #cdcdcd;
-} 
-input[type=checkbox]:checked + .circles{
-  background-color: #282828;
-} 
+#myCheck{
+  position: absolute;
+}
