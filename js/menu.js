@@ -60,7 +60,10 @@ $(".chip-img").click(function() {
     $('.j-title').animate({ 
         left: "-=100vw",
     },900 );
-    $('.summary').animate({ 
+    $('.summary-p').animate({ 
+        top: "-=100vh",
+    },900 );
+    $('.about-img').animate({ 
         top: "+=100vh",
     },900 );
 
@@ -85,11 +88,36 @@ $(".chip-img").click(function() {
     $('.j-title').animate({ 
         left: "+=100vw",
     }, 900 );
-    $('.summary').animate({ 
+    $('.summary-p').animate({ 
+        top: "+=100vh",
+    }, 900 );
+    $('.about-img').animate({ 
         top: "-=100vh",
     }, 900 );}
     
     $(this).data("clicka", !clicka);
+});
+
+
+
+
+/* Portfolio Click 1 */
+$(".portfolio1").click(function() {
+    var clickp1 = $(this).data("clickp1");
+    if (clickp1) {
+    $('.port-1 img').animate({ 
+        opacity: 0,
+        zIndex: -4, 
+    }, 900 );
+
+    } else {  
+    
+    $('.port-1 img').animate({ 
+        opacity: 1,
+        zIndex: 4,
+    }, 900 );}
+    
+    $(this).data("clickp1", !clickp1);
 });
 
 

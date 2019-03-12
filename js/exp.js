@@ -25,6 +25,11 @@ $(function() {
     }, 1800 );
     $('.about-img').animate({ 
         opacity: 1,
+        top: "+=100vh"
+    }, 900 );
+    $('.summary-p').animate({ 
+        opacity: 1,
+        top: "-=100vh"
     }, 900 );
 });
 
@@ -122,22 +127,22 @@ $(function() {
             marginTop: "-.5em",
           }, 50 );
           $('.exp-circle2').animate({ 
-            opacity: 0.25,
+            opacity: 0,
             marginTop: "-=16vh",
             zIndex: "-1",
          }, 900 );
          $('.exp-circle3').animate({ 
-            opacity: 0.25,
+            opacity: 0,
             marginTop: "+=26vh",
             zIndex: "-1",
          }, 900 );
          $('.exp-circle4').animate({ 
-            opacity: 0.25,
+            opacity: 0,
             marginTop: "-=16vh",
             zIndex: "-1",
          }, 900 );
          $('.exp-circle5').animate({ 
-            opacity: 0.25,
+            opacity: 0,
             marginTop: "+=26vh",
             zIndex: "-5",
          }, 900 );
@@ -280,22 +285,22 @@ $(function() {
                 marginTop: "15vh",
             }, 900 );
             $('.exp-circle1').animate({ 
-                opacity: 0.25,
+                opacity: 0,
                 marginTop: "-=16vh",
                 zIndex: "-1",
             }, 900 );
             $('.exp-circle3').animate({ 
-                opacity: 0.25,
+                opacity: 0,
                 marginTop: "-=26vh",
                 zIndex: "-1",
             }, 900 );
             $('.exp-circle4').animate({ 
-                opacity: 0.25,
+                opacity: 0,
                 marginTop: "+=16vh",
                 zIndex: "-1",
             }, 900 );
             $('.exp-circle5').animate({ 
-                opacity: 0.25,
+                opacity: 0,
                 marginTop: "+=26vh",
                 zIndex: "-1",
             }, 900 );
@@ -443,22 +448,22 @@ $(function() {
                 zIndex: "3",
             }, 900 );
             $('.exp-circle1').animate({ 
-                opacity: 0.25,
+                opacity: 0,
                 marginTop: "-=16vh",
                 zIndex: "-5",
             }, 900 );
             $('.exp-circle2').animate({ 
-                opacity: 0.25,
+                opacity: 0,
                 marginTop: "+=26vh",
                 zIndex: "-5",
             }, 900 );
             $('.exp-circle4').animate({ 
-                opacity: 0.25,
+                opacity: 0,
                 marginTop: "+=16vh",
                 zIndex: "-5",
             }, 900 );
             $('.exp-circle5').animate({ 
-                opacity: 0.25,
+                opacity: 0,
                 marginTop: "-=26vh",
                 zIndex: "-5",
             }, 900 );
@@ -586,22 +591,22 @@ $(function() {
                 zIndex: "3",
             }, 900 );
             $('.exp-circle1').animate({ 
-                opacity: 0.25,
+                opacity: 0,
                 marginTop: "-=16vh",
                 zIndex: "-1",
             }, 900 );
             $('.exp-circle2').animate({ 
-                opacity: 0.25,
+                opacity: 0,
                 marginTop: "+=26vh",
                 zIndex: "-1",
             }, 900 );
             $('.exp-circle3').animate({ 
-                opacity: 0.25,
+                opacity: 0,
                 marginTop: "-=16vh",
                 zIndex: "-1",
             }, 900 );
             $('.exp-circle5').animate({ 
-                opacity: 0.25,
+                opacity: 0,
                 marginTop: "-=26vh",
                 zIndex: "-1",
             }, 900 );
@@ -739,22 +744,22 @@ $(function() {
                 zIndex: "3",
             }, 900 );
             $('.exp-circle1').animate({ 
-                opacity: 0.25,
+                opacity: 0,
                 marginTop: "-=16vh",
                 zIndex: "-2",
             }, 900 );
             $('.exp-circle2').animate({ 
-                opacity: 0.25,
+                opacity: 0,
                 marginTop: "+=26vh",
                 zIndex: "-2",
             }, 900 );
             $('.exp-circle4').animate({ 
-                opacity: 0.25,
+                opacity: 0,
                 marginTop: "-=26vh",
                 zIndex: "-2",
             }, 900 );
             $('.exp-circle3').animate({ 
-                opacity: 0.25,
+                opacity: 0,
                 marginTop: "-=16vh",
                 zIndex: "-2",
             }, 900 );
