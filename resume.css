@@ -355,7 +355,7 @@ opacity: 0;
 @media screen and (max-width: 33em){
 .about-img{
 position: relative;
-left: 25%;
+left: 28%;
 width: 45%;
 filter: grayscale(100%);
 top: -98vh;
@@ -929,7 +929,7 @@ position: absolute;
 width: 5em;
 height: 5em;
 margin-left: 1.25em;
-margin-top: 1.6em;
+margin-top: .6em;
 opacity: 1;
 z-index: 3;
 filter: brightness(100%);
@@ -942,7 +942,7 @@ position: absolute;
 width: 5em;
 height: 5em;
 margin-left: 1em;
-margin-top: 1.25em;
+margin-top: .25em;
 opacity: 0;	
 z-index: 3;	
 filter: brightness(100%);
@@ -1007,14 +1007,14 @@ position: relative;
 display: block;
 font-size: .7em;
 left: 15em;
-top: 3.5em;
+top: 2.5em;
 font-weight: 800;
 }
 
 .p1-skills{
 position: relative;
 left: 15em;
-top: 3em;
+top: 2em;
 line-height: 1.65em;
 padding-bottom: 1em;
 font-size: .7em;
@@ -2346,11 +2346,12 @@ input[type=checkbox]:checked + label{
   position: absolute;
 }
 
-.port-1 img{
+.port-1 img,
+.port-2 img{
 position: absolute;
-width: 50vw;
-left: 25vw;
-top: 25vh;
+width: 35vw;
+left: 32.5vw;
+top: 38vh;
 transform: translate(-50% -50%);
 filter: grayscale(50%);
 opacity: 0;
@@ -2358,11 +2359,13 @@ z-index: -4;
 }
 
 .port-1 img:hover,
-.port-1 img:focus{
+.port-1 img:focus,
+.port-2 img:hover,
+.port-2 img:focus{
 position: absolute;
-width: 50vw;
-left: 25vw;
-top:  25vh;
+width: 35vw;
+left: 32.5vw;
+top:  38vh;
 transform: translate(-50% -50%);
 filter: grayscale(0%);
 transition: .8s;
@@ -2370,21 +2373,24 @@ transition: .8s;
 
 
 @media screen and (max-width: 33em){
-.port-1 img{
+.port-1 img,
+.port-2 img{
 position: absolute;
-width: 60vw;
-left: 20vw;
-top: 18vh;
+width: 40vw;
+left: 10vw;
+top: 33vh;
 transform: translate(-50% -50%);
 filter: grayscale(50%);
 opacity: 0;
 }
 .port-1 img:hover,
-.port-1 img:focus{
+.port-1 img:focus,
+.port-2 img:hover,
+.port-2 img:focus{
 position: absolute;
-width: 60vw;
-left: 20vw;
-top: 18vh;
+width: 40vw;
+left: 10vw;
+top: 33vh;
 transform: translate(-50% -50%);
 filter: grayscale(0%);
 transition: .8s;
@@ -2392,7 +2398,8 @@ transition: .8s;
 }
 
 @media screen and (min-width: 55em){
-.port-1 img{
+.port-1 img,
+.port-2 img{
 position: absolute;
 width: 15vw;
 left: 35vw;
@@ -2403,7 +2410,9 @@ opacity: 0;
 }
     
 .port-1 img:hover,
-.port-1 img:focus{
+.port-1 img:focus,
+.port-2 img:hover,
+.port-2 img:focus{
 position: absolute;
 width: 15vw;
 left: 35vw;
@@ -2417,11 +2426,4 @@ transition: .8s;
 position: absolute;
 top: 0vh;
 }
-}
-
-.port-1click img{
-position: absolute;
-width: 10vw;
-left: 10vw;
-top: 0vw;
 }

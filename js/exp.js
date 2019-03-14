@@ -813,3 +813,43 @@ $(function() {
 
             $(this).data("clicks5", !clicks5);
             });
+
+
+
+/* Portfolio Click 1 */
+$(".portfolio1").click(function() {
+    var clickp1 = $(this).data("clickp1");
+    if (clickp1) {
+    $('.port-1 img').animate({ 
+        opacity: 0,
+        zIndex: -4, 
+    }, 900 );
+
+    } else {  
+    
+    $('.port-1 img').animate({ 
+        opacity: 1,
+        zIndex: 4,
+    }, 900 );}
+    
+    $(this).data("clickp1", !clickp1);
+});
+
+/* Portfolio Click 2 */
+$(".portfolio2").click(function() {
+    var clickp2 = $(this).data("clickp2");
+    if (clickp2) {
+    $('.port-2 img').animate({ 
+        opacity: 0,
+        zIndex: -4, 
+    }, 900 );
+
+    } else {  
+    
+    $('.port-2 img').animate({ 
+        opacity: 1,
+        zIndex: 4,
+    }, 900 );}
+    
+    $(this).data("clickp2", !clickp2);
+});
