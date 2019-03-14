@@ -1022,7 +1022,7 @@ font-size: .7em;
 
 .files{
 position: absolute;
-top: -25vh;
+top: -10vh;
 }
 
 
@@ -2346,16 +2346,32 @@ input[type=checkbox]:checked + label{
   position: absolute;
 }
 
-.port-1 img,
-.port-2 img{
+/* PORTFOLIO */
+
+.port-1 img{
 position: absolute;
 width: 35vw;
-left: 32.5vw;
+left: 12.5vw;
 top: 38vh;
 transform: translate(-50% -50%);
 filter: grayscale(50%);
 opacity: 0;
 z-index: -4;
+background-color: #282828;
+padding: .25em;
+}
+
+.port-2 img{
+position: absolute;
+width: 35vw;
+left: 52.5vw;
+top: 38vh;
+transform: translate(-50% -50%);
+filter: grayscale(100%);
+opacity: 0;
+z-index: -4;
+background-color: #282828;
+padding: .25em;
 }
 
 .port-1 img:hover,
@@ -2363,67 +2379,75 @@ z-index: -4;
 .port-2 img:hover,
 .port-2 img:focus{
 position: absolute;
-width: 35vw;
-left: 32.5vw;
-top:  38vh;
-transform: translate(-50% -50%);
 filter: grayscale(0%);
 transition: .8s;
+background-color: #282828;
+padding: .25em;
 }
 
 
 @media screen and (max-width: 33em){
-.port-1 img,
-.port-2 img{
+.port-1 img{
 position: absolute;
 width: 40vw;
-left: 10vw;
+left: 8vw;
 top: 33vh;
 transform: translate(-50% -50%);
 filter: grayscale(50%);
 opacity: 0;
+background-color: #282828;
+padding: .25em;
 }
+.port-2 img{
+position: absolute;
+width: 40vw;
+left: 50vw;
+top: 33vh;
+transform: translate(-50% -50%);
+filter: grayscale(100%);
+opacity: 0;
+background-color: #282828;
+padding: .25em;
+}
+
 .port-1 img:hover,
 .port-1 img:focus,
 .port-2 img:hover,
 .port-2 img:focus{
 position: absolute;
-width: 40vw;
-left: 10vw;
-top: 33vh;
-transform: translate(-50% -50%);
 filter: grayscale(0%);
 transition: .8s;
 }
 }
 
 @media screen and (min-width: 55em){
-.port-1 img,
-.port-2 img{
+.port-1 img{
 position: absolute;
 width: 15vw;
-left: 35vw;
+left: 40vw;
 top: -2vh;
 transform: translate(-50% -50%);
 filter: grayscale(50%);
 opacity: 0;
 }
+
+.port-2 img{
+position: absolute;
+width: 15vw;
+left: 60vw;
+top: -2vh;
+transform: translate(-50% -50%);
+filter: grayscale(50%);
+opacity: 0;
+}
+
     
 .port-1 img:hover,
 .port-1 img:focus,
 .port-2 img:hover,
 .port-2 img:focus{
 position: absolute;
-width: 15vw;
-left: 35vw;
-top: -2vh;
-transform: translate(-50% -50%);
 filter: grayscale(0%);
 transition: .8s;
 }  
-
-.files{
-position: absolute;
-top: 0vh;
-}
 }

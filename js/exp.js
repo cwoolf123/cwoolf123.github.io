@@ -31,6 +31,10 @@ $(function() {
         opacity: 1,
         top: "-=100vh"
     }, 900 );
+    $('.bracket-img').animate({ 
+        opacity: .8,
+        top: "-=100vh"
+    }, 900 );
 });
 
 
@@ -108,6 +112,9 @@ $(function() {
         $('.j-title').animate({ 
             opacity: 1,
         }, 900 );
+        $('.bracket-img').animate({ 
+            opacity: .8,
+        }, 900 );
 
         } else {  
         
@@ -181,6 +188,9 @@ $(function() {
             opacity: 0,
         }, 900 );
         $('.j-title').animate({ 
+            opacity: 0,
+        }, 900 ); 
+        $('.bracket-img').animate({ 
             opacity: 0,
         }, 900 ); }
 
@@ -277,6 +287,9 @@ $(function() {
             $('.j-title').animate({ 
                 opacity: 1,
             }, 900 ); 
+            $('.bracket-img').animate({ 
+                opacity: .8,
+            }, 900 );
             
             } else {  
 
@@ -359,6 +372,9 @@ $(function() {
             }, 900 );
             $('.j-title').animate({ 
                 opacity: 0,
+            }, 900 ); 
+            $('.bracket-img').animate({ 
+                opacity: 0,
             }, 900 ); }
 
             $(this).data("clicks2", !clicks2);
@@ -439,6 +455,9 @@ $(function() {
             $('.j-title').animate({ 
                 opacity: 1,
             }, 900 );
+            $('.bracket-img').animate({ 
+                opacity: .8,
+            }, 900 );
             
             } else {  
 
@@ -504,6 +523,9 @@ $(function() {
                 opacity: 0,
             }, 900 );
             $('.j-title').animate({ 
+                opacity: 0,
+            }, 900 ); 
+            $('.bracket-img').animate({ 
                 opacity: 0,
             }, 900 ); }
 
@@ -582,6 +604,9 @@ $(function() {
             $('.j-title').animate({ 
                 opacity: 1,
             }, 900 );
+            $('.bracket-img').animate({ 
+                opacity: .8,
+            }, 900 );
             
             } else {  
 
@@ -649,7 +674,10 @@ $(function() {
             }, 900 );
             $('.j-title').animate({ 
                 opacity: 0,
-            }, 900 );  }
+            }, 900 );  
+            $('.bracket-img').animate({ 
+                opacity: 0,
+            }, 900 ); }
 
             $(this).data("clicks4", !clicks4);
             });
@@ -735,6 +763,9 @@ $(function() {
             $('.j-title').animate({ 
                 opacity: 1,
             }, 900 );
+            $('.bracket-img').animate({ 
+                opacity: .8,
+            }, 900 );
             
             } else {  
 
@@ -808,6 +839,9 @@ $(function() {
                 opacity: 0,
             }, 900 );
             $('.j-title').animate({ 
+                opacity: 0,
+            }, 900 ); 
+            $('.bracket-img').animate({ 
                 opacity: 0,
             }, 900 ); }
 
