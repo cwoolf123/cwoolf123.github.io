@@ -1693,7 +1693,7 @@ height: 25vh;
 width: 60vw;
 display: block;
 padding-top: 1.5em;
-top: 11rem;
+top: 24rem;
 }
 
 .experience-header,
@@ -2435,7 +2435,7 @@ opacity: 0;
 position: absolute;
 width: 15vw;
 left: 60vw;
-top: -2vh;
+top: -7vh;
 transform: translate(-50% -50%);
 filter: grayscale(50%);
 opacity: 0;
