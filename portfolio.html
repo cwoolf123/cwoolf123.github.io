@@ -24,6 +24,7 @@
 		<link rel="stylesheet" href="custom-fonts.css">
     <link rel="stylesheet" type="text/css" href="resume.css" />
     <link rel="stylesheet" type="text/css" href="contact.css" />
+    <link rel="stylesheet" type="text/css" href="modal.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">		
   </head>
   <body>
@@ -53,19 +54,94 @@
         <p class="p1-skills">Design & Development<br><i class="fa fa-wordpress"></i>&nbsp;&nbsp;<i class="fa fa-code"></i></p>
         <div class="port-1"><a target="_blank" href="#"><img src="img/Project-1.png"/></a></div> -->
 
-        <img class="port-fc" src="img/fc.png">
+        <!-- <img class="port-fc" src="img/fc.png">
         <a class="portfolio2"><img class="port-fo" src="img/fo.png"></a>
         <h2 class="p1-title">Project #1: TLC Chartered Accountants</h2>
         <p class="p1-skills">Design & Development<br><i class="fa fa-code"></i></p>
-        <div class="port-2"><a target="_blank" href="TLC/index.html"><img src="img/TLC.png"/></a></div>
-        
+        <div class="port-2"><a target="_blank" href="carousel-pen/index.html"><img src="img/TLC.png"/></a></div>
+         -->
     </div>
 </div>
 <div class="port-1txt"></div>
 <img class="comb-img2" src="img/comb.png" />
 <div class="project-1">
 </div>
+
+<div class=bg-paper></div>
+<p></p>
+<p></p>
+<button class=btn-question aria-controls=modal1>
+  <span class=visually-hidden>Open</span>
+  <svg class=svg-question><use xlink:href="#icon-question"></use></svg>
+</button>
+<button class=btn-question aria-controls=modal2>
+  <span class=visually-hidden>Open</span>
+  <svg class=svg-question><use xlink:href="#icon-question"></use></svg>
+</button>
+<div id=modal1 class=modal aria-labelledby=modal-title1>
+  <div class=modal_content>
+    <div class=modal_scroll>
+      <h2 id=modal-title1>Features:</h2>
+      <ul>
+        <li>Prevented body scroll while popup active</li>
+        <li>Optimised images</li>
+        <li>Click outside modal to close</li>
+        <li>No jQuery, pure vanilla JavaScript</li>
+        <li>CSS notation in simplified BEM</li>
+        <li>Multiple modals &amp; buttons</li>
+      </ul>
+    </div>
+    <button class=btn-close data-modal_close aria-label="Close dialog">
+      <svg class=svg-close><use xlink:href="#icon-close"></use></svg>
+    </button>
+  </div>
+</div>
+<div id=modal2 class=modal aria-labelledby=modal-title2>
+  <div class=modal_content>
+    <div class=modal_scroll>
+      <h2 id=modal-title2>To do list:</h2>
+      <ul>
+        <li>Requires updating to use HTML 5.2.</li>
+        <li>Accessibility: ARIA and keyboard control.</li>
+        <li>Disable asset load on mobile.</li>
+        <li>Cross-browser, cross device testing.</li>
+        <li>Unify JS into single module.</li>
+        <li>Spread ink from activation point.</li>
+        <li>Perhaps limit ink spread to modal, plus a bit. Not the whole viewport.</li>
+        <li>Alternate ink image: cloud, water, smoke.</li>
+        <li>Replace sprite png with video?</li>
+      </ul>
+      <h3>Content to force popup to scroll</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad modi repellendus, optio eveniet eligendi molestiae? Fugiat, temporibus! A rerum pariatur neque laborum earum, illum voluptatibus eum voluptatem fugiat, porro animi tempora? Sit harum nulla.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad modi repellendus, optio eveniet eligendi molestiae? Fugiat, temporibus! A rerum pariatur neque laborum earum, illum voluptatibus eum voluptatem fugiat, porro animi tempora? Sit harum nulla.</p>
+    </div>
+  <button class=btn-close data-modal_close aria-label="Close dialog">
+    <svg class=svg-close><use xlink:href="#icon-close"></use></svg>
+  </button>
+  </div>
+</div>
+<svg class=visually-hidden>
+
+    <symbol viewBox="0 0 48 48" id="icon-question"> 
+    </symbol>
+    <symbol viewBox="0 0 48 48" id="icon-close">
+      <path d="M24 21.3l6.3-6.2 2.7 3-6.3 6 6.3 6.6-2.7 2.7L24 27l-6 6-3-2.6 6.5-6.3-6.3-6 3-3 6.2 6.6z"/>
+    </symbol>
+
+</svg>
+<h2>Modal Ink Effect</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique eius ea sequi distinctio autem repellat, libero esse nam. Quam nesciunt nobis iure cupiditate neque hic magnam optio assumenda unde sequi. Rem cumque iure cum reprehenderit repellendus, autem voluptates maxime ipsa numquam libero nobis saepe laudantium amet praesentium voluptatibus, fuga eveniet.
+							</p>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quod, molestiae voluptates commodi debitis saepe hic, aut magnam accusantium nostrum error ratione eum vero accusamus autem modi labore doloremque explicabo ut perspiciatis nulla molestias sequi eligendi tempore libero. Dolore iste vitae illum sequi neque quas, dolorem dolor officiis voluptatum quae voluptatibus tenetur molestias soluta blanditiis amet debitis incidunt eaque ratione facere repudiandae cupiditate aspernatur, velit ea itaque. Optio aut harum ad modi dolore doloribus tenetur laboriosam aspernatur minima itaque velit quia, illo sapiente unde, eum autem expedita facilis aliquam, dolorum dicta fuga totam sed pariatur iste! Inventore laudantium qui nostrum, perspiciatis quod! Molestias asperiores facilis explicabo necessitatibus dicta perferendis, esse, quisquam autem corporis ab doloremque nisi voluptas quidem, modi sequi aperiam, illum reiciendis delectus nostrum architecto eligendi sint deleniti voluptate! Magni quia harum eligendi laudantium fuga aspernatur veniam sunt impedit, vitae sit praesentium quam porro dolorem in eveniet iusto. Dicta tempora quo itaque minima expedita accusamus ex perferendis repellat totam! Fugit rerum nihil distinctio ducimus delectus, accusamus enim eos eum nulla fugiat aliquam blanditiis minus omnis maiores, quia numquam placeat. Molestias cupiditate deleniti porro praesentium, aliquam blanditiis maxime iste necessitatibus provident optio ipsum, beatae, libero nostrum, maiores! Temporibus, reiciendis, quibusdam.
+							</p>
+</main>
+<div class=lightbox data-modal_lightbox>
+  <div id=modal_bg class=lightbox_bg></div>
+</div>
 <script src='js/exp.js'></script>
+<script src='js/modal.js'></script>	
 </section>
 <div class="social"><a href="https://codepen.io/cwoolf123/"><i class="fa fa-codepen" aria-hidden="true"></i></a><a href="https://github.com/cwoolf123"><i class="fa fa-github" aria-hidden="true"></i></a><a href="https://www.linkedin.com/in/chriswoolf"><i class="fa fa-linkedin" aria-hidden="true"></i></a></div>
 <img class="chip-img" src="img/chip.png" />
@@ -79,6 +155,7 @@
     <script src='js/title.js'></script>	
     <script src='js/menu.js'></script>
     <script src='js/contact.js'></script>	
+    <script src='js/modal.js'></script>	
     <footer id=footer>
       <div class="footer">
           <img class="fchip-img" src="img/chip.png" />

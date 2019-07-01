@@ -1,0 +1,257 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+
+kbd,
+code {
+  font-size: inherit;
+  font-weight: 100;
+  font-family: monospace, monospace;
+  text-shadow: .03125em .03125em #fff;
+  background-color: hsla(32,100%,100%,.35);
+/*   outline: .25em solid hsla(32,100%,100%,.35); */
+  padding: 0 .25em;
+}
+ul {
+  padding-left: 2rem;
+  margin-bottom: 2rem
+}
+p {
+  margin: 1rem auto;
+  max-width: 34em
+}
+li {margin: .5em 0}
+.lnk {
+  text-decoration-skip: ink;
+  outline: 0 solid #fff;
+  transition: background-color .3s;
+}
+.lnk:hover,
+.lnk:focus {
+  color: hsl(0, 0%, 22%); /* Brightest WCAG against #fff */
+  background-color: #fff;
+  text-decoration-color: rgb(58, 58, 58);
+}
+.visually-hidden{position:absolute;overflow:hidden;clip:rect(0 0 0 0);height:1px;width:1px;margin:-1px;padding:0;border:0}
+
+x.bg-paper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: .5;
+}
+
+
+
+/* Buttons */
+
+button {
+  -webkit-appearance: button;
+  -webkit-appearance: none;
+  cursor: pointer;
+  overflow: visible;
+  vertical-align: bottom;
+  text-transform: none;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0 none;
+}
+[class*="btn-"] {
+  border: 2px solid transparent;
+  border-radius: 100%;
+  padding: 0;
+  display: inline-block;
+  text-decoration: none;
+  width: 52x;
+  height: 52px;
+  outline: 0 solid;
+  transition: all .3s ease-out;
+  box-shadow: 0 .25em .25em rgba(0,0,0,.3);
+  background-color: #FAFAFD;
+  color: #4e4e4e;
+}
+[class*="btn-"]:hover,
+[class*="btn-"]:focus {
+    background-color: #fff;
+    color: #4e4e4e;
+    border-color: #4e4e4e;
+    transform: scale(1.12);
+    box-shadow: 0 .5em .5em rgba(0,0,0,.4);
+}
+[class*="btn-"]:active {
+  box-shadow: none;
+  border-color: #fff;
+}
+[class*="btn-"].-js-clicked { /* JS added */
+  will-change: transform;
+  animation: btn-pressed .3s ease-out forwards;
+}
+@keyframes btn-pressed {
+  0% {transform: scale(1.12);}
+  50% {transform: scale(.8);}
+  100% {transform: scale(1.12);}
+}
+[class*="btn-"] > [class*="svg-"] {
+  width: 48px;
+  height: 48px;
+  fill: currentColor;
+  border-radius: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  transition: transform .5s ease-out;
+}
+
+/* Button specifics */
+.btn-question {
+  display: block;
+  margin: 1rem auto;
+}
+.btn-close {
+  position: absolute;
+  top: -26px;
+  right: -26px;
+}
+
+
+/* Modal window */
+
+/* Lock scroll while pop-up is on */
+html, body {height:100%;}
+main {height:100%; padding: 0 1rem; overflow:auto;}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.2);
+  transition: opacity 0.3s ease-out 0s, visibility 0s 0.3s, transform .3s ease-out 1s;;
+}
+.modal.-js-visible {
+  will-change: opacity, transform;
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: opacity 0.7s ease-out, visibility 0s, transform .7s ease-out;
+}
+.modal.-js-visible:hover {
+  /* Stolen from trickle.js. Under consideration. SVGs will not work here */
+  cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAANpJREFUOBGNkz0KAjEQhYPYWXgCKws7LcXWyt7WG4i9jegBvIJ4AvEyXsRCsBDiN0sGkiE/O/A2O9n3viS7rPPeb9ETrVzPwrtHDzR1XF5I6oPWLQaeq5hDXQRw0I6xCuF5HH7Tz7oFuTkhrSyEhza8THaLoQhphpWUg/QOFyA/AFpy5nTbGrIjxvg4AiiGBzYc+rGZH9KPzFy+ZbX4bX9l+VDZr5NQMMbhbtvMxccpQ3JhpTchtXATQviItIpvW0CY7HHm8c9UDRd2chbABt3RQk2tEe8O3dDkD4JQ4iOR7BMpAAAAAElFTkSuQmCC"), pointer;
+}
+
+.modal_content {
+  font-weight: 100;
+  min-width: 16.5rem; /* 266px */
+  width: 70vw;
+  max-width: 30rem; /* 480px */
+  max-height: 80vh;
+  color: #4e4e4e;
+  background-color: #fff;
+  border: 2px solid #E4DCCA;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50% , -50%, 0);
+  cursor: auto;
+}
+.modal.-js-visible .modal_content {
+  /* Apparently this fixes the buggy scrolling on webkit browsers - mobile devices only - when overflow property is applied ??? */
+  -webkit-overflow-scrolling: touch;
+}
+
+.modal_scroll {
+  overflow-y: auto;
+  padding: 0 1rem;
+  max-height: calc(80vh - 4px);
+}
+
+
+
+/* Transition Layer */
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+.lightbox.-js-visible {
+  will-change: opacity;
+  opacity: 1;
+  visibility: visible;
+}
+
+.lightbox_bg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-2%, -50%, 0);
+  /* Dimensions overwritten by JavaScript to proportionally fit viewport */
+  height: 100%;
+  /* Sprite png is composed of 25 frames */
+  width: 2500%;
+/* Image is included in data-uri base 64 at bottom of the CSS */
+/*   background-image: url(../img/ink.png); */
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100% 100%;
+}
+.lightbox.-js-opening .lightbox_bg {
+  will-change: transform;
+  animation: inkFill 2s steps(24) forwards;
+}
+.lightbox.-js-closing .lightbox_bg {
+  will-change: transform;
+  animation: inkFill-reverse 1s steps(24) forwards;
+}
+
+
+@keyframes inkFill {
+  0% {
+    /* translateX(-2%) is used to horizontally center the first frame inside the viewport ??? */
+    transform: translate3d(-2%, -50%, 0);
+/*     opacity: 1; */
+  }
+  100% {
+    /* translateX(-98%) (2% + 96%) is used to horizontally center the last frame inside the viewport  */
+    transform: translate3d(-98%, -50%, 0);
+/*     opacity: .9; */
+  }
+}
+
+@keyframes inkFill-reverse {
+  0% {transform: translate3d(-98%, -50%, 0);}
+  100% {transform: translate3d(-2%, -50%, 0);}
+}
+
+
+/* Images */
+
+.ink,
+.lightbox_bg {
+    background-image: url(img/modal-white.png);
+    filter: brightness(25%);
+}
