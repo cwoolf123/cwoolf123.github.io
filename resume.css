@@ -106,36 +106,22 @@ z-index: 7;
 padding: 1em;
 opacity: .8;
 }
-       
-/*.current-img{
-position: absolute;
-width: 20vw;
-top: 100vh;
-left: 10vw;
-filter: grayscale(100%);
-opacity: .8;
+    
+.number-slides {
+  display: flex;
+  margin: auto auto auto auto;
+  position: absolute;
+  text-align: left;
+  width: 100%;
 }
-/* Mobile ready resp. text * / 
 
-@media screen and (max-width: 33em){
 
-.current-img{
-position: absolute;
-width: 80vw;
-top: 100vh;
-left: 10vw;
-filter: grayscale(100%);
-opacity: .8;
-}
-}*/
 /*-------------------------------------------------*\
 *--------------------#Headers-----------------------*
 \*-------------------------------------------------*/
 
 
-
 /* CHRIS WOOLF - Animated Header */
-
 
 #container-ani {
 top: -1.5em;
@@ -172,12 +158,9 @@ z-index: 3;
 }
 
 
-
-
 /*-------------------------------------------------*\
 *--------------------#Icons-------------------------*
 \*-------------------------------------------------*/
-
 
 /* Icons */
 .icon {
@@ -379,6 +362,7 @@ background-color: #cdcdcd;
 opacity: 0;
 }
 }
+
 /*-------------------------------------------------*\
 *----------------#Expertise-------------------------*
 \*-------------------------------------------------*/
@@ -658,7 +642,6 @@ transform: scale(2);
 }
 
 
-
 /* Responsive Design for Graphic Circles */
 
 /* Super Large Screens (4k) */
@@ -895,14 +878,9 @@ top: -30em;
 }
 
 
-
-
-
 /*-------------------------------------------------*\
 *----------------#Portfolio-------------------------*
 \*-------------------------------------------------*/
-
-
 
 /* Portfolio */
 .portfolio{
@@ -964,43 +942,43 @@ background-color: #cbcbcb;
 }
 
 .port-fc2{
-  position: absolute;
-  width: 5em;
-  height: 5em;
-  margin-left: 1.25em;
-  margin-top: 1.6em;
-  opacity: 1;
-  z-index: 3;
-  filter: brightness(100%);
-  padding: 1em;
-  }
-  
-      
-  .port-fo2{
-  position: absolute;
-  width: 5em;
-  height: 5em;
-  margin-left: 1em;
-  margin-top: 1.25em;
-  opacity: 0;	
-  z-index: 3;	
-  filter: brightness(100%);
-  padding: 1em;
-  }
-  
-  .port-fc2:hover,
-  .port-fc2:focus{
-  display: none;
-  opacity: 0;
-  }
-  
-  .port-fo2:hover,
-  .port-fo2:focus{
-  display: block;
-  opacity: 1;
-  transition: .3s ease;
-  background-color: #cbcbcb;
-  }
+position: absolute;
+width: 5em;
+height: 5em;
+margin-left: 1.25em;
+margin-top: 1.6em;
+opacity: 1;
+z-index: 3;
+filter: brightness(100%);
+padding: 1em;
+}
+
+    
+.port-fo2{
+position: absolute;
+width: 5em;
+height: 5em;
+margin-left: 1em;
+margin-top: 1.25em;
+opacity: 0;	
+z-index: 3;	
+filter: brightness(100%);
+padding: 1em;
+}
+
+.port-fc2:hover,
+.port-fc2:focus{
+display: none;
+opacity: 0;
+}
+
+.port-fo2:hover,
+.port-fo2:focus{
+display: block;
+opacity: 1;
+transition: .3s ease;
+background-color: #cbcbcb;
+}
 
 .p1-title{
 position: relative;
@@ -1022,7 +1000,7 @@ font-size: .7em;
 
 .files{
 position: absolute;
-top: -10vh;
+top: 0vh;
 }
 
 
@@ -1031,7 +1009,7 @@ top: -10vh;
 .p1-title,
 .p1-skills{
 font-size: .6em;
-margin-left: 2em;
+margin-left: -1em;
 top: 2em;
 }
 
@@ -1061,6 +1039,7 @@ margin-bottom: 1.5em;
 text-align: center;
 }
   
+
 /*-------------------------------------------------*\
 *-----------------#Skills---------------------------*
 \*-------------------------------------------------*/
@@ -2066,20 +2045,6 @@ top: 10vh;
 opacity: 0;
 z-index: -1;
 }
-
-
-
-/*.cube-img{
-position: absolute;
-display: fixed;
-width: 25vw;
-top: 0vh;
-left: 60vw;
-opacity: .5;
-z-index: -10;
-filter: grayscale(100);
-}*/
-
 
 /*-------------------------------------------------*\
 *-------------#Background Image --------------------*

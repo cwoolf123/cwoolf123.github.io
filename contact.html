@@ -24,7 +24,8 @@
 		<link rel="stylesheet" href="custom-fonts.css">
     <link rel="stylesheet" type="text/css" href="resume.css" />
     <link rel="stylesheet" type="text/css" href="contact.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">		
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
   </head>
   <body>
     <header>
@@ -53,7 +54,7 @@
     <div class="content">		
 				<div id="hire">
 					
-					<form action="mailto:chriswoolf@mail.com" method="post" enctype="text/plain">
+					<form id="from" action="mailto:chriswoolf@mail.com" method="post" enctype="text/plain">
 						  <div class="field name-box">
 								<input type="text" id="name" placeholder="Who Are You?"/>
 								<label for="name">Name</label>
@@ -79,10 +80,11 @@
 <footer>
   <div class="footer">
       <img class="fchip-img" src="img/chip.png" />
-    <p class="footer-words"><br><br><strong>Design & Built By:</strong><br><br/>Chris Woolf © 2019<br/><br/>• • •</p>
+    <p class="footer-words"><br><br><strong>Designed & Built By:</strong><br><br/>Chris Woolf © <script>document.write(new Date().getFullYear())</script>
+      <br/><br/>• • •</p>
 
     <p class="footer-explore"><br><br><strong>Explore</strong><br><br/><a class="link-light" href="index.html">Home</a><br/><br/><a class="link-light" href="about.html">About</a><br/><br/><a class="link-light" href="contact.html">Contact</a><br/><br/><a class="link-light" href="portfolio.html">Portfolio</a></p>
-    <div class="footer-follow"><span class="f-title"><strong>Follow</strong></span><br><br><br><i class="fa fa-codepen f-icon" aria-hidden="true"></i><i class="fa fa-code-fork f-icon" aria-hidden="true"></i><i class="fa fa-linkedin f-icon" aria-hidden="true"></i></div>
+    <div class="footer-follow"><span class="f-title"><strong>Follow</strong></span><br><br><br><i class="fab fa-codepen f-icon" aria-hidden="true"></i><i class="fab fa-github f-icon" aria-hidden="true"></i><i class="fab fa-linkedin f-icon" aria-hidden="true"></i></div>
     <div class="switch">
       <input type="checkbox">
       <label>
@@ -93,7 +95,7 @@
     </div>
   </div>
 </footer>
-<div class="social"><a href="https://codepen.io/cwoolf123/"><i class="fa fa-codepen" aria-hidden="true"></i></a><a href="https://github.com/cwoolf123"><i class="fa fa-github" aria-hidden="true"></i></a><a href="https://www.linkedin.com/in/chriswoolf"><i class="fa fa-linkedin" aria-hidden="true"></i></a></div>
+<div class="social"><a href="https://codepen.io/cwoolf123/"><i class="fab fa-codepen" aria-hidden="true"></i></a><a href="https://github.com/cwoolf123"><i class="fab fa-github" aria-hidden="true"></i></a><a href="https://www.linkedin.com/in/chriswoolf"><i class="fab fa-linkedin" aria-hidden="true"></i></a></div>
 <img class="chip-img" src="img/chip.png" />
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/transitions.js"></script>
