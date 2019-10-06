@@ -2319,11 +2319,22 @@ width: 35vw;
 left: 12.5vw;
 top: 38vh;
 transform: translate(-50% -50%);
-filter: grayscale(50%);
+/* filter: grayscale(50%); */
 opacity: 0;
 z-index: -4;
-background-color: #282828;
+background-color: none;
 padding: .25em;
+}
+
+.port-1 h3{
+position: absolute;
+width: 100%;
+left: 48.8vw;
+top: 38vh;
+opacity: 0;
+z-index: -4;
+background-color: none;
+font-size: 1.4rem;
 }
 
 .port-2 img{
@@ -2335,7 +2346,7 @@ transform: translate(-50% -50%);
 filter: grayscale(100%);
 opacity: 0;
 z-index: -4;
-background-color: #282828;
+background-color: none;
 padding: .25em;
 }
 
@@ -2344,9 +2355,9 @@ padding: .25em;
 .port-2 img:hover,
 .port-2 img:focus{
 position: absolute;
-filter: grayscale(0%);
-transition: .8s;
-background-color: #282828;
+filter: invert(100%);
+transition: 1s;
+background-color: none;
 padding: .25em;
 }
 
@@ -2360,7 +2371,7 @@ top: 33vh;
 transform: translate(-50% -50%);
 filter: grayscale(50%);
 opacity: 0;
-background-color: #282828;
+background-color: none;
 padding: .25em;
 }
 .port-2 img{
@@ -2371,7 +2382,7 @@ top: 33vh;
 transform: translate(-50% -50%);
 filter: grayscale(100%);
 opacity: 0;
-background-color: #282828;
+background-color: none;
 padding: .25em;
 }
 
@@ -2380,7 +2391,7 @@ padding: .25em;
 .port-2 img:hover,
 .port-2 img:focus{
 position: absolute;
-filter: grayscale(0%);
+filter: grayscale(-1%);
 transition: .8s;
 }
 }

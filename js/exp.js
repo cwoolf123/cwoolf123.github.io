@@ -856,7 +856,12 @@ $(".portfolio1").click(function() {
     if (clickp1) {
     $('.port-1 img').animate({ 
         opacity: 0,
+        zIndex: -4,
+    }, 900 );
+    $('.port-1 h3').animate({ 
+        opacity: 0,
         zIndex: -4, 
+        marginLeft: '48.5vw', 
     }, 900 );
 
     } else {  
@@ -864,6 +869,11 @@ $(".portfolio1").click(function() {
     $('.port-1 img').animate({ 
         opacity: 1,
         zIndex: 4,
+    }, 900 );
+    $('.port-1 h3').animate({ 
+        opacity: 1,
+        zIndex: 4,
+        marginLeft: '0vw', 
     }, 900 );}
     
     $(this).data("clickp1", !clickp1);
