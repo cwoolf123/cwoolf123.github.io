@@ -867,11 +867,11 @@ $(".portfolio1").click(function() {
     } else {  
     
     $('.port-1 img').animate({ 
-        opacity: 1,
+        opacity: .6,
         zIndex: 4,
     }, 900 );
     $('.port-1 h3').animate({ 
-        opacity: 1,
+        opacity: .6,
         zIndex: 4,
         marginLeft: '0vw', 
     }, 900 );}
@@ -891,7 +891,7 @@ $(".portfolio2").click(function() {
     } else {  
     
     $('.port-2 img').animate({ 
-        opacity: 1,
+        opacity: .6,
         zIndex: 4,
     }, 900 );}
     
