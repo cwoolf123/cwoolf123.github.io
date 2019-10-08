@@ -452,7 +452,7 @@ filter: grayscale(100%);
 .exp-img4{
 width: 5em;
 height: 5em;
-margin-left: .4em;
+margin-left: -.1em;
 margin-top: .5em;
 opacity: .6;
 filter: grayscale(100%);
