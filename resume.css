@@ -384,6 +384,7 @@ text-align: left;
 text-transform: uppercase;
 border-bottom: 1px solid #4e4d4d;
 padding-bottom: 1rem;
+width: 50rem;
 }
 
 
@@ -426,7 +427,7 @@ transform: scale(2);
 .exp-img0{
 width: 5em;
 height: 5em;
-margin-left: .4em;
+margin-left: .1em;
 margin-top: 1em;
 opacity: .6;
 }
@@ -443,7 +444,7 @@ opacity: .6;
 .exp-img3{
 width: 5em;
 height: 5em;
-margin-left: .4em;
+margin-left: 0em;
 margin-top: 1em;	
 opacity: .6;
 filter: grayscale(100%);
@@ -1488,7 +1489,7 @@ left: -3vw;
 width: 100vw;
 display: block;
 z-index: 17;
-padding: 2em;
+padding: 2em 2em 0em 2em;
 background-color: #cdcdcd;
 opacity: .8;
 }
@@ -1579,7 +1580,7 @@ padding-top: .19em;
 .portfolio-header,
 .expertise-header,
 .summary-header{
-width: 90vw;
+width: 70vw;
 font-size: 1em;
 display: block;
 padding-bottom: 1rem;
@@ -1689,7 +1690,7 @@ top: 11rem;
 .expertise-header,
 .skills-header,
 .portfolio-header{
-width: 60vw;
+width: 40vw;
 padding-bottom: 1.3rem;
 }
 
