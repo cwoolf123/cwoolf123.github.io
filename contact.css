@@ -74,7 +74,7 @@ border: none;
 background: #cbcbcb;
 width: 80.5%;
 margin: 0;
-padding: 26px 0;
+padding: 20px 0 15px 0px;
 padding-left: 19.5%;
 color: #636363;
 font-size: .8em;
@@ -140,6 +140,7 @@ font-weight: 800;
 -o-transition: all 333ms ease-in-out;
 -ms-transition: all 333ms ease-in-out;
 transition: all 333ms ease-in-out;
+margin-top: 3rem;
 left: -1vh;
 }
   
