@@ -72,7 +72,7 @@ gulp.task('vendor', function () {
 });
 */
 
-gulp.task('compile', gulp.series('sass', 'js'));
+gulp.task('build', gulp.series('sass', 'js'));
 
 gulp.task('watch', function() {
   gulp.watch(sassSrc, gulp.series('sass'));
@@ -80,5 +80,5 @@ gulp.task('watch', function() {
 });
 
 gulp.task('default', async function(){
-    gulp.series('compile');
+    gulp.series('build');
 });

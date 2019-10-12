@@ -1,14 +1,14 @@
 {
-  "name": "boilerplate",
+  "name": "cwoolf123.github.io",
   "version": "1.0.0",
-  "description": "Boilerplate",
+  "description": "cwoolf123.github.io",
   "main": "gulpfile.js",
   "scripts": {
     "prod": "gulp compile"
   },
   "repository": {
-    "type": "",
-    "url": ""
+    "type": "Github Pages",
+    "url": "cwoolf123.github.io"
   },
   "author": "",
   "license": "ISC",
