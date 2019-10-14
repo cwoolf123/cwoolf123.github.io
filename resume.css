@@ -22,6 +22,7 @@
 *  #Background Image
 *  #Switch
 *  #Circle Chart
+*  #Hexagons
 */
 
 
@@ -2441,3 +2442,63 @@ filter: grayscale(0%);
 transition: .8s;
 }  
 }
+
+/*-------------------------------------------------*\
+*-----------------#Hexagons-------------------------*
+\*-------------------------------------------------*/
+
+.wrapper {
+  display: block;
+  top: 10rem;
+  left: 15rem;
+  position: relative;
+  width: 173.6px;
+  height: 173.6px;
+  filter: grayscale(100%);
+}
+
+.wrapper:hover {
+  display: block;
+  top: 10rem;
+  left: 15rem;
+  position: relative;
+  width: auto;
+  filter: grayscale(0%);
+  transition: .5s;
+}
+
+.hexagon-1::before {
+  content: ' ';
+  position: absolute;
+  top: -140.2px;
+  left: 0px;
+  height: 50% !important;
+  border-top: 86.6px solid transparent;
+  border-right: 86.6px solid transparent;
+  border-left: 86.6px solid transparent;
+  border-bottom: 53.6px solid #5d849a;
+}
+
+.hexagon-1 {
+  position: relative;
+  width: 173.6px;
+  height: 110px;
+  /* background: grey; */
+  background-image: url(http://localhost:8888/cwoolf123.github.io/img/pierone.png);
+  background-size: cover;
+}
+
+.hexagon-1::after {
+  content: ' ';
+  position: absolute;
+  bottom: -140.2px;
+  left: 0px;
+  height: 50% !important;
+  border-top: 53.6px solid #5d849a;
+  border-right: 86.6px solid transparent;
+  border-left: 86.6px solid transparent;
+  border-bottom: 86.6px solid transparent;
+  
+}
+
+
