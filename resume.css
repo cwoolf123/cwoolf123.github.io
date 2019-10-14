@@ -124,8 +124,8 @@ opacity: .8;
 /* CHRIS WOOLF - Animated Header */
 
 #container-ani {
-top: -1.5em;
-left: 1em;
+top: -0.5em;
+left: 2em;
 position: absolute;
 display: fixed;
 transform: translate(-50%, -50%);	
@@ -136,7 +136,7 @@ z-index: 1;
 @media screen and (min-width: 55em) {
 #container-ani {
 top: -.8em;
-left: 1.2em;
+left: 2.2em;
 position: absolute;
 display: fixed;
 transform: translate(-50%, -50%), scale(60%);
@@ -147,8 +147,8 @@ z-index: 3;
 	
 @media screen and (max-width: 30em) {
 #container-ani {
-top: -1.4em;
-left: .8em;
+top: -1em;
+left: 1.3em;
 position: absolute;
 display: fixed;
 transform: translate(-50%, -50%), scale(60%);
@@ -1488,13 +1488,13 @@ display: block;
   
 nav a{
 position: relative;
-top: -20em;
+top: -30em;
 left: -3vw;
 width: 100vw;
 display: block;
 z-index: 17;
-padding: 2em 2em 0em 2em;
-background-color: #cdcdcd;
+padding: 4em 0em 2em 2em;
+background-color: #e7e7e7;
 opacity: .8;
 }
     
@@ -1504,9 +1504,9 @@ display: block;
 border: 1px solid #444;
 background-color: #444;
 width: 2em;
-left: 83%;
+left: 81%;
 z-index: 21;
-top: .1em;
+top: 0.6em;
 padding: .05em;
 margin: .9em;
 }
@@ -1517,8 +1517,8 @@ display: block;
 border: 2px solid #444;
 background-color: #444;
 width: 2em;
-top: 0.45em;
-left: 83%;
+top: 0.95em;
+left: 81%;
 z-index: 21;
 padding: .0em;
 margin: .9em;
@@ -1530,8 +1530,8 @@ display: block;
 border: 1px solid #444;
 background-color: #444;
 width: 2em;
-top: .84em;
-left: 83%;
+top: 1.34em;
+left: 81%;
 z-index: 21;
 padding: .08em;
 margin: .9em;  

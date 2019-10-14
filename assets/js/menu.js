@@ -13,7 +13,7 @@ $(".menu-click1").click(function () {
       width: "2rem"
     }, 600);
     $('nav').animate({
-      top: "-20em",
+      top: "-30em",
       zIndex: 1
     }, 600);
   } else {
@@ -24,10 +24,10 @@ $(".menu-click1").click(function () {
       width: "1rem"
     }, 400);
     $('.line3').animate({
-      width: "0rem"
+      width: "1.5rem"
     }, 600);
     $('nav').animate({
-      top: "30em",
+      top: "50em",
       zIndex: 5
     }, 600);
   }

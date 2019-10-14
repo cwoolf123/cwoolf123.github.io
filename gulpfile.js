@@ -59,7 +59,7 @@ gulp.task('js', function(){
     .pipe(gulp.dest(jsDist))
 });
 
-/* Not currently in use but can be used to concat and minify single vendor JS file
+//  Not currently in use but can be used to concat and minify single vendor JS file
 gulp.task('vendor', function () {    
     return gulp.src(jsVendorSrc)
         .pipe(concat('vendor.js'))
@@ -70,7 +70,7 @@ gulp.task('vendor', function () {
         }))
         .pipe(gulp.dest(jsDist));
 });
-*/
+
 
 gulp.task('build', gulp.series('sass', 'js'));
 

@@ -15,7 +15,7 @@
         $('nav').animate({ 
             top: "-20em",
             zIndex: 1,
-        }, 600 ); 
+        }, 500 ); 
 
         } else {  
         
@@ -26,14 +26,14 @@
             width: "1rem",
         }, 400 );
         $('.line3').animate({ 
-            width: "0rem",
+            width: "1.5rem",
         }, 600 ); 
         $('nav').animate({ 
-            top: "30em",
+            top: "40em",
             zIndex: 5,
-        }, 600 ); }
+        }, 500 ); }
         
-        $(this).data("clickm", !clickm);
+        $(this).data("clickm", !clickm)
     });
 
 

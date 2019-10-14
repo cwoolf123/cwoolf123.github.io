@@ -1,4 +1,18 @@
 $("nav a").on("click", function (event) {
+  $('.line1').animate({ 
+    width: "2rem",
+}, 200 );
+$('.line2').animate({ 
+    width: "2rem",
+}, 400 );
+$('.line3').animate({ 
+    width: "2rem",
+}, 600 );
+  $('nav').animate({ 
+    opacity: 0,
+    top: "-20em",
+    zIndex: 1,
+}, 500 );
   
     event.preventDefault()
     
@@ -18,6 +32,7 @@ $("nav a").on("click", function (event) {
           $("section").html(newPage)
           
           $("section").fadeIn(250)
+ 
         })
       }
     })
