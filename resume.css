@@ -2449,7 +2449,7 @@ transition: .8s;
 *-----------------#Hexagons-------------------------*
 \*-------------------------------------------------*/
 
-.wrapper {
+.wrapper-1 {
   display: block;
   top: 10rem;
   left: 15rem;
@@ -2459,7 +2459,7 @@ transition: .8s;
   filter: grayscale(100%);
 }
 
-.wrapper:hover {
+.wrapper-1:hover {
   display: block;
   top: 10rem;
   left: 15rem;
@@ -2472,10 +2472,9 @@ transition: .8s;
 .hexagon-1::before {
   content: ' ';
   position: absolute;
-  top: -140.2px;
+  top: -97px;
   left: 0px;
-  height: 50% !important;
-  border-top: 86.6px solid transparent;
+  border-top: 43.6px solid transparent;
   border-right: 86.6px solid transparent;
   border-left: 86.6px solid transparent;
   border-bottom: 53.6px solid #5d849a;
@@ -2483,7 +2482,7 @@ transition: .8s;
 
 .hexagon-1 {
   position: relative;
-  width: 173.6px;
+  width: 172.6px;
   height: 110px;
   /* background: grey; */
   background-image: url(http://localhost:8888/cwoolf123.github.io/img/pierone.png);
@@ -2493,10 +2492,9 @@ transition: .8s;
 .hexagon-1::after {
   content: ' ';
   position: absolute;
-  bottom: -140.2px;
+  bottom: -130.2px;
   left: 0px;
-  height: 50% !important;
-  border-top: 53.6px solid #5d849a;
+  border-top: 43.6px solid #5d849a;
   border-right: 86.6px solid transparent;
   border-left: 86.6px solid transparent;
   border-bottom: 86.6px solid transparent; 

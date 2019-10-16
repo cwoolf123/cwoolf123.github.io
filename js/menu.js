@@ -99,5 +99,55 @@ $(".chip-img").click(function() {
 });
 
 
+(function($){
 
+    $(window).load(function(){
+        //everything is loaded (images, scripts, etc.)
+        var os_tagsToAdd = [];
+var os_tagsToRemove = [];
 
+$(".os_section-slider").click(function() {
+  console.clear();
+
+  var os_tagName = $(this).prev().attr("id");
+
+  //if checked AFTER the click
+  if($(this).prev().is(":checked")) {
+    if($.inArray(os_tagName, os_tagsToAdd) == -1){
+      os_tagsToAdd.push(os_tagName);
+    }
+    os_tagsToRemove.splice($.inArray(os_tagName, os_tagsToRemove),1);
+
+    //if unchecked AFTER the click
+  } else {
+    if($.inArray(os_tagName, os_tagsToRemove) == -1){
+      os_tagsToRemove.push(os_tagName);
+    }
+    os_tagsToAdd.splice($.inArray(os_tagName, os_tagsToAdd),1);
+  }
+
+  console.log( os_tagsToAdd );
+  console.log( os_tagsToRemove );
+});
+
+// Onload remove array fill
+$("[type='checkbox']").each(function(){
+  if( $(this).is(":checked") ){
+    os_tagsToRemove.push($(this).attr("id"));
+  }else{
+    os_tagsToAdd.push($(this).attr("id"));
+  }
+});
+
+console.log( os_tagsToAdd );
+console.log( os_tagsToRemove );
+    });
+
+    // and/or
+
+    $(document).ready(function(){
+        // the dom is in place, but everything is not necessarily loaded
+
+    });
+
+})(jQuery);
