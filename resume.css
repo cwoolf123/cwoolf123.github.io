@@ -700,7 +700,7 @@ top: -14.25em;
 .exp-circle5,
 .cirle-line5{
 transform: scale(1);
-left: 30em;
+left: 29.5em;
 top: -23em;
 }
 }
@@ -2142,6 +2142,8 @@ transform: rotate(-25deg);
 *-------------------- #Switch ----------------------*
 \*-------------------------------------------------*/
 
+/*For switch theme styles please see line 2506*/
+
 /*---Switch styles---*/
 
 /* Checkbox hack */
@@ -2497,8 +2499,12 @@ transition: .8s;
   border-top: 53.6px solid #5d849a;
   border-right: 86.6px solid transparent;
   border-left: 86.6px solid transparent;
-  border-bottom: 86.6px solid transparent;
-  
+  border-bottom: 86.6px solid transparent; 
 }
 
 
+/* Dark Theme Styles */
+
+.dark {
+  background-color: #2e2e2e !important;
+}
