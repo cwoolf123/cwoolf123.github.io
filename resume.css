@@ -273,6 +273,18 @@ transition: 1.5s;
 filter: invert(100%) brightness(2000%);
 }
 
+/* Programming Languages icon */
+
+.icon-handlebars {
+  position: relative;
+  display: inline-block;
+  height: 1rem;
+  width: 2rem;
+  text-align: center;
+  padding: 5px;
+}
+
+
 /*-------------------------------------------------*\
 *----------------#Sections--------------------------*
 \*-------------------------------------------------*/
