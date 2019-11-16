@@ -63,6 +63,10 @@ cursor: crosshair !important;
 z-index: 0;
 }
 
+h4 {
+  color: #212121 !important;
+}
+
 /* Links */
 
 a {
@@ -1337,7 +1341,7 @@ opacity: .7;
 
 
 .footer{
-position: absolute;
+position: relative;
 display: fixed;
 width: 110vw;
 background-color: #2e2e2e;
