@@ -126,7 +126,7 @@ button:focus {
 .img-wrap img {
 	display: block;
 	max-width: 100%;
-	filter: grayscale(1);
+	/* filter: grayscale(1); */
 }
 
 .preview {

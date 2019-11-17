@@ -1070,7 +1070,47 @@ margin-bottom: 1.5em;
 text-align: center;
 }
   
+/* Employer Logos */
 
+.emp-01 {
+  position: relative;
+  display: absolute;
+  height: 6rem;
+  width: 6rem;
+  text-align: center;
+  margin-bottom: 5rem;
+  margin-top: 3rem;
+}
+
+.emp-02 {
+  position: relative;
+  display: absolute;
+  width: 8rem;
+  text-align: center;
+  top: 22rem;
+  filter: brightness(0);
+}
+
+/* Code Icons */
+
+img.fab.handlebars {
+  height: 1rem;
+  filter: grayscale(1);
+}
+
+/* Padding */
+
+.padding-01 {
+ margin-top: 100px;
+}
+
+.padding-02 {
+  padding-top: 128px !important;
+}
+
+.padding-03 {
+  margin-top: 56.5px !important;
+}
 /*-------------------------------------------------*\
 *-----------------#Skills---------------------------*
 \*-------------------------------------------------*/
