@@ -22,6 +22,7 @@
 *  #Background Image
 *  #Switch
 *  #Circle Chart
+*  #Pixel Art
 */
 
 
@@ -2496,4 +2497,13 @@ position: absolute;
 filter: grayscale(0%);
 transition: .8s;
 }  
+}
+
+/*-------------------------------------------------*\
+*------------------- #Pixel Art --------------------*
+\*-------------------------------------------------*/
+
+.current-img {
+  width: 5rem;
+  height: auto;
 }

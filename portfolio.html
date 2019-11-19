@@ -28,7 +28,7 @@ alias ls='ls -GFh'
 <!doctype html>
 <html>
   <head>
-		<meta charset="UTF-8" />
+    <meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no">
 		<title>Chris Woolf </title>
 		<meta name="description" content="A slider made with the Pieces library where slides are animated in a fragmented look." />
@@ -36,12 +36,8 @@ alias ls='ls -GFh'
 		<meta name="author" content="Chris Woolf" />
 		<link rel="shortcut icon" href="favicon.png">
 		<link rel="stylesheet" href="custom-fonts.css">
-    <!-- <link rel="stylesheet" type="text/css" href="resume.css" /> -->
-    <!-- <link rel="stylesheet" type="text/css" href="contact.css" /> -->
-    <!-- <link rel="stylesheet" type="text/css" href="portfolio.css" /> -->
     <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-    <script src='js/modernizr-custom.js'></script>
   </head>
   <body>
     <header>
@@ -62,7 +58,7 @@ alias ls='ls -GFh'
 <div class="line3"></div>
 </header>
 <section>
-
+    <script src='js/modernizr-custom.js'></script>
   	<div class="container">
         <header class="header">
           <div class="links">
@@ -466,6 +462,70 @@ alias ls='ls -GFh'
 <div class="project-1">
 </div>
 <script src='js/exp.js'></script>
+<script src='js/portfolio.js'></script>
+<script src='js/portfolio-cont.js'></script>	
+<script src='js/imagesloaded.pkgd.min.js'></script>	
+<script src='js/masonry.pkgd.min.js'></script>	
+<script src='js/classie.js'></script>	
+<script>
+(function() {
+  var support = { transitions: Modernizr.csstransitions },
+      // transition end event name
+      transEndEventNames = { 'WebkitTransition': 'webkitTransitionEnd', 'MozTransition': 'transitionend', 'OTransition': 'oTransitionEnd', 'msTransition': 'MSTransitionEnd', 'transition': 'transitionend' },
+      transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
+      onEndTransition = function( el, callback ) {
+          var onEndCallbackFn = function( ev ) {
+              if( support.transitions ) {
+                  if( ev.target != this ) return;
+                  this.removeEventListener( transEndEventName, onEndCallbackFn );
+              }
+              if( callback && typeof callback === 'function' ) { callback.call(this); }
+          };
+          if( support.transitions ) {
+              el.addEventListener( transEndEventName, onEndCallbackFn );
+          }
+          else {
+              onEndCallbackFn();
+          }
+      };
+
+  new GridFx(document.querySelector('.grid'), {
+      imgPosition : {
+          x : -0.5,
+          y : 1
+      },
+      onOpenItem : function(instance, item) {
+          instance.items.forEach(function(el) {
+              if(item != el) {
+                  var delay = Math.floor(Math.random() * 50);
+                  el.style.WebkitTransition = 'opacity .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1), -webkit-transform .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1)';
+                  el.style.transition = 'opacity .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1), transform .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1)';
+                  el.style.WebkitTransform = 'scale3d(0.1,0.1,1)';
+                  el.style.transform = 'scale3d(0.1,0.1,1)';
+                  el.style.opacity = 0;
+              }
+          });
+      },
+      onCloseItem : function(instance, item) {
+          instance.items.forEach(function(el) {
+              if(item != el) {
+                  el.style.WebkitTransition = 'opacity .4s, -webkit-transform .4s';
+                  el.style.transition = 'opacity .4s, transform .4s';
+                  el.style.WebkitTransform = 'scale3d(1,1,1)';
+                  el.style.transform = 'scale3d(1,1,1)';
+                  el.style.opacity = 1;
+
+                  onEndTransition(el, function() {
+                      el.style.transition = 'none';
+                      el.style.WebkitTransform = 'none';
+                  });
+              }
+          });
+      }
+  });
+})();
+</script>
+</section>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/transitions.js"></script>
 <script src='js/jquery-2.2.1.min.js'></script>
@@ -476,70 +536,6 @@ alias ls='ls -GFh'
 <script src='js/title.js'></script>	
 <script src='js/menu.js'></script>
 <script src='js/contact.js'></script>	
-<script src='js/masonry.pkgd.min.js'></script>	
-<script src='js/portfolio-cont.js'></script>	
-<script src='js/classie.js'></script>	
-<script src='js/imagesloaded.pkgd.min.js'></script>	
-<script src='js/portfolio.js'></script>	
-<script>
-		(function() {
-			var support = { transitions: Modernizr.csstransitions },
-				// transition end event name
-				transEndEventNames = { 'WebkitTransition': 'webkitTransitionEnd', 'MozTransition': 'transitionend', 'OTransition': 'oTransitionEnd', 'msTransition': 'MSTransitionEnd', 'transition': 'transitionend' },
-				transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
-				onEndTransition = function( el, callback ) {
-					var onEndCallbackFn = function( ev ) {
-						if( support.transitions ) {
-							if( ev.target != this ) return;
-							this.removeEventListener( transEndEventName, onEndCallbackFn );
-						}
-						if( callback && typeof callback === 'function' ) { callback.call(this); }
-					};
-					if( support.transitions ) {
-						el.addEventListener( transEndEventName, onEndCallbackFn );
-					}
-					else {
-						onEndCallbackFn();
-					}
-				};
-
-			new GridFx(document.querySelector('.grid'), {
-				imgPosition : {
-					x : -0.5,
-					y : 1
-				},
-				onOpenItem : function(instance, item) {
-					instance.items.forEach(function(el) {
-						if(item != el) {
-							var delay = Math.floor(Math.random() * 50);
-							el.style.WebkitTransition = 'opacity .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1), -webkit-transform .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1)';
-							el.style.transition = 'opacity .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1), transform .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1)';
-							el.style.WebkitTransform = 'scale3d(0.1,0.1,1)';
-							el.style.transform = 'scale3d(0.1,0.1,1)';
-							el.style.opacity = 0;
-						}
-					});
-				},
-				onCloseItem : function(instance, item) {
-					instance.items.forEach(function(el) {
-						if(item != el) {
-							el.style.WebkitTransition = 'opacity .4s, -webkit-transform .4s';
-							el.style.transition = 'opacity .4s, transform .4s';
-							el.style.WebkitTransform = 'scale3d(1,1,1)';
-							el.style.transform = 'scale3d(1,1,1)';
-							el.style.opacity = 1;
-
-							onEndTransition(el, function() {
-								el.style.transition = 'none';
-								el.style.WebkitTransform = 'none';
-							});
-						}
-					});
-				}
-			});
-		})();
-	</script>
-</section>
 <div class="social"><a href="https://codepen.io/cwoolf123/"><i class="fab fa-codepen" aria-hidden="true"></i></a><a href="https://github.com/cwoolf123"><i class="fab fa-github" aria-hidden="true"></i></a><a href="https://www.linkedin.com/in/chriswoolf"><i class="fab fa-linkedin" aria-hidden="true"></i></a></div>
 <img class="chip-img" src="img/chip.png" />
     <div class="footer-portoflio">
