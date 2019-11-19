@@ -1,7 +1,10 @@
 const gulp = require('gulp'),
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
-    babel = require('gulp-babel'),
+    // babel = require('gulp-babel'),
+    uglify = require('gulp-uglify'),
+    concat = require('gulp-concat'),
+    // concat = require('gulp-concat-util'),
     minify = require('gulp-minify'),
     cleanCSS = require('gulp-clean-css'),
     // concat = require('gulp-concat'),
@@ -24,13 +27,9 @@ gulp.task('sass', function(){
 
 gulp.task('js', function(){
   return gulp.src(jsSrc)
-    .pipe(babel())
-    .pipe(minify({
-        ignoreFiles: ['.min.js'],
-        ext: {
-                min: '.min.js'
-            }
-    }))
+  .pipe(concat('all.js'))
+  // .pipe(concat.scripts('all.js'))
+    .pipe(uglify())
     .pipe(gulp.dest(jsDist))
 });
 
