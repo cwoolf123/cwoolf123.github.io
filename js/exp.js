@@ -1,199 +1,66 @@
 $(function() {
-    $('.circles').animate({ 
-        opacity: 1,
-    }, 1800 );
-    $('nav').animate({ 
-        opacity: 1,
-    }, 1800 );
-    $('.fa-plus').animate({ 
-        opacity: 1,
-    }, 1800 );
-    $('.j-title').animate({ 
-        opacity: .8,
-    }, 1800 );
-    $('.chip-img').animate({ 
-        opacity: .7,
-    }, 1800 );
-    $('.social').animate({ 
-        opacity: .9,
-    }, 1800 );
-    $('.comb-img').animate({ 
-        opacity: .1,
-    }, 1800 );
-    $('.comb-img2').animate({ 
-        opacity: .1,
-    }, 1800 );
-    $('.about-img').animate({ 
-        opacity: 1,
-        top: "+=100vh"
-    }, 900 );
-    $('.summary-p').animate({ 
-        opacity: 1,
-        top: "-=100vh"
-    }, 900 );
-    $('.bracket-img').animate({ 
-        opacity: .8,
-        top: "-=100vh"
-    }, 900 );
+    $('.circles').animate({ opacity: 1 }, 1800 );
+    $('nav').animate({ opacity: 1 }, 1800 );
+    $('.fa-plus').animate({ opacity: 1 }, 1800 );
+    $('.j-title').animate({ opacity: .8 }, 1800 );
+    $('.chip-img').animate({ opacity: .7 }, 1800 );
+    $('.social').animate({ opacity: .9 }, 1800 );
+    $('.comb-img').animate({ opacity: .1 }, 1800 );
+    $('.comb-img2').animate({ opacity: .1 }, 1800 );
+    $('.about-img').animate({ opacity: 1, top: "+=100vh" }, 900 );
+    $('.summary-p').animate({ opacity: 1, top: "-=100vh" }, 900 );
+    $('.bracket-img').animate({ opacity: .8, top: "-=100vh" }, 900 );
 });
 
 
     /* Click 1 */
     $(".exp-click1").click(function() {
         var clicks = $(this).data("clicks");
-        if (clicks) {
-        $('.exp-circle1').animate({ 
-            marginLeft: "0em",
-            marginTop: "0em",
-        }, 900 );
-        $('.circle-dot').animate({ 
-            opacity: "1",
-        }, 900 );
-        $('.circle-line').animate({ 
-            opacity: "1",
-        }, 900 );
-        $('.expertise-title').animate({ 
-            fontSize: ".7em",
-            marginTop: "1.8em",
-        }, 900 );
-        $('.exp-circle2').animate({ 
-            marginTop: "0em",
-            opacity: 1,
-            zIndex: "1",
-        }, 900 );
-        $('.exp-circle3').animate({ 
-            marginTop: "0em",
-            opacity: 1,
-            zIndex: "1",
-        }, 900 );
-        $('.exp-circle4').animate({ 
-            marginTop: "0em",
-            opacity: 1,
-            zIndex: "1",
-        }, 900 );
-        $('.exp-circle5').animate({ 
-            marginTop: "0em",
-            opacity: 1,
-            zIndex: "1",
-         }, 900 );
-         $('.exp-d1').animate({ 
-            left: "+=160vw",
-         }, 900 ); 
-         $('.expertise-header').animate({ 
-            top: "+=12vh",
-            opacity: 1,
-         }, 900 ); 
-         $('.wd-box').animate({ 
-            opacity: 0,
-            top: "+80vh",
-        }, 900 );
-        $('.wd-box-dot').animate({ 
-            opacity: 0,
-            left: "+80vw",
-        }, 900 );
-        $('.title-txt').animate({ 
-            opacity: 1,
-        }, 900 );
-        $('.title-txt2').animate({ 
-            opacity: 1,
-        }, 900 );
-        $('.title-txt3').animate({ 
-            opacity: 1,
-        }, 900 );
-        $('.title-txta').animate({ 
-            opacity: 1,
-        }, 900 );
-        $('.title-txt4').animate({ 
-            opacity: 1,
-        }, 900 );
-        $('.chip-img').animate({ 
-            opacity: 1,
-        }, 900 );
-        $('.j-title').animate({ 
-            opacity: 1,
-        }, 900 );
-        $('.bracket-img').animate({ 
-            opacity: .8,
-        }, 900 );
+        if (clicks) { $('.exp-circle1').animate({ marginLeft: "0em", marginTop: "0em" }, 900 );
+        $('.circle-dot').animate({ opacity: "1" }, 900 );
+        $('.circle-line').animate({ opacity: "1" }, 900 );
+        $('.expertise-title').animate({ fontSize: ".7em", marginTop: "1.8em" }, 900 );
+        $('.exp-circle2').animate({ marginTop: "0em", opacity: 1, zIndex: "1" }, 900 );
+        $('.exp-circle3').animate({ marginTop: "0em", opacity: 1, zIndex: "1" }, 900 );
+        $('.exp-circle4').animate({ marginTop: "0em", opacity: 1, zIndex: "1" }, 900 );
+        $('.exp-circle5').animate({ marginTop: "0em", opacity: 1, zIndex: "1" }, 900 );
+        $('.exp-d1').animate({ left: "+=160vw" }, 900 ); 
+        $('.expertise-header').animate({ top: "+=12vh", opacity: 1 }, 900 ); 
+        $('.wd-box').animate({ opacity: 0, top: "+80vh" }, 900 );
+        $('.wd-box-dot').animate({ opacity: 0, left: "+80vw" }, 900 );
+        $('.title-txt').animate({ opacity: 1 }, 900 );
+        $('.title-txt2').animate({ opacity: 1 }, 900 );
+        $('.title-txt3').animate({ opacity: 1 }, 900 );
+        $('.title-txta').animate({ opacity: 1 }, 900 );
+        $('.title-txt4').animate({ opacity: 1 }, 900 );
+        $('.chip-img').animate({ opacity: 1 }, 900 );
+        $('.j-title').animate({ opacity: 1 }, 900 );
+        $('.bracket-img').animate({ opacity: .8 }, 900 );
+        $('.skills').animate({ opacity: 0, left: "-=110vw" }, 900 );
 
         } else {  
         
-        $('.exp-circle1').animate({ 
-            marginLeft: "1em",
-            marginTop: "1em",
-            'border': '1px solid black',
-        }, 900 );
-        $('.circle-dot').animate({ 
-            opacity: "0",
-        }, 50 );
-        $('.circle-line').animate({ 
-            opacity: "0",
-          }, 50 );
-         $('.expertise-title').animate({ 
-            fontSize: ".8em",
-            marginTop: "-.5em",
-          }, 50 );
-          $('.exp-circle2').animate({ 
-            opacity: 0,
-            marginTop: "-=16vh",
-            zIndex: "-1",
-         }, 900 );
-         $('.exp-circle3').animate({ 
-            opacity: 0,
-            marginTop: "+=26vh",
-            zIndex: "-1",
-         }, 900 );
-         $('.exp-circle4').animate({ 
-            opacity: 0,
-            marginTop: "-=16vh",
-            zIndex: "-1",
-         }, 900 );
-         $('.exp-circle5').animate({ 
-            opacity: 0,
-            marginTop: "+=26vh",
-            zIndex: "-5",
-         }, 900 );
-         $('.exp-d1').animate({ 
-            left: "-=160vw",
-            opacity: .8,
-         }, 900 ); 
-         $('.wd-box').animate({ 
-            opacity: 1,
-            top: "-15vh",
-        }, 900 );
-        $('.wd-box-dot').animate({ 
-            opacity: 1,
-            left: "20vw",
-        }, 900 );
-         $('.expertise-header').animate({ 
-            top: "-=12vh",
-            opacity: 0,
-         }, 900 ); 
-         $('.title-txt').animate({ 
-            opacity: 0,
-        }, 900 );
-        $('.title-txt2').animate({ 
-            opacity: 0,
-        }, 900 );
-        $('.title-txt3').animate({ 
-            opacity: 0,
-        }, 900 );
-        $('.title-txta').animate({ 
-            opacity: 0,
-        }, 900 );
-        $('.title-txt4').animate({ 
-            opacity: 0,
-        }, 900 );
-        $('.chip-img').animate({ 
-            opacity: 0,
-        }, 900 );
-        $('.j-title').animate({ 
-            opacity: 0,
-        }, 900 ); 
-        $('.bracket-img').animate({ 
-            opacity: 0,
-        }, 900 ); }
-
+        $('.exp-circle1').animate({ marginLeft: "1em", marginTop: "1em", 'border': '1px solid black' }, 900 );
+        $('.circle-dot').animate({ opacity: "0" }, 50 );
+        $('.circle-line').animate({ opacity: "0" }, 50 );
+        $('.expertise-title').animate({ fontSize: ".8em", marginTop: "-.5em" }, 50 );
+        $('.exp-circle2').animate({ opacity: 0, marginTop: "-=16vh", zIndex: "-1" }, 900 );
+        $('.exp-circle3').animate({ opacity: 0, marginTop: "+=26vh", zIndex: "-1" }, 900 );
+        $('.exp-circle4').animate({ opacity: 0, marginTop: "-=16vh", zIndex: "-1" }, 900 );
+        $('.exp-circle5').animate({ opacity: 0, marginTop: "+=26vh", zIndex: "-5" }, 900 );
+        $('.exp-d1').animate({ left: "-=160vw", opacity: 0.8 }, 900 ); 
+        $('.wd-box').animate({ opacity: 1, top: "-15vh" }, 900 );
+        $('.wd-box-dot').animate({ opacity: 1, left: "20vw" }, 900 );
+        $('.expertise-header').animate({ top: "-=12vh", opacity: 0 }, 900 ); 
+        $('.title-txt').animate({ opacity: 0 }, 900 );
+        $('.title-txt2').animate({ opacity: 0 }, 900 );
+        $('.title-txt3').animate({ opacity: 0 }, 900 );
+        $('.title-txta').animate({ opacity: 0 }, 900 );
+        $('.title-txt4').animate({ opacity: 0 }, 900 );
+        $('.chip-img').animate({ opacity: 0 }, 900 );
+        $('.j-title').animate({ opacity: 0 }, 900 ); 
+        $('.bracket-img').animate({ opacity: 0 }, 900 ); 
+        $('.skills').animate({ opacity: .8, left: "+=110vw" }, 1200 ); }
         $(this).data("clicks", !clicks);
         });
 
