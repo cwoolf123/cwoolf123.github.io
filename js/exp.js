@@ -157,6 +157,7 @@ $(function() {
             $('.bracket-img').animate({ 
                 opacity: .8,
             }, 900 );
+            $('.skills').animate({ opacity: 0, left: "-=110vw" }, 900 );
             
             } else {  
 
@@ -242,7 +243,8 @@ $(function() {
             }, 900 ); 
             $('.bracket-img').animate({ 
                 opacity: 0,
-            }, 900 ); }
+            }, 900 ); 
+            $('.skills').animate({ opacity: .8, left: "+=110vw" }, 1200 ); }
 
             $(this).data("clicks2", !clicks2);
             });
@@ -325,6 +327,7 @@ $(function() {
             $('.bracket-img').animate({ 
                 opacity: .8,
             }, 900 );
+            $('.skills').animate({ opacity: 0, left: "-=110vw" }, 900 );
             
             } else {  
 
@@ -394,7 +397,8 @@ $(function() {
             }, 900 ); 
             $('.bracket-img').animate({ 
                 opacity: 0,
-            }, 900 ); }
+            }, 900 ); 
+            $('.skills').animate({ opacity: .8, left: "+=110vw" }, 1200 ); }
 
             $(this).data("clicks3", !clicks3);
             });
@@ -474,6 +478,7 @@ $(function() {
             $('.bracket-img').animate({ 
                 opacity: .8,
             }, 900 );
+            $('.skills').animate({ opacity: 0, left: "-=110vw" }, 900 );
             
             } else {  
 
@@ -544,7 +549,8 @@ $(function() {
             }, 900 );  
             $('.bracket-img').animate({ 
                 opacity: 0,
-            }, 900 ); }
+            }, 900 ); 
+            $('.skills').animate({ opacity: .8, left: "+=110vw" }, 1200 ); }
 
             $(this).data("clicks4", !clicks4);
             });
@@ -633,6 +639,7 @@ $(function() {
             $('.bracket-img').animate({ 
                 opacity: .8,
             }, 900 );
+            $('.skills').animate({ opacity: 0, left: "-=110vw" }, 900 );
             
             } else {  
 
@@ -710,7 +717,8 @@ $(function() {
             }, 900 ); 
             $('.bracket-img').animate({ 
                 opacity: 0,
-            }, 900 ); }
+            }, 900 ); 
+            $('.skills').animate({ opacity: .8, left: "+=110vw" }, 1200 ); }
 
             $(this).data("clicks5", !clicks5);
             });
