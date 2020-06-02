@@ -213,6 +213,7 @@ left: 91vw;
 width: 1vw;
 text-align: center;
 opacity: 0;
+z-index: 9999;
 }
 
 @media screen and (max-width: 33em){
@@ -223,6 +224,7 @@ width: 2vw;
 left: 86vw;
 text-align: center;
 opacity: 0;
+z-index: 9999;
 }
 }
 
@@ -234,6 +236,7 @@ width: 1vw;
 left: 93vw;
 text-align: center;
 opacity: 0;
+z-index: 9999;
 }
 }
 
