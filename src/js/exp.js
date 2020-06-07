@@ -4,6 +4,7 @@ $(document).ready(function() {
     $('nav').animate({ opacity: 1 }, 1800 );
     $('.fa-plus').animate({ opacity: 1 }, 1800 );
     $('.j-title').animate({ opacity: .8 }, 1800 );
+    $('.cat-title').animate({ opacity: .8 }, 1800 );
     $('.chip-img').animate({ opacity: .7 }, 1800 );
     $('.social').animate({ opacity: .9 }, 1800 );
     $('.comb-img').animate({ opacity: .1 }, 1800 );
@@ -23,6 +24,7 @@ $(document).ready(function() {
         $('.exp-circle3').animate({ marginTop: "0em", opacity: 1, zIndex: "1" }, 900 );
         $('.exp-circle4').animate({ marginTop: "0em", opacity: 1, zIndex: "1" }, 900 );
         $('.exp-circle5').animate({ marginTop: "0em", opacity: 1, zIndex: "1" }, 900 );
+        $('.cat-title').animate({ opacity: 1, }, 900 );
         $('.exp-d1').animate({ left: "+=160vw" }, 900 ); 
         $('.expertise-header').animate({ top: "+=12vh", opacity: 1 }, 900 ); 
         $('.wd-box').animate({ opacity: 0, top: "+80vh" }, 900 );
@@ -47,6 +49,7 @@ $(document).ready(function() {
         $('.exp-circle3').animate({ opacity: 0, marginTop: "+=26vh", zIndex: "-1" }, 900 );
         $('.exp-circle4').animate({ opacity: 0, marginTop: "-=16vh", zIndex: "-1" }, 900 );
         $('.exp-circle5').animate({ opacity: 0, marginTop: "+=26vh", zIndex: "-5" }, 900 );
+        $('.cat-title').animate({ opacity: 0, }, 900 );
         $('.exp-d1').animate({ left: "-=160vw", opacity: 0.8 }, 900 ); 
         $('.wd-box').animate({ opacity: 1, top: "-15vh" }, 900 );
         $('.wd-box-dot').animate({ opacity: 1, left: "20vw" }, 900 );
@@ -96,6 +99,9 @@ $(document).ready(function() {
                 marginTop: "0em",
                 opacity: "1",
                 zIndex: "4",
+             }, 900 );
+             $('.cat-title').animate({ 
+                opacity: 1,
              }, 900 );
              $('.exp-d2').animate({ 
                 left: "+=155vw",
@@ -183,6 +189,9 @@ $(document).ready(function() {
                 opacity: 0,
                 marginTop: "+=26vh",
                 zIndex: "-1",
+            }, 900 );
+            $('.cat-title').animate({ 
+                opacity: 0,
             }, 900 );
             $('.exp-d2').animate({ 
                 left: "-=155vw",
@@ -284,6 +293,9 @@ $(document).ready(function() {
                 marginTop: "+=26vh",
                 zIndex: "4",
              }, 900 );
+             $('.cat-title').animate({ 
+                opacity: "1",
+             }, 900 );
              $('.exp-d3').animate({ 
                 left: "+=160vw",
                 opacity: .8,
@@ -354,6 +366,9 @@ $(document).ready(function() {
                 opacity: 0,
                 marginTop: "-=26vh",
                 zIndex: "-5",
+            }, 900 );
+            $('.cat-title').animate({ 
+                opacity: 0,
             }, 900 );
             $('.exp-d3').animate({ 
                 left: "-=160vw",
@@ -434,6 +449,9 @@ $(document).ready(function() {
                 marginTop: "+=26vh",
                 zIndex: "1",
             }, 900 );
+            $('.cat-title').animate({ 
+                opacity: "1",
+            }, 900 );
             $('.exp-d4').animate({ 
                 left: "+=150vw",
                 opacity: .8,
@@ -505,6 +523,9 @@ $(document).ready(function() {
                 opacity: 0,
                 marginTop: "-=26vh",
                 zIndex: "-1",
+            }, 900 );
+            $('.cat-title').animate({ 
+                opacity: 0,
             }, 900 );
             $('.exp-d4').animate({ 
                 left: "-=150vw",
@@ -588,6 +609,9 @@ $(document).ready(function() {
                 marginTop: "+=16vh",
                 zIndex: "1",
             }, 900 );
+            $('.cat-title').animate({ 
+                opacity: "1",
+            }, 900 );
              $('.exp-d5').animate({ 
                 left: "+=190vw",
                 opacity: .8,
@@ -612,7 +636,7 @@ $(document).ready(function() {
             }, 900 );
              $('.expertise-title5').animate({ 
                 fontSize: ".7em",
-                marginTop: "2em"
+                marginTop: "1.5em"
             }, 50 );
             $('.title-txt').animate({ 
                 opacity: 1,
@@ -662,6 +686,9 @@ $(document).ready(function() {
                 marginTop: "-=26vh",
                 zIndex: "-2",
             }, 900 );
+            $('.cat-title').animate({ 
+                opacity: 0,
+            }, 900 );
             $('.exp-circle3').animate({ 
                 opacity: 0,
                 marginTop: "-=16vh",
@@ -691,7 +718,7 @@ $(document).ready(function() {
             }, 900 );
             $('.expertise-title5').animate({ 
                 fontSize: ".8em",
-                marginTop: "-.5em",
+                marginTop: "-.75em",
             }, 50 ); 
             $('.title-txt').animate({ 
                 opacity: 0,
