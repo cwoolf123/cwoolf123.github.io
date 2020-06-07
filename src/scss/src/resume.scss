@@ -1132,7 +1132,7 @@ height: 10vh;
 color: #4e4d4d;
 text-align: justify;
 line-height: 1.3em;
-top: 0rem;
+top: 17rem;
 opacity: 0;
 left: -100vw;
 z-index: -7;
@@ -1196,6 +1196,12 @@ font-size: .8em;
 list-style-type: none;
 position: relative;
 left: -3em;
+}
+
+@media screen and (max-width: 33em){
+.skills-p ul li{
+left: -15em;
+  }
 }
 
 .skills-k{
@@ -1792,7 +1798,7 @@ top: 9.5rem;
 
 /* Expertise Text Box 1 (Web Design) */
 .exp-d1{ 
-font-size: .8em;
+font-size: 1em;
 line-height: 1.2em;
 position: absolute;
 text-align: justify;
@@ -1811,7 +1817,7 @@ z-index: 1;
 @media screen and (max-width: 33em){
 
 .exp-d1{ 
-font-size: .6em;
+font-size: 1em;
 line-height: 1em;
 width: 98%;
 top: 4.5em;
@@ -1824,7 +1830,7 @@ opacity: 0;
 @media screen and (min-width: 55em){
 
 .exp-d1{ 
-font-size: .8em;
+font-size: 1.25em;
 line-height: 1.2em;
 width: 80%;
 top: 5em;
@@ -1859,7 +1865,7 @@ z-index: -1;
 /* Expertise Text Box 2 (WordPress) */
 
 .exp-d2{ 
-font-size: .8em;
+font-size: 1em;
 line-height: 1.2em;
 position: absolute;
 text-align: justify;
@@ -1869,7 +1875,7 @@ left: 183vw;
 opacity: 0.8;
 color: #4e4d4d;
 padding: 1em 1.2em;
-background-color: #e7e7e7;
+background-color: transparent;
 z-index: 1;
 }
 
@@ -1877,7 +1883,7 @@ z-index: 1;
 @media screen and (max-width: 33em){
 
 .exp-d2{ 
-font-size: .6em;
+font-size: 1em;
 line-height: 1em;
 width: 90%;
 top: 2.5em;
@@ -1890,7 +1896,7 @@ left: 190vw;
 @media screen and (min-width: 55em){
 
 .exp-d2{ 
-font-size: .8em;
+font-size: 1.25em;
 line-height: 1.2em;
 width: 80%;
 top: 13.5em;
@@ -1903,7 +1909,7 @@ left: 185vw;
 
 /* Expertise Text Box 3 (Responsive Design) */
 .exp-d3{ 
-font-size: .8em;
+font-size: 1em;
 line-height: 1.2em;
 position: absolute;
 text-align: justify;
@@ -1913,14 +1919,14 @@ left: 193vw;
 opacity: 0.8;
 color: #4e4d4d;
 padding: 1em 1.2em;
-background-color: #e7e7e7;
+background-color: transparent;
 z-index: 1;
 }
 /* for Mobiles */
 @media screen and (max-width: 33em){
 
 .exp-d3{ 
-font-size: .6em;
+font-size: 1em;
 line-height: 1em;
 width: 90%;
 top: 2em;
@@ -1932,7 +1938,7 @@ left: 195vw;
 @media screen and (min-width: 55em){
 
 .exp-d3{ 
-font-size: .8em;
+font-size: 1.25em;
 line-height: 1.2em;
 width: 80%;
 top: 11.5em;
@@ -1942,7 +1948,7 @@ left: 193vw;
 
 /* Expertise Text Box 4 (Animation) */
 .exp-d4{ 
-font-size: .8em;
+font-size: 1em;
 line-height: 1em;
 position: absolute;
 text-align: justify;
@@ -1952,14 +1958,14 @@ left: 185vw;
 opacity: 0.8;
 color: #4e4d4d;
 padding: 1em 1.2em;
-background-color: #e7e7e7;
+background-color: transparent;
 z-index: 1;
 }
 /* for Mobiles */
 @media screen and (max-width: 33em){
 
 .exp-d4{ 
-font-size: .6em;
+font-size: 1em;
 line-height: 1em;
 width: 98%;
 top: 2em;
@@ -1971,7 +1977,7 @@ left: 180vw;
 @media screen and (min-width: 55em){
 
 .exp-d4{ 
-font-size: .8em;
+font-size: 1.25em;
 line-height: 1em;
 width: 80%;
 top: 13.5em;
@@ -1983,7 +1989,7 @@ left: 187vw;
 
 /* Expertise Text Box 5 (Graphic Design) */
 .exp-d5{ 
-font-size: .8em;
+font-size: 1em;
 line-height: 1em;
 position: absolute;
 text-align: justify;
@@ -1993,7 +1999,7 @@ left: 225vw;
 opacity: 0.8;
 color: #4e4d4d;
 padding: 1em 1.2em;
-background-color: #e7e7e7;
+background-color: transparent;
 z-index: 1;
 }
 
@@ -2001,7 +2007,7 @@ z-index: 1;
 @media screen and (max-width: 33em){
 	
 .exp-d5{ 
-font-size: .6em;
+font-size: 1em;
 line-height: 1em;
 width: 100%;
 top: -.5em;
@@ -2013,7 +2019,7 @@ left: 221vw;
 @media screen and (min-width: 55em){
 	
 .exp-d5{ 
-font-size: .8em;
+font-size: 1.25em;
 line-height: 1em;
 width: 75%;
 top: 9.5em;
@@ -2022,11 +2028,11 @@ left: 230vw;
 }
 
 
-/* Web Design Squares */
+/* Web Design Circles */
 .wd-circle{
 width: 10rem;
 height: 10rem;
-border: 2px solid #636363;
+border: 2px solid #bbbbbb;
 position: absolute;
 display: fixed;
 left: 40vw;
@@ -2038,7 +2044,7 @@ z-index: -3;
 .wd-circle-dot{
 width: 10rem;
 height: 10rem;
-border: 3px dotted #636363;
+border: 3px dotted #bbbbbb;
 position: absolute;
 display: fixed;
 top: 12vh;
@@ -2052,7 +2058,7 @@ z-index: -3;
 .wd-line{
 width: 10rem;
 height: 0rem;
-border: 2px solid #999;
+border: 2px solid #bbbbbb;
 position: absolute;
 display: fixed;
 opacity: 0;
@@ -2064,7 +2070,7 @@ z-index: -5;
 .wd-line-dot{
 width: 10rem;
 height: 1rem;
-border: 1px dashed #999;
+border: 1px dashed #bbbbbb;
 position: absolute;
 display: fixed;
 opacity: 0;
@@ -2077,7 +2083,7 @@ transform: rotate(90deg);
 .wd-line-dot2{
 width: 9rem;
 height: .5rem;
-border: 1px solid #999;
+border: 1px solid #bbbbbb;
 position: absolute;
 display: fixed;
 opacity: 0;
