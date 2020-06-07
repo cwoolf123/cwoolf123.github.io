@@ -24,4 +24,3 @@ $("nav a").on("click", function (event) {
     
   })
 
-  

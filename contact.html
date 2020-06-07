@@ -12,7 +12,7 @@
     //////////////////////////////////////////////////////
     -->
 <!doctype html>
-<html>
+<html id="html">
   <head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no">
@@ -101,13 +101,31 @@
     <p class="footer-explore"><br><br><strong>Explore</strong><br><br/><a class="link-light" href="index.html">Home</a><br/><br/><a class="link-light" href="about.html">About</a><br/><br/><a class="link-light" href="contact.html">Contact</a><br/><br/><a class="link-light" href="portfolio.html">Portfolio</a></p>
     <div class="footer-follow"><span class="f-title"><strong>Follow</strong></span><br><br><br><i class="fab fa-codepen f-icon" aria-hidden="true"></i><i class="fab fa-github f-icon" aria-hidden="true"></i><i class="fab fa-linkedin f-icon" aria-hidden="true"></i></div>
     <div class="switch">
-      <input type="checkbox">
+      <input type="checkbox" value="" onClick="themeSwitch();">
       <label>
         <span class="fontawesome-ok"></span>
         <span class="fontawesome-remove"></span>
         <div></div>
       </label>
     </div>
+    <script type="text/javascript">
+      let $count = 0;
+
+   function themeSwitch() {
+     if ($count == 0) {
+       window.document.getElementById('html').style.filter = 'invert(1)';
+       $count++;
+      }
+      else if ($count == 1) {
+        window.document.getElementById('html').style.filter = 'invert(0)';
+        $count = 0;
+      }
+      else {
+        // do nothing
+      }
+      };
+
+</script>
   </div>
 </footer>
 <div class="social"><a href="https://codepen.io/cwoolf123/"><i class="fab fa-codepen" aria-hidden="true"></i></a><a href="https://github.com/cwoolf123"><i class="fab fa-github" aria-hidden="true"></i></a><a href="https://www.linkedin.com/in/chriswoolf"><i class="fab fa-linkedin" aria-hidden="true"></i></a></div>
