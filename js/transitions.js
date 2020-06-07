@@ -1,8 +1,9 @@
+
 $("nav a").on("click", function (event) {
   
     event.preventDefault()
     
-    const href = $(this).attr("href")
+    href = $(this).attr("href")
     
     window.history.pushState(null, null, href)
     
@@ -13,7 +14,7 @@ $("nav a").on("click", function (event) {
       url: href,
       success: function (data) {
         $("section").fadeOut(250, function () {
-          const newPage = $(data).filter("section").html()
+          newPage = $(data).filter("section").html()
           
           $("section").html(newPage)
           
@@ -22,6 +23,6 @@ $("nav a").on("click", function (event) {
       }
     })
     
-  })
+  });
 
-  
+

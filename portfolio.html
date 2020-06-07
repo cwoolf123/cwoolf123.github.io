@@ -65,26 +65,12 @@
 <img class="comb-img2" src="img/comb.png" />
 <div class="project-1">
 </div>
-<script src='js/exp.js'></script>
-<script src='js/imagesloaded.pkgd.min.js'></script>	
-<script src='js/masonry.pkgd.min.js'></script>	
-<script src='js/classie.js'></script>	
 </section>
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/transitions.js"></script>
-<script src='js/jquery-2.2.1.min.js'></script>
-<script src='js/anime.min.js'></script>
-<script src='js/pieces.min.js'></script>
-<script src='js/exp.js'></script>
-<script src='js/snap.svg-min.js'></script>
-<script src='js/title.js'></script>
-<script src='js/portfolioTitle.js'></script>	
-<script src='js/menu.js'></script>
-<script src='js/contact.js'></script>	
-<div class="social"><a href="https://codepen.io/cwoolf123/"><i class="fab fa-codepen" aria-hidden="true"></i></a><a href="https://github.com/cwoolf123"><i class="fab fa-github" aria-hidden="true"></i></a><a href="https://www.linkedin.com/in/chriswoolf"><i class="fab fa-linkedin" aria-hidden="true"></i></a></div>
-<!-- <img class="chip-img" src="img/chip.png" /> -->
-    <div class="footer-portoflio">
+  <div class="social"><a href="https://codepen.io/cwoolf123/"><i class="fab fa-codepen" aria-hidden="true"></i></a><a href="https://github.com/cwoolf123"><i class="fab fa-github" aria-hidden="true"></i></a><a href="https://www.linkedin.com/in/chriswoolf"><i class="fab fa-linkedin" aria-hidden="true"></i></a></div>
+  <div class="footer-portoflio">
     <footer id=footer>
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script src='assets/js/all.js'></script>
       <div class="footer">
           <img class="fchip-img" src="img/chip.png" />
         <p class="footer-words"><br><br><strong>Designed & Built By:</strong><br><br/>Chris Woolf © <script>document.write(new Date().getFullYear())</script>
@@ -92,6 +78,14 @@
   
         <p class="footer-explore"><br><br><strong>Explore</strong><br><br/><a class="link-light" href="index.html">Home</a><br/><br/><a class="link-light" href="about.html">About</a><br/><br/><a class="link-light" href="contact.html">Contact</a><br/><br/><a class="link-light" href="portfolio.html">Portfolio</a></p>
         <div class="footer-follow"><span class="f-title"><strong>Follow</strong></span><br><br><br><i class="fab fa-codepen f-icon" aria-hidden="true"></i><i class="fab fa-github f-icon" aria-hidden="true"></i><i class="fab fa-linkedin f-icon" aria-hidden="true"></i></div>
+        <div class="switch">
+          <input type="checkbox" value="" onClick="themeSwitch();">
+          <label>
+            <span class="fontawesome-ok"></span>
+            <span class="fontawesome-remove"></span>
+            <div></div>
+          </label>
+        </div>
     </footer>
     <script type="text/javascript">
       let $count = 0;
@@ -114,14 +108,3 @@
   </div>
   </body>
 </html>
-
-<!-- $ ~/vi bash_profile   
-
-i
-
-export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
-export CLICOLOR=1
-export LSCOLORS=ExFxBxDxCxegedabagacad
-alias ls='ls -GFh'
-
-:wq -->
