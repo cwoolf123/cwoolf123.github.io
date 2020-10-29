@@ -13,7 +13,7 @@
             width: "2rem",
         }, 600 );
         $('nav').animate({ 
-            top: "-20em",
+            top: "-38em",
             zIndex: 1,
         }, 600 ); 
 
@@ -29,7 +29,7 @@
             width: "0rem",
         }, 600 ); 
         $('nav').animate({ 
-            top: "30em",
+            top: "58em",
             zIndex: 5,
         }, 600 ); }
         

@@ -25,6 +25,8 @@
     "stylelint": "^11.0.0"
   },
   "dependencies": {
-    "gulp-sass-lint": "^1.4.0"
+    "gulp-concat": "^2.6.1",
+    "gulp-sass-lint": "^1.4.0",
+    "gulp-uglify": "^3.0.2"
   }
 }

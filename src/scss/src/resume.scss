@@ -109,7 +109,7 @@ left: -25vw;
 width: 100vw;
 z-index: 7;
 padding: 1em;
-opacity: .8;
+opacity: 1;
 }
     
 .number-slides {
@@ -1562,16 +1562,16 @@ position: absolute;
 display: block;
 }
   
-nav a{
+nav a {
 position: relative;
-top: -20em;
+top: -38em;
 left: -3vw;
 width: 100vw;
 display: block;
 z-index: 17;
-padding: 2em 2em 0em 2em;
-background-color: #cdcdcd;
-opacity: .8;
+padding: 4em 2em 6rem 2em;
+background-color: #eaeaea;
+opacity: 1;
 }
     
 .line1{
@@ -1621,6 +1621,11 @@ padding: 2em;
 width: 7.5em;
 z-index: 4;
 }
+
+.circlef.guide {
+margin-left: -4rem !important;
+}
+
 }
 
 
